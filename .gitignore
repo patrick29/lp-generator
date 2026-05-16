@@ -1,0 +1,38 @@
+# Dependências
+node_modules/
+.pnpm-store/
+.yarn/
+
+# Builds
+dist/
+build/
+.next/
+.astro/
+out/
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Cache
+.cache/
+.parcel-cache/
+.turbo/
+
+# Assets brutos pesados (mantenha apenas os otimizados versionados)
+# Descomente se quiser ignorar PSDs, AIs, vídeos brutos, etc.
+# **/assets/raw/

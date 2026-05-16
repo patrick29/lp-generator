@@ -1,0 +1,62 @@
+code: "lp-generator"
+name: "LP Generator Pipeline"
+description: "Briefing → Estratégia → Aprovação → Copy → Visual → Código → Aprovação → Revisão → Aprovação final."
+
+# Steps na ordem de execução. Cada step referencia um arquivo em steps/.
+steps:
+  - id: 1
+    name: "brief-intake"
+    type: checkpoint
+    file: steps/step-01-brief-intake.md
+
+  - id: 2
+    name: "analyze-and-strategize"
+    type: agent
+    agent: bruno-briefing
+    file: steps/step-02-analyze-and-strategize.md
+
+  - id: 3
+    name: "approve-strategy"
+    type: checkpoint
+    file: steps/step-03-approve-strategy.md
+
+  - id: 4
+    name: "write-copy"
+    type: agent
+    agent: carla-copy
+    file: steps/step-04-write-copy.md
+
+  - id: 5
+    name: "design-visual"
+    type: agent
+    agent: diana-design
+    file: steps/step-05-design-visual.md
+
+  - id: 6
+    name: "build-code"
+    type: agent
+    agent: davi-dev
+    file: steps/step-06-build-code.md
+
+  - id: 7
+    name: "approve-content"
+    type: checkpoint
+    file: steps/step-07-approve-content.md
+
+  - id: 8
+    name: "review"
+    type: agent
+    agent: rita-revisao
+    file: steps/step-08-review.md
+    on_reject: 6  # default: volta para Davi. review.md indica explicitamente se é melhor voltar para 4 ou 5.
+
+  - id: 9
+    name: "final-approval"
+    type: checkpoint
+    file: steps/step-09-final-approval.md
+
+checkpoints:
+  - 1
+  - 3
+  - 7
+  - 9

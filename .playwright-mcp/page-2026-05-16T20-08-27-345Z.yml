@@ -1,0 +1,652 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "Nova Digital":
+        - /url: "#top"
+        - img "Nova Digital"
+      - generic [ref=e5]:
+        - link "Sobre" [ref=e6] [cursor=pointer]:
+          - /url: "#sobre"
+        - link "Fundadora" [ref=e7] [cursor=pointer]:
+          - /url: "#fundadora"
+        - link "Serviços" [ref=e8] [cursor=pointer]:
+          - /url: "#servicos"
+        - link "Método NOVA" [ref=e9] [cursor=pointer]:
+          - /url: "#metodo"
+        - link "Cases" [ref=e10] [cursor=pointer]:
+          - /url: "#cases"
+        - link "FAQ" [ref=e11] [cursor=pointer]:
+          - /url: "#faq"
+        - link "Contato" [ref=e12] [cursor=pointer]:
+          - /url: "#contato"
+      - link "Diagnóstico gratuito!" [ref=e14] [cursor=pointer]:
+        - /url: "#contato"
+  - main [ref=e15]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e21] [cursor=pointer]:
+            - img [ref=e22]
+            - generic [ref=e26]: Foto · Letícia Shibayama (vertical, alta resolução)
+          - generic:
+            - button "Replace"
+            - button "Remove"
+        - generic [ref=e28]: Do plano ao painel.
+      - generic [ref=e29]:
+        - generic [ref=e30]: AGÊNCIA DE MARKETING ESTRATÉGICO
+        - heading "Estratégia todo mundo promete. Aplicar com excelência é outra história." [level=1] [ref=e32]:
+          - text: Estratégia todo mundo
+          - emphasis [ref=e33]: promete
+          - text: .
+          - strong [ref=e34]: Aplicar
+          - text: com excelência
+          - text: é outra história.
+        - paragraph [ref=e35]: Marketing digital com plano, execução e leitura de painel. Do briefing ao número que importa.
+        - generic [ref=e36]:
+          - link "Diagnóstico gratuito!" [ref=e37] [cursor=pointer]:
+            - /url: "#contato"
+            - text: Diagnóstico gratuito!
+            - img [ref=e38]
+          - link "Ver o método NOVA" [ref=e40] [cursor=pointer]:
+            - /url: "#metodo"
+            - img [ref=e41]
+            - text: Ver o método NOVA
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - strong [ref=e45]: "[Anos]"
+            - generic [ref=e46]: de mercado digital
+          - generic [ref=e47]:
+            - strong [ref=e48]: "[Marcas]"
+            - generic [ref=e49]: já atendidas
+          - generic [ref=e50]:
+            - strong [ref=e51]: "[Métrica]"
+            - generic [ref=e52]: "[label]"
+    - generic [ref=e53]:
+      - generic [ref=e55]: MARCAS PARCEIRAS
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]: ▶
+          - generic [ref=e60]: "[Logo 1]"
+        - generic [ref=e61]:
+          - generic [ref=e62]: ▶
+          - generic [ref=e63]: "[Logo 2]"
+        - generic [ref=e64]:
+          - generic [ref=e65]: ▶
+          - generic [ref=e66]: "[Logo 3]"
+        - generic [ref=e67]:
+          - generic [ref=e68]: ▶
+          - generic [ref=e69]: "[Logo 4]"
+        - generic [ref=e70]:
+          - generic [ref=e71]: ▶
+          - generic [ref=e72]: "[Logo 5]"
+        - generic [ref=e73]:
+          - generic [ref=e74]: ▶
+          - generic [ref=e75]: "[Logo 6]"
+        - generic [ref=e76]:
+          - generic [ref=e77]: ▶
+          - generic [ref=e78]: "[Logo 7]"
+        - generic [ref=e79]:
+          - generic [ref=e80]: ▶
+          - generic [ref=e81]: "[Logo 1]"
+        - generic [ref=e82]:
+          - generic [ref=e83]: ▶
+          - generic [ref=e84]: "[Logo 2]"
+        - generic [ref=e85]:
+          - generic [ref=e86]: ▶
+          - generic [ref=e87]: "[Logo 3]"
+        - generic [ref=e88]:
+          - generic [ref=e89]: ▶
+          - generic [ref=e90]: "[Logo 4]"
+        - generic [ref=e91]:
+          - generic [ref=e92]: ▶
+          - generic [ref=e93]: "[Logo 5]"
+        - generic [ref=e94]:
+          - generic [ref=e95]: ▶
+          - generic [ref=e96]: "[Logo 6]"
+        - generic [ref=e97]:
+          - generic [ref=e98]: ▶
+          - generic [ref=e99]: "[Logo 7]"
+    - generic [ref=e100]:
+      - generic:
+        - generic: NOVA.
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]: MANIFESTO
+          - heading "A gente aplica estratégia com excelência." [level=2] [ref=e105]:
+            - text: A gente
+            - emphasis [ref=e106]: aplica
+            - text: estratégia
+            - text: com
+            - strong [ref=e107]: excelência
+            - text: .
+        - list [ref=e108]:
+          - listitem [ref=e109]:
+            - img [ref=e111]
+            - generic [ref=e114]: "01"
+            - heading "Resultado real, no painel" [level=3] [ref=e115]
+            - paragraph [ref=e116]: "Crescimento que dá pra ver: receita, marca e relevância com leitura de dados."
+          - listitem [ref=e117]:
+            - img [ref=e119]
+            - generic [ref=e122]: "02"
+            - heading "Estratégia direcionada" [level=3] [ref=e123]
+            - paragraph [ref=e124]: Cada ação tem um porquê. A gente decide com base no que move o seu negócio.
+          - listitem [ref=e125]:
+            - img [ref=e127]
+            - generic [ref=e129]: "03"
+            - heading "Humanização do digital" [level=3] [ref=e130]
+            - paragraph [ref=e131]: Dados e métricas viram relação real. Tecnologia a serviço da conexão com o seu público.
+    - generic [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - generic [ref=e137] [cursor=pointer]:
+            - img [ref=e138]
+            - generic [ref=e142]: Foto · Letícia Shibayama (vertical, alta resolução)
+          - generic:
+            - button "Replace"
+            - button "Remove"
+        - generic [ref=e143]:
+          - generic [ref=e144]: "\""
+          - text: Estratégia bem aplicada é o que separa marca que cresce de marca que aparece.
+      - generic [ref=e145]:
+        - generic [ref=e146]: FUNDADORA
+        - heading "Letícia Shibayama." [level=2] [ref=e148]
+        - paragraph [ref=e149]:
+          - text: Profissional alegre, comunicativa e apaixonada por
+          - strong [ref=e150]: marketing digital
+        - paragraph [ref=e151]: "A Letícia fundou a Nova pra fazer o contrário do discurso: plano, execução e leitura de dados na mesma mesa."
+        - paragraph [ref=e152]: É ela quem define o método, o padrão e a régua que o time aplica em cada projeto.
+        - list [ref=e153]:
+          - listitem [ref=e154]:
+            - strong [ref=e155]: "[Anos]"
+            - generic [ref=e156]: criando estratégia
+          - listitem [ref=e157]:
+            - strong [ref=e158]: "[Marcas]"
+            - generic [ref=e159]: parcerias
+          - listitem [ref=e160]:
+            - strong [ref=e161]: "[Audiência]"
+            - generic [ref=e162]: "[plataforma]"
+        - generic [ref=e163]:
+          - link "Ver perfil" [ref=e164] [cursor=pointer]:
+            - /url: "[link-do-perfil]"
+            - text: Ver perfil
+            - generic [ref=e165]: →
+          - link "Diagnóstico gratuito!" [ref=e166] [cursor=pointer]:
+            - /url: "#contato"
+            - text: Diagnóstico gratuito!
+            - img [ref=e167]
+    - generic [ref=e169]:
+      - generic [ref=e170]:
+        - generic [ref=e171]: O QUE A GENTE APLICA
+        - heading "Planejamento estratégico. Execução com método." [level=2] [ref=e173]:
+          - text: Planejamento estratégico.
+          - text: Execução com método.
+      - generic [ref=e174]:
+        - article [ref=e175]:
+          - img [ref=e177]
+          - generic [ref=e180]: "01"
+          - heading "Tráfego pago" [level=3] [ref=e181]
+          - paragraph [ref=e182]: Campanhas em Google e Meta com plano antes do botão e leitura semanal de funil.
+          - list [ref=e183]:
+            - listitem [ref=e184]:
+              - img [ref=e185]
+              - text: Planejamento e setup
+            - listitem [ref=e187]:
+              - img [ref=e188]
+              - text: Criativos por etapa
+            - listitem [ref=e190]:
+              - img [ref=e191]
+              - text: Leitura semanal
+          - link "Conversar sobre" [ref=e193] [cursor=pointer]:
+            - /url: "#contato"
+            - text: Conversar sobre
+            - generic [ref=e194]: →
+        - article [ref=e195]:
+          - img [ref=e197]
+          - generic [ref=e201]: "02"
+          - heading "Gestão de mídia" [level=3] [ref=e202]
+          - paragraph [ref=e203]: Quem cuida da sua verba é quem entende a estratégia que ela serve.
+          - list [ref=e204]:
+            - listitem [ref=e205]:
+              - img [ref=e206]
+              - text: Leitura diária
+            - listitem [ref=e208]:
+              - img [ref=e209]
+              - text: Ajuste por canal
+            - listitem [ref=e211]:
+              - img [ref=e212]
+              - text: Reuniões quinzenais
+          - link "Conversar sobre" [ref=e214] [cursor=pointer]:
+            - /url: "#contato"
+            - text: Conversar sobre
+            - generic [ref=e215]: →
+        - article [ref=e216]:
+          - img [ref=e218]
+          - generic [ref=e221]: "03"
+          - 'heading "[Frente 03: a definir]" [level=3] [ref=e222]'
+          - paragraph [ref=e223]: "[Descrição curta da terceira frente da Nova quando confirmar.]"
+          - list [ref=e224]:
+            - listitem [ref=e225]:
+              - img [ref=e226]
+              - text: "[Sub-serviço 1]"
+            - listitem [ref=e228]:
+              - img [ref=e229]
+              - text: "[Sub-serviço 2]"
+            - listitem [ref=e231]:
+              - img [ref=e232]
+              - text: "[Sub-serviço 3]"
+          - link "Conversar sobre" [ref=e234] [cursor=pointer]:
+            - /url: "#contato"
+            - text: Conversar sobre
+            - generic [ref=e235]: →
+        - article [ref=e236]:
+          - img [ref=e238]
+          - generic [ref=e240]: "04"
+          - 'heading "[Frente 04: a definir]" [level=3] [ref=e241]'
+          - paragraph [ref=e242]: "[Descrição curta da quarta frente quando confirmar. Ou cortar este card e ficar com 3.]"
+          - list [ref=e243]:
+            - listitem [ref=e244]:
+              - img [ref=e245]
+              - text: "[Sub-serviço 1]"
+            - listitem [ref=e247]:
+              - img [ref=e248]
+              - text: "[Sub-serviço 2]"
+            - listitem [ref=e250]:
+              - img [ref=e251]
+              - text: "[Sub-serviço 3]"
+          - link "Conversar sobre" [ref=e253] [cursor=pointer]:
+            - /url: "#contato"
+            - text: Conversar sobre
+            - generic [ref=e254]: →
+    - generic [ref=e255]:
+      - generic [ref=e256]:
+        - generic [ref=e257]: COMO A GENTE TRABALHA
+        - heading "Método NOVA." [level=2] [ref=e259]
+        - paragraph [ref=e260]: Cinco fases que conectam plano, execução e leitura.
+      - generic [ref=e262]:
+        - generic [ref=e263]:
+          - img [ref=e265]
+          - generic [ref=e268]:
+            - generic [ref=e269]: "01"
+            - generic [ref=e270]: Semana 1–2
+          - heading "Diagnóstico." [level=3] [ref=e271]
+          - list [ref=e272]:
+            - listitem [ref=e273]:
+              - img [ref=e274]
+              - text: Análise de mercado
+            - listitem [ref=e276]:
+              - img [ref=e277]
+              - text: Benchmark
+            - listitem [ref=e279]:
+              - img [ref=e280]
+              - text: Mapa de oportunidades
+        - generic [ref=e282]:
+          - img [ref=e284]
+          - generic [ref=e288]:
+            - generic [ref=e289]: "02"
+            - generic [ref=e290]: Semana 3–4
+          - heading "Estratégia." [level=3] [ref=e291]
+          - list [ref=e292]:
+            - listitem [ref=e293]:
+              - img [ref=e294]
+              - text: Posicionamento
+            - listitem [ref=e296]:
+              - img [ref=e297]
+              - text: Plano de canais
+            - listitem [ref=e299]:
+              - img [ref=e300]
+              - text: KPIs trimestrais
+        - generic [ref=e302]:
+          - img [ref=e304]
+          - generic [ref=e307]:
+            - generic [ref=e308]: "03"
+            - generic [ref=e309]: Semana 5–8
+          - heading "Criativo." [level=3] [ref=e310]
+          - list [ref=e311]:
+            - listitem [ref=e312]:
+              - img [ref=e313]
+              - text: Conceito de campanha
+            - listitem [ref=e315]:
+              - img [ref=e316]
+              - text: Peças e vídeos
+            - listitem [ref=e318]:
+              - img [ref=e319]
+              - text: Materiais por funil
+        - generic [ref=e321]:
+          - img [ref=e323]
+          - generic [ref=e326]:
+            - generic [ref=e327]: "04"
+            - generic [ref=e328]: Semana 6+
+          - heading "Mídia." [level=3] [ref=e329]
+          - list [ref=e330]:
+            - listitem [ref=e331]:
+              - img [ref=e332]
+              - text: Setup de mídia
+            - listitem [ref=e334]:
+              - img [ref=e335]
+              - text: Landing pages e CRO
+            - listitem [ref=e337]:
+              - img [ref=e338]
+              - text: Otimização semanal
+        - generic [ref=e340]:
+          - img [ref=e342]
+          - generic [ref=e345]:
+            - generic [ref=e346]: "05"
+            - generic [ref=e347]: Em curso
+          - heading "Crescimento." [level=3] [ref=e348]
+          - list [ref=e349]:
+            - listitem [ref=e350]:
+              - img [ref=e351]
+              - text: Relatório executivo
+            - listitem [ref=e353]:
+              - img [ref=e354]
+              - text: Calendário editorial
+            - listitem [ref=e356]:
+              - img [ref=e357]
+              - text: Revisão trimestral
+    - generic [ref=e359]:
+      - generic [ref=e360]:
+        - generic [ref=e361]: CASES DE SUCESSO
+        - heading "Marcas que cresceram com a gente do lado." [level=2] [ref=e363]:
+          - text: Marcas que cresceram
+          - text: com a gente do lado.
+      - generic [ref=e364]:
+        - article [ref=e365]:
+          - generic [ref=e366]:
+            - generic [ref=e367]:
+              - generic [ref=e369] [cursor=pointer]:
+                - img [ref=e370]
+                - generic [ref=e374]: Imagem do case · [Cliente 1]
+              - generic:
+                - button "Replace"
+                - button "Remove"
+            - generic [ref=e375]: "[Frente · Frente]"
+          - generic [ref=e376]:
+            - generic [ref=e377]:
+              - generic [ref=e378]: "[Cliente 1]"
+              - heading "[O que mudou para esse cliente.]" [level=3] [ref=e379]
+            - generic [ref=e380]:
+              - strong [ref=e381]: "[X%]"
+              - generic [ref=e382]: "[indicador]"
+        - article [ref=e383]:
+          - generic [ref=e384]:
+            - generic [ref=e385]:
+              - generic [ref=e387] [cursor=pointer]:
+                - img [ref=e388]
+                - generic [ref=e392]: Imagem do case · [Cliente 2]
+              - generic:
+                - button "Replace"
+                - button "Remove"
+            - generic [ref=e393]: "[Frente · Frente]"
+          - generic [ref=e394]:
+            - generic [ref=e395]:
+              - generic [ref=e396]: "[Cliente 2]"
+              - heading "[Resultado mensurável do cliente.]" [level=3] [ref=e397]
+            - generic [ref=e398]:
+              - strong [ref=e399]: "[X×]"
+              - generic [ref=e400]: "[indicador]"
+        - article [ref=e401]:
+          - generic [ref=e402]:
+            - generic [ref=e403]:
+              - generic [ref=e405] [cursor=pointer]:
+                - img [ref=e406]
+                - generic [ref=e410]: Imagem do case · [Cliente 3]
+              - generic:
+                - button "Replace"
+                - button "Remove"
+            - generic [ref=e411]: "[Frente · Frente]"
+          - generic [ref=e412]:
+            - generic [ref=e413]:
+              - generic [ref=e414]: "[Cliente 3]"
+              - heading "[Transformação concreta.]" [level=3] [ref=e415]
+            - generic [ref=e416]:
+              - strong [ref=e417]: "[+X%]"
+              - generic [ref=e418]: "[indicador]"
+        - article [ref=e419]:
+          - generic [ref=e420]:
+            - generic [ref=e421]:
+              - generic [ref=e423] [cursor=pointer]:
+                - img [ref=e424]
+                - generic [ref=e428]: Imagem do case · [Cliente 4]
+              - generic:
+                - button "Replace"
+                - button "Remove"
+            - generic [ref=e429]: "[Frente · Frente]"
+          - generic [ref=e430]:
+            - generic [ref=e431]:
+              - generic [ref=e432]: "[Cliente 4]"
+              - heading "[Próximo case.]" [level=3] [ref=e433]
+            - generic [ref=e434]:
+              - strong [ref=e435]: "[X%]"
+              - generic [ref=e436]: "[indicador]"
+        - article [ref=e437]:
+          - generic [ref=e438]:
+            - generic [ref=e439]:
+              - generic [ref=e441] [cursor=pointer]:
+                - img [ref=e442]
+                - generic [ref=e446]: Imagem do case · [Cliente 5]
+              - generic:
+                - button "Replace"
+                - button "Remove"
+            - generic [ref=e447]: "[Frente · Frente]"
+          - generic [ref=e448]:
+            - generic [ref=e449]:
+              - generic [ref=e450]: "[Cliente 5]"
+              - heading "[Próximo case.]" [level=3] [ref=e451]
+            - generic [ref=e452]:
+              - strong [ref=e453]: "[X×]"
+              - generic [ref=e454]: "[indicador]"
+        - article [ref=e455]:
+          - generic [ref=e456]:
+            - generic [ref=e457]:
+              - generic [ref=e459] [cursor=pointer]:
+                - img [ref=e460]
+                - generic [ref=e464]: Imagem do case · [Cliente 6]
+              - generic:
+                - button "Replace"
+                - button "Remove"
+            - generic [ref=e465]: "[Frente · Frente]"
+          - generic [ref=e466]:
+            - generic [ref=e467]:
+              - generic [ref=e468]: "[Cliente 6]"
+              - heading "[Próximo case.]" [level=3] [ref=e469]
+            - generic [ref=e470]:
+              - strong [ref=e471]: "[+X%]"
+              - generic [ref=e472]: "[indicador]"
+    - generic [ref=e473]:
+      - generic [ref=e474]:
+        - generic [ref=e475]: PALAVRA DE QUEM CONTRATA
+        - heading "Ouça de quem importa." [level=2] [ref=e477]
+      - generic [ref=e478]:
+        - generic [ref=e479]:
+          - generic [ref=e481]:
+            - generic [ref=e483] [cursor=pointer]:
+              - img [ref=e484]
+              - generic [ref=e488]: "[Nome"
+            - generic:
+              - button "Replace"
+              - button "Remove"
+          - generic [ref=e489]: "\""
+          - blockquote [ref=e490]: "[Depoimento 1: fala do cliente em 2-3 frases. Tom natural.]"
+          - generic [ref=e491]:
+            - strong [ref=e492]: "[Nome do Cliente 1]"
+            - generic [ref=e493]: "[Cargo · Empresa]"
+        - generic [ref=e494]:
+          - generic [ref=e496]:
+            - generic [ref=e498] [cursor=pointer]:
+              - img [ref=e499]
+              - generic [ref=e503]: "[Nome"
+            - generic:
+              - button "Replace"
+              - button "Remove"
+          - generic [ref=e504]: "\""
+          - blockquote [ref=e505]: "[Depoimento 2: por que renovou contrato, ou o que esperava e não tinha visto antes.]"
+          - generic [ref=e506]:
+            - strong [ref=e507]: "[Nome do Cliente 2]"
+            - generic [ref=e508]: "[Cargo · Empresa]"
+        - generic [ref=e509]:
+          - generic [ref=e511]:
+            - generic [ref=e513] [cursor=pointer]:
+              - img [ref=e514]
+              - generic [ref=e518]: "[Nome"
+            - generic:
+              - button "Replace"
+              - button "Remove"
+          - generic [ref=e519]: "\""
+          - blockquote [ref=e520]: "[Depoimento 3: foco em processo, resultado mensurável ou relacionamento.]"
+          - generic [ref=e521]:
+            - strong [ref=e522]: "[Nome do Cliente 3]"
+            - generic [ref=e523]: "[Cargo · Empresa]"
+    - generic [ref=e525]:
+      - generic [ref=e526]:
+        - generic [ref=e527]: FAQ
+        - heading "Dúvidas Frequentes." [level=2] [ref=e528]
+        - generic [ref=e529]:
+          - generic [ref=e530]: Ainda com dúvida?
+          - link "Manda pra gente" [ref=e531] [cursor=pointer]:
+            - /url: "#contato"
+            - text: Manda pra gente
+            - generic [ref=e532]: →
+      - list [ref=e533]:
+        - listitem [ref=e534]:
+          - button "01 A Nova é uma agência recente. O que isso significa pra mim?" [expanded] [ref=e535] [cursor=pointer]:
+            - generic [ref=e536]: "01"
+            - generic [ref=e537]: A Nova é uma agência recente. O que isso significa pra mim?
+          - paragraph [ref=e542]: "Significa proximidade real entre quem decide e quem executa, sem camada de intermediário. O time é pequeno por escolha: aplicar estratégia com excelência exige cadência curta entre plano, leitura e ajuste. O custo de uma agência grande é diluído em pirâmide; aqui é direcionado pra aplicar estratégia no seu projeto."
+        - listitem [ref=e543]:
+          - button "02 Como funciona o atendimento no dia a dia?" [ref=e544] [cursor=pointer]:
+            - generic [ref=e545]: "02"
+            - generic [ref=e546]: Como funciona o atendimento no dia a dia?
+          - generic:
+            - paragraph: "Você conversa diretamente com o time que está com a mão no projeto: reuniões de leitura na cadência combinada, decisões registradas, ajustes implementados rápido quando o número pede. Sem repasse de e-mail entre camadas, sem \"vou checar com a área\"."
+        - listitem [ref=e550]:
+          - button "03 Como vocês compensam ter um time pequeno?" [ref=e551] [cursor=pointer]:
+            - generic [ref=e552]: "03"
+            - generic [ref=e553]: Como vocês compensam ter um time pequeno?
+          - generic:
+            - paragraph: Time pequeno é estrutura, não desvantagem. Todo mundo na Nova lê o mesmo painel e fala com o mesmo cliente. Para escopo que pede braço extra (produção pesada, peças por volume), trabalhamos com parceiros de confiança, sempre coordenados pela estratégia da casa.
+        - listitem [ref=e557]:
+          - button "04 Quanto tempo até ver resultado?" [ref=e558] [cursor=pointer]:
+            - generic [ref=e559]: "04"
+            - generic [ref=e560]: Quanto tempo até ver resultado?
+          - generic:
+            - paragraph: "Mídia paga bem feita responde em 30 a 60 dias. Branding e posicionamento, 90 dias pra começar a virar percepção. Crescimento orgânico, 6 a 12 meses. A gente fala isso desde o primeiro briefing: não vendemos milagre, vendemos método aplicado."
+        - listitem [ref=e564]:
+          - button "05 Como funciona o contrato?" [ref=e565] [cursor=pointer]:
+            - generic [ref=e566]: "05"
+            - generic [ref=e567]: Como funciona o contrato?
+          - generic:
+            - paragraph: Mensal, com escopo claro e revisão trimestral. Sem fidelidade longa, sem pegadinha. A ideia é que o cliente fique porque o trabalho está rendendo no painel, não porque a cláusula obriga.
+        - listitem [ref=e571]:
+          - button "06 Como é a primeira conversa?" [ref=e572] [cursor=pointer]:
+            - generic [ref=e573]: "06"
+            - generic [ref=e574]: Como é a primeira conversa?
+          - generic:
+            - paragraph: Uma call de 30 minutos, sem custo. A gente entende o cenário e diz, ali mesmo, se faz sentido seguir. Se não fizer, te indicamos quem pode ajudar melhor. Aqui a gente prefere cliente certo a cliente cheio.
+    - generic [ref=e579]:
+      - generic [ref=e580]:
+        - generic [ref=e581]: VAMOS CONVERSAR
+        - heading "Solicite seu diagnóstico. Sem custo, sem compromisso." [level=2] [ref=e583]:
+          - text: Solicite seu diagnóstico.
+          - emphasis [ref=e584]: Sem custo, sem compromisso.
+        - paragraph [ref=e585]: Uma call de 30 minutos. A gente entende o cenário e diz, ali mesmo, se faz sentido seguir.
+        - generic [ref=e587]:
+          - generic [ref=e589] [cursor=pointer]:
+            - img [ref=e590]
+            - generic [ref=e594]: Foto ambiente · reunião ou workspace da Nova
+          - generic:
+            - button "Replace"
+            - button "Remove"
+      - generic [ref=e595]:
+        - generic [ref=e596]:
+          - generic [ref=e597]: Nome
+          - textbox "Nome" [ref=e598]:
+            - /placeholder: Como podemos te chamar?
+        - generic [ref=e599]:
+          - generic [ref=e600]: Empresa
+          - textbox "Empresa" [ref=e601]:
+            - /placeholder: Nome da sua marca
+        - generic [ref=e602]:
+          - generic [ref=e603]: E-mail
+          - textbox "E-mail" [ref=e604]:
+            - /placeholder: oi@suamarca.com.br
+        - generic [ref=e605]:
+          - generic [ref=e606]: WhatsApp
+          - textbox "WhatsApp" [ref=e607]:
+            - /placeholder: (11) 9 9999-9999
+        - group [ref=e608]:
+          - generic [ref=e609]: Verba prevista
+          - generic [ref=e610]:
+            - button "Até R$ 1k/mês" [ref=e611] [cursor=pointer]
+            - button "R$ 1 a 3k/mês" [ref=e612] [cursor=pointer]
+            - button "R$ 3 a 8k/mês" [ref=e613] [cursor=pointer]
+            - button "Acima de R$ 8k/mês" [ref=e614] [cursor=pointer]
+        - generic [ref=e615]:
+          - generic [ref=e616]: Qual o seu maior desafio hoje?
+          - textbox "Qual o seu maior desafio hoje?" [ref=e617]:
+            - /placeholder: "Ex: temos tráfego mas não convertemos, ou: não sabemos por onde começar."
+        - button "Solicitar diagnóstico gratuito" [ref=e618] [cursor=pointer]:
+          - text: Solicitar diagnóstico gratuito
+          - img [ref=e619]
+  - contentinfo [ref=e621]:
+    - generic [ref=e623]:
+      - generic [ref=e624]:
+        - generic [ref=e625]:
+          - link "Nova Digital" [ref=e626] [cursor=pointer]:
+            - /url: "#top"
+            - img "Nova Digital"
+          - paragraph [ref=e627]: Marketing digital com estratégia aplicada. Do plano ao painel.
+        - generic [ref=e628]:
+          - generic [ref=e629]: A NOVA
+          - list [ref=e630]:
+            - listitem [ref=e631]:
+              - link "Sobre" [ref=e632] [cursor=pointer]:
+                - /url: "#sobre"
+            - listitem [ref=e633]:
+              - link "Fundadora" [ref=e634] [cursor=pointer]:
+                - /url: "#fundadora"
+            - listitem [ref=e635]:
+              - link "Cases" [ref=e636] [cursor=pointer]:
+                - /url: "#cases"
+            - listitem [ref=e637]:
+              - link "Depoimentos" [ref=e638] [cursor=pointer]:
+                - /url: "#depoimentos"
+            - listitem [ref=e639]:
+              - link "FAQ" [ref=e640] [cursor=pointer]:
+                - /url: "#faq"
+        - generic [ref=e641]:
+          - generic [ref=e642]: SERVIÇOS
+          - list [ref=e643]:
+            - listitem [ref=e644]:
+              - link "Tráfego pago" [ref=e645] [cursor=pointer]:
+                - /url: "#servicos"
+            - listitem [ref=e646]:
+              - link "Gestão de mídia" [ref=e647] [cursor=pointer]:
+                - /url: "#servicos"
+            - listitem [ref=e648]:
+              - link "Método NOVA" [ref=e649] [cursor=pointer]:
+                - /url: "#metodo"
+        - generic [ref=e650]:
+          - generic [ref=e651]: SIGA A NOVA
+          - list [ref=e652]:
+            - listitem [ref=e653]:
+              - link "Instagram" [ref=e654] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e655]:
+              - link "LinkedIn" [ref=e656] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e657]:
+              - link "TikTok" [ref=e658] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e659]:
+              - link "YouTube" [ref=e660] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e661]:
+        - generic [ref=e662]: © 2026 Nova Digital · CNPJ [a preencher]
+        - generic [ref=e663]: Estratégia aplicada, resultado real.
+        - generic [ref=e664]:
+          - link "Política de privacidade" [ref=e665] [cursor=pointer]:
+            - /url: "#"
+          - link "Termos" [ref=e666] [cursor=pointer]:
+            - /url: "#"
+          - link "LGPD" [ref=e667] [cursor=pointer]:
+            - /url: "#"

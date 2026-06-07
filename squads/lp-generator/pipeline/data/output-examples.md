@@ -244,3 +244,147 @@ HARD REJECTION TRIGGER: Eixo Código 3/10.
 Required change [→ step 6 davi-dev]: Otimizar hero image. Atual 1.8MB PNG sem width/height. Converter para WebP (~200KB), adicionar width="1280" height="720", marcar priority no Next/Image. Meta LCP < 2.5s.
 Required change [→ step 4 carla-copy]: CTA "Saiba mais" é nível 1 da Intensity Ladder. Reescrever para nível 4 ("Comece grátis por 14 dias →").
 ```
+
+---
+
+## Exemplo 3 — Assessoria de Marketing Digital (HTML + Tailwind single-file, tom Autoridade-Assessoria)
+
+> Referências de mercado consultadas: V4 Company, Assessoria Alpha, Agência Mestre, Conversion.
+
+### Strategy (síntese)
+
+- **Diagnóstico:** Problem Aware, Sophistication 3 (mercado saturado de agências — exige autoridade de escala + mecanismo diferenciado).
+- **Big Idea:** "Seu marketing não converte porque é executado por generalistas. Assessoria é diferente de agência."
+- **Driver dominante:** medo (de ficar para trás) + status (ser reconhecido como empresa que cresce).
+- **Stack:** HTML + Tailwind CDN single-file (LP de captação sem server-side).
+- **Framework:** 4Ps (Promise → Picture → Proof → Push).
+- **Sequência de seções:** Hero (promessa + qualificador + CTA) → Números de autoridade → Pain Stack → Como funciona (3 passos) → Cases com ROI → Testimunhos (com headline de resultado) → Scarcity → Form two-step → FAQ.
+
+### Hooks gerados (Carla apresenta os 3)
+
+```
+HOOK A (Autoridade + Urgência):
+"Faça de 2026 o ano mais lucrativo da sua empresa."
+Pre-headline: PARA EMPRESAS QUE FATURAM ACIMA DE R$ 100 MIL/MÊS
+Rationale: Qualificador de público eleva percepção de exclusividade e filtra lead ruim. Future-pacing com ano concreto cria urgência temporal.
+
+HOOK B (Contrarian):
+"Você não precisa de mais tráfego. Precisa de uma estratégia que converta."
+Rationale: Inverte a crença comum (mais tráfego = mais venda) e abre espaço para o mecanismo diferenciado.
+
+HOOK C (Dado de prova):
+"Nossos parceiros cresceram, em média, 70% no ano a ano. O próximo pode ser você."
+Rationale: Prova social no hero com número específico + convite sem pressão.
+
+[Usuário escolhe Hook A]
+```
+
+### Hero finalizado
+
+```
+PRE-HEADLINE: PARA EMPRESAS QUE FATURAM ACIMA DE R$ 100 MIL/MÊS
+
+H1: Faça de 2026 o ano mais lucrativo da sua empresa.
+
+SUBHERO: Agende seu diagnóstico gratuito e descubra como transformar seu marketing em uma máquina de geração de receita.
+
+CTA PRIMÁRIO: Agendar diagnóstico gratuito →
+NEUTRALIZADOR: Em até 1 dia útil um especialista entra em contato. Sem compromisso.
+```
+
+### Números de autoridade (logo abaixo do hero)
+
+```
++R$ 500 mi em receita gerada para parceiros
++800 empresas atendidas
+12 anos de operação
+Especialistas certificados Google, Meta e RD Station
+```
+
+### Copy da seção Testimunhos
+
+```
+TESTIMUNHO 1:
+CRESCIMENTO DE 70% NO ANO A ANO
+"Comparando ano a ano, crescemos 70%. As decisões certas, com a assessoria certa, geraram o resultado que a gente esperava."
+— Diego Lopes, Head de DTC · MAX Titanium
+
+TESTIMUNHO 2:
+ROI DE 9,5
+"A gente investiu, a gente vendeu. Nosso ROI está na casa de 9,5 — e isso é mensurável, não achismo."
+— Jonas Esteves, Diretor de Marketing · Lugano Chocolates
+
+TESTIMUNHO 3:
+DE LEAD PARA VENDA
+"Antes, a agência se preocupava só em entregar lead. Com a assessoria, há preocupação em entregar a venda — o resultado final lá na ponta."
+— Max Constâncio, Sócio-diretor · MAXMD Movelaria
+```
+
+### Copy da seção Scarcity
+
+```
+H2: O nosso trabalho é exclusivo.
+
+Nem sempre temos vagas abertas para novos parceiros. Trabalhamos com um número limitado de empresas para garantir dedicação real a cada operação.
+
+CTA: Verificar disponibilidade de vagas →
+```
+
+### Copy do form (two-step)
+
+```
+EYEBROW: PRÓXIMO PASSO
+
+H2: Preencha e receba o contato do nosso time.
+
+PASSO 1 — Complete o formulário
+Conte seu cenário com calma. Seus dados são usados apenas para entrar em contato.
+
+PASSO 2 — Receba o diagnóstico
+Em até 1 dia útil um especialista entra em contato para entender sua operação e apresentar um diagnóstico honesto.
+
+CAMPOS: Nome, Empresa, E-mail, WhatsApp, Faturamento mensal (chips), Maior desafio atual (textarea)
+SUBMIT: Solicitar diagnóstico gratuito →
+```
+
+### Visual system (excerto)
+
+```
+DESIGN SYSTEM — Assessoria de Marketing
+Vibe: autoridade premium, data-driven, sem excesso corporativo
+
+Colors:
+  Primary:    #0A0A0A (quase preto — peso de autoridade)
+  Secondary:  #1E40AF (blue-800 — confiança, credibilidade)
+  Accent:     #F59E0B (amber-500 — CTAs, números de destaque)
+  Background: #FFFFFF
+  Surface:    #F8FAFC (slate-50 — cards de testimunhos)
+  Text:       #0A0A0A / #374151
+
+Typography:
+  Heading: 'Inter', 700/800 — peso sem serifa, transmite modernidade e dados
+  Body:    'Inter', 400/500
+  Scale (desktop): hero 56, h2 36, h3 24, body 18, caption 14
+  Scale (mobile):  hero 36, h2 26, h3 20, body 16, caption 13
+
+Images plan:
+  Hero: image-ai-generator — "dashboard de analytics com gráfico crescente, fundo escuro, detalhe amber, ângulo perspectiva"
+  Logos de clientes: image-fetcher Clearbit para logos reais
+  Testimunhos: image-fetcher Unsplash para retratos profissionais neutros
+  Números de autoridade: SVG inline com ícones simples (TrendingUp, Users, Clock, Award)
+```
+
+### Veredito da Rita
+
+```
+REVIEW VERDICT: APPROVE
+| Eixo      | Score | Resumo |
+|-----------|-------|--------|
+| Copy      | 9/10  | Hero qualificado, hook data-first, testimunhos com headline de resultado, scarcity legítima, two-step no form |
+| Visual    | 8/10  | Sistema documentado, paleta autoridade sem excesso, amber nos CTAs funciona |
+| Código    | 9/10  | Lighthouse 94/98/100/100, LCP 1.6s, CLS 0.02 |
+| SEO+Meta  | 8/10  | Title/meta/OG/canonical presentes; falta JSON-LD Organization |
+| MÉDIA     | 8.5/10|   |
+
+Suggestion [não bloqueante]: Adicionar JSON-LD Organization com address e sameAs para redes sociais — melhora rich result no Google.
+```

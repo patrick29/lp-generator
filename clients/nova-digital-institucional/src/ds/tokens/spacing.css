@@ -1,0 +1,64 @@
+/* ============================================================
+   Nova Digital — Spacing, radius, shadow, motion tokens
+   ------------------------------------------------------------
+   The brand reads SOFT and ROUNDED: stadium/pill shapes, generous
+   radii, gentle shadows. Spacing follows a 4px base grid.
+   ============================================================ */
+
+:root {
+  /* ---- Spacing (4px base) ---- */
+  --space-0:    0;
+  --space-1:    0.25rem;   /* 4 */
+  --space-2:    0.5rem;    /* 8 */
+  --space-3:    0.75rem;   /* 12 */
+  --space-4:    1rem;      /* 16 */
+  --space-5:    1.25rem;   /* 20 */
+  --space-6:    1.5rem;    /* 24 */
+  --space-8:    2rem;      /* 32 */
+  --space-10:   2.5rem;    /* 40 */
+  --space-12:   3rem;      /* 48 */
+  --space-16:   4rem;      /* 64 */
+  --space-20:   5rem;      /* 80 */
+  --space-24:   6rem;      /* 96 */
+  --space-32:   8rem;      /* 128 */
+
+  /* ---- Radii — rounded brand language ---- */
+  --radius-xs:   6px;
+  --radius-sm:   10px;
+  --radius-md:   16px;
+  --radius-lg:   24px;
+  --radius-xl:   32px;
+  --radius-2xl:  44px;
+  --radius-pill: 999px;    /* stadium / capsule — the brand signature */
+  --radius-circle: 50%;
+
+  /* ---- Shadows — soft, warm, low-spread ---- */
+  --shadow-xs:   0 1px 2px rgba(36,9,43,0.06);
+  --shadow-sm:   0 2px 8px rgba(36,9,43,0.07);
+  --shadow-md:   0 8px 24px rgba(36,9,43,0.10);
+  --shadow-lg:   0 18px 44px rgba(36,9,43,0.14);
+  --shadow-xl:   0 28px 70px rgba(36,9,43,0.18);
+  /* Brand-tinted glows for accent surfaces */
+  --shadow-orange: 0 14px 34px rgba(243,140,51,0.34);
+  --shadow-purple: 0 14px 34px rgba(108,33,128,0.30);
+
+  /* ---- Borders ---- */
+  --border-width:      1px;
+  --border-width-thick: 2px;
+  --rule-accent-width: 6px;   /* the orange vertical/horizontal rule motif */
+
+  /* ---- Layout ---- */
+  --container-sm:   640px;
+  --container-md:   880px;
+  --container-lg:   1120px;
+  --container-xl:   1320px;
+  --page-gutter:    clamp(1.25rem, 5vw, 5rem);  /* @kind spacing */
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);     /* @kind other */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);    /* @kind other */
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);/* @kind other */
+  --dur-fast:      140ms;  /* @kind other */
+  --dur-base:      240ms;  /* @kind other */
+  --dur-slow:      420ms;  /* @kind other */
+}

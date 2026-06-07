@@ -1,0 +1,110 @@
+/* ============================================================
+   Nova Digital — Color tokens
+   ------------------------------------------------------------
+   Official brand palette (from "Paleta de cores"):
+     Laranja  #F38C33   energy, lightness, action
+     Roxo     #6C2180   authority, modernity, trust
+     Branco   #FEFEFE   clarity, space
+   Tints/shades below are harmonious extensions for UI surfaces,
+   states and depth — derived in OKLCH from the three base hues.
+   ============================================================ */
+
+:root {
+  /* ---- Brand base ---- */
+  --nova-orange:      #F38C33;
+  --nova-purple:      #6C2180;
+  --nova-white:       #FEFEFE;
+
+  /* ---- Orange scale ---- */
+  --orange-50:        #FEF4E9;
+  --orange-100:       #FCE3C7;
+  --orange-200:       #F9C892;
+  --orange-300:       #F6B065;
+  --orange-400:       #F49C45;
+  --orange-500:       #F38C33;   /* = --nova-orange */
+  --orange-600:       #E07A1F;
+  --orange-700:       #BC6315;
+  --orange-800:       #8E4B14;
+  --orange-900:       #5E330F;
+
+  /* ---- Purple scale ---- */
+  --purple-50:        #F4ECF7;
+  --purple-100:       #E5D2EC;
+  --purple-200:       #C9A3D6;
+  --purple-300:       #A86FBE;
+  --purple-400:       #8B45A2;
+  --purple-500:       #6C2180;   /* = --nova-purple */
+  --purple-600:       #5B1A6D;
+  --purple-700:       #491457;
+  --purple-800:       #360F41;
+  --purple-900:       #24092B;
+
+  /* ---- Neutrals (warm, purple-tinted) ---- */
+  --cream:            #EDE7E1;   /* the off-white "circle" motif */
+  --cream-deep:       #E2D9D0;
+  --neutral-0:        #FEFEFE;
+  --neutral-50:       #F7F4F2;
+  --neutral-100:      #EFE9E6;
+  --neutral-200:      #DED4D4;
+  --neutral-300:      #C2B4BC;
+  --neutral-400:      #9B889A;
+  --neutral-500:      #735F74;
+  --neutral-600:      #574059;
+  --neutral-700:      #3E2A41;
+  --neutral-800:      #2C1B30;   /* near-black, purple cast */
+  --neutral-900:      #1C0F20;
+
+  /* ---- Semantic status ---- */
+  --success:          #1E9E6A;
+  --success-soft:     #DCF3E8;
+  --warning:          #E0A21B;
+  --warning-soft:     #FBEFCF;
+  --danger:           #D2453B;
+  --danger-soft:      #F8DEDC;
+  --info:             #8B45A2;
+  --info-soft:        #EBDBF0;
+
+  /* ============================================================
+     Semantic aliases — prefer these in components
+     ============================================================ */
+
+  /* Brand roles */
+  --brand-primary:        var(--nova-orange);
+  --brand-primary-hover:  var(--orange-600);
+  --brand-primary-press:  var(--orange-700);
+  --brand-secondary:      var(--nova-purple);
+  --brand-secondary-hover:var(--purple-600);
+  --brand-secondary-press:var(--purple-700);
+
+  /* Backgrounds */
+  --bg-canvas:        var(--neutral-50);
+  --bg-surface:       var(--neutral-0);
+  --bg-muted:         var(--neutral-100);
+  --bg-inverse:       var(--nova-purple);   /* signature purple field */
+  --bg-inverse-deep:  var(--purple-700);
+  --bg-accent:        var(--nova-orange);   /* signature orange field */
+  --bg-cream:         var(--cream);
+
+  /* Text */
+  --text-primary:     var(--purple-800);    /* headlines on light */
+  --text-body:        var(--neutral-700);   /* paragraphs on light */
+  --text-muted:       var(--neutral-500);
+  --text-on-purple:   var(--nova-white);
+  --text-on-purple-soft: rgba(254,254,254,0.74);
+  --text-on-orange:   var(--purple-800);
+  --text-accent:      var(--nova-orange);
+  --text-link:        var(--nova-purple);
+
+  /* Borders & dividers */
+  --border-subtle:    rgba(108,33,128,0.12);
+  --border-default:   rgba(108,33,128,0.22);
+  --border-strong:    var(--nova-purple);
+  --border-on-dark:   rgba(254,254,254,0.28);
+
+  /* Surfaces */
+  --surface-card:     var(--neutral-0);
+  --surface-card-inverse: var(--purple-600);
+
+  /* Focus ring */
+  --focus-ring:       rgba(243,140,51,0.55);
+}

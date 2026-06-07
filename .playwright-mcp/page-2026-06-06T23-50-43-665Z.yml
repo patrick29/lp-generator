@@ -1,0 +1,20 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img "Ícone de claude.ai" [ref=e5]
+        - heading "claude.ai" [level=1] [ref=e6]
+      - heading "Executando verificação de segurança" [level=2] [ref=e7]
+      - paragraph [ref=e8]: Este site utiliza um serviço de segurança para proteção contra bots maliciosos. Esta página é exibida enquanto o site verifica se você não é um bot.
+  - contentinfo [ref=e9]:
+    - generic [ref=e11]:
+      - generic [ref=e13]:
+        - text: "Ray ID:"
+        - code [ref=e14]: a07b5229e95ff1e1
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - text: Desempenho e segurança da
+          - link "Cloudflare" [ref=e17] [cursor=pointer]:
+            - /url: https://www.cloudflare.com?utm_source=challenge&utm_campaign=m
+        - link "Privacidade" [ref=e19] [cursor=pointer]:
+          - /url: https://www.cloudflare.com/pt-br/privacypolicy/

@@ -1,0 +1,228 @@
+- generic [active] [ref=e1]:
+  - link "Ir para o conteúdo" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - generic [ref=e3]:
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - link "Depoimentos" [ref=e20] [cursor=pointer]:
+              - /url: "#depoimentos"
+              - generic [ref=e21]: Depoimentos
+          - listitem [ref=e22]:
+            - link "Clientes" [ref=e23] [cursor=pointer]:
+              - /url: "#clientes"
+              - generic [ref=e24]: Clientes
+          - listitem [ref=e25]:
+            - link "Sobre a Alpha" [ref=e26] [cursor=pointer]:
+              - /url: "#sobre"
+              - generic [ref=e27]: Sobre a Alpha
+        - link "Contrate" [ref=e31] [cursor=pointer]:
+          - /url: "#form"
+          - generic [ref=e33]: Contrate
+      - link "Agende já uma reunião" [ref=e39] [cursor=pointer]:
+        - /url: "#form"
+        - generic [ref=e41]: Agende já uma reunião
+      - generic [ref=e47]:
+        - generic [ref=e49]:
+          - heading "Cadastre-se e receba o contato do nosso time!" [level=2] [ref=e51]
+          - generic [ref=e60]:
+            - figure [ref=e61]
+            - generic [ref=e63]:
+              - heading "Complete o formulário" [level=3] [ref=e64]
+              - paragraph [ref=e65]: Forneça suas informações de contato. Garantimos a segurança total de seus dados. Serão usados apenas para contato.
+          - generic [ref=e74]:
+            - figure [ref=e75]
+            - generic [ref=e77]:
+              - heading "Receba uma ligação personalizada" [level=3] [ref=e78]
+              - paragraph [ref=e79]: Em um prazo de até 8 horas, um dos nossos especialistas entrará em contato diretamente para agendar a reunião mais crucial com você.
+        - form "Formulario_Qualificacao" [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e87]:
+              - generic [ref=e88] [cursor=pointer]: Nome
+              - textbox "Nome Nome" [ref=e89]:
+                - /placeholder: Seu nome
+            - generic [ref=e90]:
+              - generic [ref=e91] [cursor=pointer]: Email
+              - textbox "Email Email" [ref=e92]:
+                - /placeholder: Seu melhor e-mail
+            - generic [ref=e93]:
+              - generic [ref=e94] [cursor=pointer]: Telefone
+              - textbox "Telefone Telefone" [ref=e95]:
+                - /placeholder: Telefone
+            - generic [ref=e96]:
+              - generic [ref=e97] [cursor=pointer]: Nome da Empresa
+              - textbox "Nome da Empresa Nome da Empresa" [ref=e98]:
+                - /placeholder: Nome da empresa
+            - generic [ref=e99]: Selecionar segmento
+            - generic [ref=e100]:
+              - generic [ref=e101] [cursor=pointer]: Qual o seu segmento?
+              - generic [ref=e102]:
+                - generic:
+                  - img
+                - combobox "Qual o seu segmento? Qual o seu segmento?" [ref=e103]:
+                  - option "Pizzarias" [selected]
+                  - option "Hamburguerias"
+                  - option "Restaurante comida brasileira"
+                  - option "Churrascaria steakhouse"
+                  - option "Restaurante japonês"
+                  - option "Restaurante massas italiano"
+                  - option "Restaurante comida árabe"
+                  - option "Açaí / sorveteria"
+                  - option "Cafeteria"
+                  - option "Doceria"
+                  - option "Gastrobar"
+                  - option "Outros"
+            - generic [ref=e104]: Selecionar faturamento
+            - generic [ref=e105]:
+              - generic [ref=e106] [cursor=pointer]: Faturamento
+              - generic [ref=e107]:
+                - generic:
+                  - img
+                - combobox "Faturamento" [ref=e108]:
+                  - option "Selecionar" [selected]
+                  - option "Até 30 mil"
+                  - option "30 mil até 50 mil"
+                  - option "50 mil até 80 mil"
+                  - option "80 mil até 100 mil"
+                  - option "100 mil até 150 mil"
+                  - option "150 mil até 250 mil"
+                  - option "250 mil até 400 mil"
+                  - option "400 mil até 600 mil"
+                  - option "600 mil até 1 milhão"
+                  - option "Mais de 1 milhão"
+            - button "Receber mais informações" [ref=e112] [cursor=pointer]:
+              - generic [ref=e114]: Receber mais informações
+    - generic [ref=e126]:
+      - heading "Clientes Alpha" [level=2] [ref=e128]
+      - heading "Alguns clientes que já escalamos" [level=2] [ref=e130]
+      - region "Carrossel de imagens" [ref=e136]:
+        - generic [ref=e137]:
+          - group "1 de 19" [ref=e138]:
+            - figure [ref=e139]:
+              - img "01 - 2024-06-13T184652.315" [ref=e141]
+          - group "2 de 19" [ref=e142]:
+            - figure [ref=e143]:
+              - img "02 - 2024-06-13T184651.261" [ref=e145]
+          - group "3 de 19" [ref=e146]:
+            - figure [ref=e147]:
+              - img "04 - 2024-06-13T184650.240" [ref=e149]
+          - group "4 de 19" [ref=e150]:
+            - figure [ref=e151]:
+              - img "03 - 2024-06-13T184649.164" [ref=e153]
+          - group "5 de 19" [ref=e154]:
+            - figure [ref=e155]:
+              - img "06 (90)" [ref=e157]
+          - group "6 de 19" [ref=e158]:
+            - figure [ref=e159]:
+              - img "05 (87)" [ref=e161]
+          - group "7 de 19" [ref=e162]:
+            - figure [ref=e163]:
+              - img "07 (72)" [ref=e165]
+          - group "8 de 19" [ref=e166]:
+            - figure [ref=e167]:
+              - img "08 (65)" [ref=e169]
+          - group "9 de 19" [ref=e170]:
+            - figure [ref=e171]:
+              - img "image-removebg-preview (3) (1)" [ref=e173]
+          - group "10 de 19" [ref=e174]:
+            - figure [ref=e175]:
+              - img "milkymoo" [ref=e177]
+          - group "11 de 19" [ref=e178]:
+            - figure [ref=e179]:
+              - img "Logo R" [ref=e181]
+          - group "12 de 19" [ref=e182]:
+            - figure [ref=e183]:
+              - img "Logo R Burger" [ref=e185]
+          - group "13 de 19" [ref=e186]:
+            - figure [ref=e187]:
+              - img "Logo Nova Jaragua" [ref=e189]
+          - group "14 de 19" [ref=e190]:
+            - figure [ref=e191]:
+              - img "Logo Pedaço da Pizza" [ref=e193]
+          - group "15 de 19" [ref=e194]:
+            - figure [ref=e195]:
+              - img "Logo LAVI" [ref=e197]
+          - group "16 de 19" [ref=e198]:
+            - figure [ref=e199]:
+              - img "Logo Massas In Box" [ref=e201]
+          - group "17 de 19" [ref=e202]:
+            - figure [ref=e203]:
+              - img "Logo Nonno Peppe" [ref=e205]
+          - group "18 de 19" [ref=e206]:
+            - figure [ref=e207]:
+              - img "LOGO---PNG" [ref=e209]
+          - group "19 de 19" [ref=e210]:
+            - figure [ref=e211]:
+              - img "Logo Peds" [ref=e213]
+        - button [ref=e214] [cursor=pointer]:
+          - img [ref=e215]
+        - button [ref=e217] [cursor=pointer]:
+          - img [ref=e218]
+      - link "Seja mais um Case de Sucesso" [ref=e225] [cursor=pointer]:
+        - /url: "#form"
+        - generic [ref=e227]: Seja mais um Case de Sucesso
+    - heading "Estrutura" [level=2] [ref=e233]
+    - generic [ref=e247]:
+      - heading "Depoimentos" [level=2] [ref=e249]
+      - heading "Os nossos clientes falam por nós" [level=2] [ref=e251]
+      - link "Seja mais um Case de Sucesso" [ref=e267] [cursor=pointer]:
+        - /url: "#form"
+        - generic [ref=e269]: Seja mais um Case de Sucesso
+    - generic [ref=e273]:
+      - heading "O que faremos?" [level=2] [ref=e275]
+      - heading "Entenda como podemos agregar ao seu restaurante!" [level=2] [ref=e277]
+      - list [ref=e279]:
+        - listitem [ref=e280]:
+          - img [ref=e282]
+          - generic [ref=e285]: Aumentar o número de pedidos no delivery
+        - listitem [ref=e286]:
+          - img [ref=e288]
+          - generic [ref=e291]: Não dependa das plataformas para vender
+        - listitem [ref=e292]:
+          - img [ref=e294]
+          - generic [ref=e297]: Aumentar o movimento no salão
+        - listitem [ref=e298]:
+          - img [ref=e300]
+          - generic [ref=e303]: Ações de marketing e metrificação de resultados
+        - listitem [ref=e304]:
+          - img [ref=e306]
+          - generic [ref=e309]: Entender os seus indicadores de resultados
+        - listitem [ref=e310]:
+          - img [ref=e312]
+          - generic [ref=e315]: Acelerar o seu crescimento
+        - listitem [ref=e316]:
+          - img [ref=e318]
+          - generic [ref=e321]: Tornar a sua empresa referência de mercado
+    - generic [ref=e331]:
+      - heading "O nosso trabalho é exclusivo e nem sempre temos vagas abertas para novos parceiros" [level=2] [ref=e333]
+      - paragraph [ref=e335]: Agarre a oportunidade e receba uma assessoria de crescimento da maior especialista da América Latina.
+      - link "Agende já uma reunião" [ref=e337] [cursor=pointer]:
+        - /url: "#form"
+        - generic [ref=e339]: Agende já uma reunião
+    - generic [ref=e343]:
+      - list [ref=e353]:
+        - listitem [ref=e354]:
+          - link "Voltar ao topo" [ref=e355] [cursor=pointer]:
+            - /url: "#form"
+            - img [ref=e357]
+            - generic [ref=e359]: Voltar ao topo
+      - generic [ref=e364]:
+        - paragraph [ref=e368]: 2025 © Assessoria Alpha.
+        - list [ref=e372]:
+          - listitem [ref=e373]:
+            - link "Instagram" [ref=e374] [cursor=pointer]:
+              - /url: https://www.instagram.com/assessorialpha/
+              - generic [ref=e375]: Instagram
+              - img [ref=e376]
+          - listitem [ref=e378]:
+            - link "Youtube" [ref=e379] [cursor=pointer]:
+              - /url: https://www.youtube.com/@AssessoriaAlphaDeMarketing
+              - generic [ref=e380]: Youtube
+              - img [ref=e381]
+          - listitem [ref=e383]:
+            - link "Tiktok" [ref=e384] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@assessorialpha
+              - generic [ref=e385]: Tiktok
+              - img [ref=e386]
+  - contentinfo [ref=e388]

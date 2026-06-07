@@ -1,0 +1,275 @@
+/* ============================================================
+   KINEVO — Design Tokens (colors + type)
+   "Automação prática para empresas em evolução."
+   Palette derived from the official logo (June 2026):
+   Navy (primary) · Bright blue · Royal blue · Teal (accent)
+   ------------------------------------------------------------
+   Fonts via Google Fonts. Add once in <head>:
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+   ============================================================ */
+
+:root {
+  /* ---------- BRAND CORE (from logo) ---------- */
+  --kv-navy:        #0A2C72;  /* PRIMARY — wordmark navy */
+  --kv-navy-deep:   #03205C;  /* darker navy */
+  --kv-blue:        #2D88FE;  /* bright blue (logo node) */
+  --kv-blue-royal:  #0A5FEF;  /* saturated royal (tagline, links) */
+  --kv-teal:        #06B5A8;  /* ACCENT — the "evolução" teal */
+  --kv-ice:         #F4F6FA;  /* light neutral */
+  --kv-white:       #FFFFFF;
+
+  /* ---------- NAVY SCALE (primary) ---------- */
+  --kv-navy-50:   #EAEEF9;
+  --kv-navy-100:  #CFD9F0;
+  --kv-navy-200:  #A3B5E0;
+  --kv-navy-300:  #6E86C9;
+  --kv-navy-400:  #3F5BA8;
+  --kv-navy-500:  #1E3D88;
+  --kv-navy-600:  #0A2C72;   /* = --kv-navy */
+  --kv-navy-700:  #08245E;
+  --kv-navy-800:  #061B49;
+  --kv-navy-900:  #041336;
+
+  /* ---------- BLUE SCALE (bright / secondary) ---------- */
+  --kv-blue-50:   #EAF3FF;
+  --kv-blue-100:  #D0E4FF;
+  --kv-blue-200:  #A6CDFF;
+  --kv-blue-300:  #6FB0FF;
+  --kv-blue-400:  #4DA3FF;
+  --kv-blue-500:  #2D88FE;   /* = --kv-blue */
+  --kv-blue-600:  #0A5FEF;   /* = --kv-blue-royal */
+  --kv-blue-700:  #0B4FC4;
+  --kv-blue-800:  #0F4299;
+  --kv-blue-900:  #123A7A;
+
+  /* ---------- TEAL SCALE (accent — use sparingly) ---------- */
+  --kv-teal-50:   #E0F7F4;
+  --kv-teal-100:  #B8EFE9;
+  --kv-teal-200:  #7FE2D8;
+  --kv-teal-300:  #3FD0C3;
+  --kv-teal-400:  #15C2B2;
+  --kv-teal-500:  #06B5A8;   /* = --kv-teal */
+  --kv-teal-600:  #059186;
+  --kv-teal-700:  #07726A;
+  --kv-teal-800:  #0A5B55;
+  --kv-teal-900:  #0C4A46;
+
+  /* ---------- NEUTRAL / COOL GREY SCALE ---------- */
+  --kv-neutral-0:    #FFFFFF;
+  --kv-neutral-25:   #FAFBFD;
+  --kv-neutral-50:   #F4F6FA;   /* = --kv-ice */
+  --kv-neutral-100:  #E8ECF3;
+  --kv-neutral-200:  #D6DCE7;
+  --kv-neutral-300:  #B7C0D0;
+  --kv-neutral-400:  #8B95A8;
+  --kv-neutral-500:  #646E80;
+  --kv-neutral-600:  #474F5E;
+  --kv-neutral-700:  #333A47;
+  --kv-neutral-800:  #22262F;
+  --kv-neutral-900:  #14182A;
+
+  /* ---------- SEMANTIC COLORS ---------- */
+  --kv-success:   #1FB873;
+  --kv-success-bg:#E4F7EE;
+  --kv-warning:   #E8A317;
+  --kv-warning-bg:#FCF2DC;
+  --kv-danger:    #E5484D;
+  --kv-danger-bg: #FCE7E8;
+  --kv-info:      #0A5FEF;
+  --kv-info-bg:   #EAF3FF;
+
+  /* ---------- SEMANTIC SURFACES / TEXT (light theme) ---------- */
+  --kv-bg:          var(--kv-white);
+  --kv-bg-subtle:   var(--kv-neutral-50);
+  --kv-surface:     var(--kv-white);
+  --kv-surface-2:   var(--kv-neutral-25);
+  --kv-border:      var(--kv-neutral-200);
+  --kv-border-strong:var(--kv-neutral-300);
+  --kv-fg1:         #0E1B3A;       /* primary text — deep navy ink */
+  --kv-fg2:         #51607D;       /* secondary text */
+  --kv-fg3:         #8893A8;       /* tertiary / captions */
+  --kv-fg-on-navy:  var(--kv-white);
+  --kv-fg-on-blue:  var(--kv-white);
+  --kv-link:        var(--kv-blue-royal);
+
+  /* ---------- DARK SURFACES (deep navy — the brand's home) ---------- */
+  --kv-dark-bg:       #021A54;
+  --kv-dark-surface:  #06245F;
+  --kv-dark-surface-2:#0C2D6E;
+  --kv-dark-border:   #1B3C7E;
+  --kv-dark-fg1:      #EAF0FB;
+  --kv-dark-fg2:      #9DB0D6;
+  --kv-dark-fg3:      #5E739F;
+
+  /* ---------- GRADIENTS (graphic support — never inside the logo) ---------- */
+  --kv-grad-motion:   linear-gradient(102deg, #2D88FE 0%, #06B5A8 100%);  /* blue→teal */
+  --kv-grad-brand:    linear-gradient(150deg, #0A2C72 0%, #0A5FEF 100%);  /* navy→royal, like the logo connectors */
+  --kv-grad-navy:     linear-gradient(160deg, #0C2D6E 0%, #021A54 100%);
+  --kv-grad-glow:     radial-gradient(120% 120% at 80% -10%, rgba(45,136,254,0.40) 0%, rgba(6,181,168,0.10) 42%, transparent 70%);
+
+  /* ============================================================
+     TYPOGRAPHY
+     Display: Poppins (echoes the wordmark) · Body/UI: IBM Plex Sans · Mono: IBM Plex Mono
+     ============================================================ */
+  --kv-font-display: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --kv-font-body:    'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --kv-font-mono:    'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  --kv-w-regular: 400;
+  --kv-w-medium:  500;
+  --kv-w-semibold:600;
+  --kv-w-bold:    700;
+
+  --kv-text-xs:   12px;
+  --kv-text-sm:   14px;
+  --kv-text-base: 16px;
+  --kv-text-lg:   18px;
+  --kv-text-xl:   20px;
+  --kv-text-2xl:  24px;
+  --kv-text-3xl:  30px;
+  --kv-text-4xl:  38px;
+  --kv-text-5xl:  48px;
+  --kv-text-6xl:  64px;
+  --kv-text-7xl:  84px;
+
+  --kv-leading-tight:  1.08;
+  --kv-leading-snug:   1.25;
+  --kv-leading-normal: 1.5;
+  --kv-leading-relaxed:1.65;
+
+  --kv-tracking-tight: -0.02em;
+  --kv-tracking-snug:  -0.01em;
+  --kv-tracking-normal:0em;
+  --kv-tracking-wide:  0.02em;
+  --kv-tracking-caps:  0.08em;
+
+  /* ---------- RADII ---------- */
+  --kv-radius-xs:  4px;
+  --kv-radius-sm:  6px;
+  --kv-radius-md:  10px;
+  --kv-radius-lg:  14px;
+  --kv-radius-xl:  20px;
+  --kv-radius-2xl: 28px;
+  --kv-radius-pill:999px;
+
+  /* ---------- SPACING (4px base) ---------- */
+  --kv-space-1: 4px;
+  --kv-space-2: 8px;
+  --kv-space-3: 12px;
+  --kv-space-4: 16px;
+  --kv-space-5: 20px;
+  --kv-space-6: 24px;
+  --kv-space-8: 32px;
+  --kv-space-10:40px;
+  --kv-space-12:48px;
+  --kv-space-16:64px;
+  --kv-space-20:80px;
+  --kv-space-24:96px;
+
+  /* ---------- SHADOWS (cool navy-tinted) ---------- */
+  --kv-shadow-xs: 0 1px 2px rgba(10,44,114,0.06);
+  --kv-shadow-sm: 0 1px 3px rgba(10,44,114,0.10), 0 1px 2px rgba(10,44,114,0.05);
+  --kv-shadow-md: 0 4px 14px rgba(10,44,114,0.10), 0 2px 4px rgba(10,44,114,0.05);
+  --kv-shadow-lg: 0 12px 32px rgba(10,44,114,0.14), 0 4px 8px rgba(10,44,114,0.06);
+  --kv-shadow-xl: 0 24px 60px rgba(10,44,114,0.20);
+  --kv-shadow-navy: 0 8px 24px rgba(10,44,114,0.30);   /* primary button */
+  --kv-shadow-blue: 0 8px 24px rgba(45,136,254,0.32);
+  --kv-shadow-teal: 0 8px 24px rgba(6,181,168,0.30);
+
+  /* ---------- MOTION ---------- */
+  --kv-ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --kv-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --kv-dur-fast:    120ms;
+  --kv-dur-base:    220ms;
+  --kv-dur-slow:    360ms;
+}
+
+/* ============================================================
+   SEMANTIC TYPE CLASSES
+   ============================================================ */
+.kv-display {
+  font-family: var(--kv-font-display);
+  font-weight: var(--kv-w-bold);
+  font-size: var(--kv-text-7xl);
+  line-height: var(--kv-leading-tight);
+  letter-spacing: var(--kv-tracking-tight);
+  color: var(--kv-navy);
+}
+.kv-h1 {
+  font-family: var(--kv-font-display);
+  font-weight: var(--kv-w-bold);
+  font-size: var(--kv-text-5xl);
+  line-height: var(--kv-leading-tight);
+  letter-spacing: var(--kv-tracking-tight);
+  color: var(--kv-navy);
+}
+.kv-h2 {
+  font-family: var(--kv-font-display);
+  font-weight: var(--kv-w-semibold);
+  font-size: var(--kv-text-4xl);
+  line-height: var(--kv-leading-snug);
+  letter-spacing: var(--kv-tracking-snug);
+  color: var(--kv-navy);
+}
+.kv-h3 {
+  font-family: var(--kv-font-display);
+  font-weight: var(--kv-w-semibold);
+  font-size: var(--kv-text-2xl);
+  line-height: var(--kv-leading-snug);
+  letter-spacing: var(--kv-tracking-snug);
+  color: var(--kv-navy);
+}
+.kv-h4 {
+  font-family: var(--kv-font-display);
+  font-weight: var(--kv-w-medium);
+  font-size: var(--kv-text-xl);
+  line-height: var(--kv-leading-snug);
+  color: var(--kv-navy);
+}
+.kv-lead {
+  font-family: var(--kv-font-body);
+  font-weight: var(--kv-w-regular);
+  font-size: var(--kv-text-xl);
+  line-height: var(--kv-leading-relaxed);
+  color: var(--kv-fg2);
+}
+.kv-body {
+  font-family: var(--kv-font-body);
+  font-weight: var(--kv-w-regular);
+  font-size: var(--kv-text-base);
+  line-height: var(--kv-leading-normal);
+  color: var(--kv-fg1);
+}
+.kv-body-sm {
+  font-family: var(--kv-font-body);
+  font-weight: var(--kv-w-regular);
+  font-size: var(--kv-text-sm);
+  line-height: var(--kv-leading-normal);
+  color: var(--kv-fg2);
+}
+.kv-caption {
+  font-family: var(--kv-font-body);
+  font-weight: var(--kv-w-medium);
+  font-size: var(--kv-text-xs);
+  line-height: var(--kv-leading-normal);
+  color: var(--kv-fg3);
+}
+/* mono eyebrow / technical label — a signature Kinevo detail */
+.kv-eyebrow {
+  font-family: var(--kv-font-mono);
+  font-weight: var(--kv-w-medium);
+  font-size: var(--kv-text-xs);
+  line-height: 1;
+  letter-spacing: var(--kv-tracking-caps);
+  text-transform: uppercase;
+  color: var(--kv-blue-royal);
+}
+.kv-mono {
+  font-family: var(--kv-font-mono);
+  font-weight: var(--kv-w-regular);
+  font-size: var(--kv-text-sm);
+  line-height: var(--kv-leading-normal);
+  color: var(--kv-fg2);
+}

@@ -1,0 +1,513 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "Nova Digital" [ref=e5] [cursor=pointer]:
+          - /url: "#topo"
+          - img "Nova Digital · Agência" [ref=e6]
+        - navigation [ref=e7]:
+          - button "Menu" [ref=e8] [cursor=pointer]:
+            - img [ref=e9]
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Agência · Marketing Estratégico
+        - heading "Marketing que move marcas no digital." [level=1] [ref=e15]:
+          - text: Marketing que
+          - emphasis [ref=e16]: move
+          - text: marcas no digital.
+        - paragraph [ref=e17]: Unimos criatividade, estratégia e tecnologia para transformar a sua presença online em resultados reais, sem perder o olhar humano que torna cada projeto único.
+        - generic [ref=e18]:
+          - link "Quero meu diagnóstico" [ref=e19] [cursor=pointer]:
+            - /url: "#contato"
+            - text: Quero meu diagnóstico
+            - img [ref=e21]
+          - link "Conheça o Método" [ref=e23] [cursor=pointer]:
+            - /url: "#metodo"
+            - img [ref=e25]
+            - text: Conheça o Método
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - generic [ref=e29]: MA
+            - generic [ref=e30]: JP
+            - generic [ref=e31]: RC
+            - generic [ref=e32]: LF
+          - generic [ref=e33]:
+            - generic [ref=e34]: ★★★★★
+            - text: +120 marcas em movimento com a Nova Digital.
+      - generic [ref=e35]:
+        - generic [ref=e36]: Sem compromisso
+        - generic [ref=e38]:
+          - img [ref=e40]
+          - generic [ref=e45]:
+            - heading "Diagnóstico gratuito" [level=2] [ref=e46]
+            - paragraph [ref=e47]: Receba uma análise do marketing da sua marca em até 1 dia útil.
+        - generic [ref=e48]:
+          - generic [ref=e51]:
+            - generic:
+              - img
+            - textbox "Seu nome" [ref=e52]
+          - generic [ref=e55]:
+            - generic:
+              - img
+            - textbox "@ do Instagram" [ref=e56]
+          - generic [ref=e59]:
+            - generic:
+              - img
+            - textbox "WhatsApp" [ref=e60]
+          - combobox "Faixa de investimento mensal" [ref=e64] [cursor=pointer]:
+            - option "Faixa de investimento mensal" [disabled] [selected]
+            - option "Até R$ 1.000"
+            - option "R$ 1.000 a R$ 3.000"
+            - option "R$ 3.000 a R$ 5.000"
+            - option "Acima de R$ 5.000"
+          - button "Quero meu diagnóstico grátis" [ref=e65] [cursor=pointer]:
+            - text: Quero meu diagnóstico grátis
+            - img [ref=e67]
+          - paragraph [ref=e69]:
+            - img [ref=e70]
+            - text: Seus dados estão seguros. Sem spam.
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e78]: O que fazemos
+        - heading "Soluções completas, do plano ao resultado." [level=2] [ref=e79]:
+          - text: Soluções completas,
+          - emphasis [ref=e80]: do plano ao resultado.
+        - paragraph [ref=e81]: Cada serviço é pensado de forma integrada e bem direcionada, porque marketing de verdade conecta estratégia, criatividade e dados.
+      - generic [ref=e82]:
+        - generic [ref=e83] [cursor=pointer]: Tudo
+        - generic [ref=e84] [cursor=pointer]: Conteúdo
+        - generic [ref=e85] [cursor=pointer]: Aquisição
+        - generic [ref=e86] [cursor=pointer]: Marca
+        - generic [ref=e87] [cursor=pointer]: Audiovisual
+      - generic [ref=e88]:
+        - article [ref=e89] [cursor=pointer]:
+          - generic [ref=e90]: "01"
+          - img [ref=e92]
+          - generic [ref=e97]: Presença
+          - generic [ref=e98]: Gestão de Redes Sociais
+          - generic [ref=e99]: Conteúdo estratégico e constante que gera conexão real, comunidade e autoridade para a sua marca.
+          - generic [ref=e100]:
+            - generic [ref=e101]: Linha editorial
+            - generic [ref=e102]: Stories
+            - generic [ref=e103]: Calendário
+        - article [ref=e104] [cursor=pointer]:
+          - generic [ref=e105]: "02"
+          - img [ref=e107]
+          - generic [ref=e112]: Audiovisual
+          - generic [ref=e113]: Reels & Vídeos de Impacto
+          - generic [ref=e114]: Roteiro, gravação presencial e edição profissional de vídeos que param o scroll e convertem.
+          - generic [ref=e115]:
+            - generic [ref=e116]: Roteiro
+            - generic [ref=e117]: Gravação
+            - generic [ref=e118]: Edição
+        - article [ref=e119] [cursor=pointer]:
+          - generic [ref=e120]: "03"
+          - img [ref=e122]
+          - generic [ref=e125]: Fotografia
+          - generic [ref=e126]: Ensaio & Fotos com IA
+          - generic [ref=e127]: Ensaio fotográfico de produtos e ambiente, mais fotos geradas com IA para enriquecer o feed.
+          - generic [ref=e128]:
+            - generic [ref=e129]: Produtos
+            - generic [ref=e130]: Ambiente
+            - generic [ref=e131]: IA
+        - article [ref=e132] [cursor=pointer]:
+          - generic [ref=e133]: "04"
+          - img [ref=e135]
+          - generic [ref=e139]: Performance
+          - generic [ref=e140]: Tráfego Pago
+          - generic [ref=e141]: Campanhas no Google e Meta com foco total em retorno sobre o investimento.
+          - generic [ref=e142]:
+            - generic [ref=e143]: Meta Ads
+            - generic [ref=e144]: Google Ads
+            - generic [ref=e145]: ROI
+        - article [ref=e146] [cursor=pointer]:
+          - generic [ref=e147]: "05"
+          - img [ref=e149]
+          - generic [ref=e152]: Identidade
+          - generic [ref=e153]: Branding & Posicionamento
+          - generic [ref=e154]: Marcas com propósito, personalidade e uma identidade visual memorável e coerente.
+          - generic [ref=e155]:
+            - generic [ref=e156]: Posicionamento
+            - generic [ref=e157]: Identidade
+            - generic [ref=e158]: Tom de voz
+        - article [ref=e159] [cursor=pointer]:
+          - generic [ref=e160]: "06"
+          - img [ref=e162]
+          - generic [ref=e164]: Inteligência
+          - generic [ref=e165]: Análise & Relatórios
+          - generic [ref=e166]: "Métricas claras todo mês: o que funcionou, o que ajustar e o próximo passo da estratégia."
+          - generic [ref=e167]:
+            - generic [ref=e168]: Relatórios
+            - generic [ref=e169]: Métricas
+            - generic [ref=e170]: Otimização
+    - generic [ref=e171]:
+      - generic: NOVA
+      - generic [ref=e173]:
+        - generic [ref=e176]: Nossa metodologia
+        - heading "Método NOVA™" [level=2] [ref=e178]:
+          - text: Método
+          - emphasis [ref=e179]: NOVA™
+        - paragraph [ref=e180]: O sistema completo que transforma sua marca em referência digital. Quatro etapas que conduzem do posicionamento à análise contínua. Cada letra é uma fase do processo.
+      - generic [ref=e183]:
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e188]: Etapa N
+            - generic [ref=e189]: Narrativa
+            - generic [ref=e190]: Posicionamento & Linha Editorial
+            - paragraph [ref=e191]: Antes de postar qualquer coisa, definimos QUEM é a sua marca no digital. Um posicionamento claro e uma linha editorial que atraem exatamente o público certo, não seguidores aleatórios, mas pessoas que realmente vão comprar de você.
+            - list [ref=e192]:
+              - listitem [ref=e193]:
+                - img [ref=e195]
+                - text: Análise de perfil e diagnóstico digital
+              - listitem [ref=e197]:
+                - img [ref=e199]
+                - text: Definição do posicionamento e tom de voz
+              - listitem [ref=e201]:
+                - img [ref=e203]
+                - text: Criação da linha editorial estratégica
+              - listitem [ref=e205]:
+                - img [ref=e207]
+                - text: Coleta de dados e insights do público-alvo
+          - generic [ref=e210]: "N"
+        - generic [ref=e211]:
+          - generic [ref=e212]:
+            - generic [ref=e214]: Etapa O
+            - generic [ref=e215]: Organização
+            - generic [ref=e216]: Planejamento & Cronograma Editorial
+            - paragraph [ref=e217]: "Uma marca de sucesso no digital não improvisa, ela planeja. Organizamos todo o calendário de conteúdo: datas comemorativas, campanhas sazonais e posts estratégicos que mantêm o seu perfil ativo, relevante e sempre gerando interesse."
+            - list [ref=e218]:
+              - listitem [ref=e219]:
+                - img [ref=e221]
+                - text: Cronograma mensal de postagens
+              - listitem [ref=e223]:
+                - img [ref=e225]
+                - text: Planejamento de stories e interações
+              - listitem [ref=e227]:
+                - img [ref=e229]
+                - text: Calendário de campanhas e datas especiais
+              - listitem [ref=e231]:
+                - img [ref=e233]
+                - text: Gestão organizada de publicações
+          - generic [ref=e236]: O
+        - generic [ref=e237]:
+          - generic [ref=e238]:
+            - generic [ref=e240]: Etapa V
+            - generic [ref=e241]: Viralização
+            - generic [ref=e242]: Produção, Gravação & Edição de Alto Impacto
+            - paragraph [ref=e243]: É aqui que a magia acontece. Nossa equipe visita a sua empresa, capta os bastidores, os produtos e as histórias que conectam o público à marca. Produzimos Reels, fotos e conteúdos que param o scroll e geram conversão.
+            - list [ref=e244]:
+              - listitem [ref=e245]:
+                - img [ref=e247]
+                - text: Visita presencial para gravação e captação
+              - listitem [ref=e249]:
+                - img [ref=e251]
+                - text: Roteirização de Reels e vídeos
+              - listitem [ref=e253]:
+                - img [ref=e255]
+                - text: Edição profissional com identidade visual
+              - listitem [ref=e257]:
+                - img [ref=e259]
+                - text: Ensaio fotográfico de produtos e ambiente
+              - listitem [ref=e261]:
+                - img [ref=e263]
+                - text: Fotos com IA (10 fotos)
+          - generic [ref=e266]: V
+        - generic [ref=e267]:
+          - generic [ref=e268]:
+            - generic [ref=e270]: Etapa A
+            - generic [ref=e271]: Análise
+            - generic [ref=e272]: Métricas, Insights & Melhoria Contínua
+            - paragraph [ref=e273]: "Sem dados, não há estratégia. Todo mês analisamos os resultados: o que funcionou, o que pode melhorar e o que será ajustado para o próximo ciclo. Assim a sua presença digital evolui continuamente, gerando mais alcance, engajamento e clientes."
+            - list [ref=e274]:
+              - listitem [ref=e275]:
+                - img [ref=e277]
+                - text: Relatório mensal de desempenho
+              - listitem [ref=e279]:
+                - img [ref=e281]
+                - text: Análise de perfil e métricas de alcance
+              - listitem [ref=e283]:
+                - img [ref=e285]
+                - text: Identificação de conteúdos de maior impacto
+              - listitem [ref=e287]:
+                - img [ref=e289]
+                - text: Ajuste de estratégia e otimização contínua
+          - generic [ref=e292]: A
+    - generic [ref=e294]:
+      - generic [ref=e295]:
+        - generic [ref=e298]: Quem caminha com a gente
+        - heading "Histórias de quem colocou a marca em movimento." [level=2] [ref=e300]:
+          - text: Histórias de quem colocou a marca
+          - emphasis [ref=e301]: em movimento.
+      - generic [ref=e302]:
+        - article [ref=e303]:
+          - generic [ref=e304]: ”
+          - generic [ref=e305]: ★★★★★
+          - paragraph [ref=e306]: "Em três meses a gente saiu de um perfil parado para uma fila de pedidos no direct. O Método NOVA organizou tudo: hoje sei exatamente o que postar e por quê."
+          - generic [ref=e307]:
+            - generic [ref=e308]: MA
+            - generic [ref=e309]:
+              - generic [ref=e310]: Mariana Alves
+              - generic [ref=e311]: Confeitaria Doce Ponto
+        - article [ref=e312]:
+          - generic [ref=e313]: ”
+          - generic [ref=e314]: ★★★★★
+          - paragraph [ref=e315]: A visita presencial mudou o jogo. Os Reels ficaram com a nossa cara e o alcance explodiu. Sinto que tenho uma sócia de marketing, não um fornecedor.
+          - generic [ref=e316]:
+            - generic [ref=e317]: JP
+            - generic [ref=e318]:
+              - generic [ref=e319]: João Pereira
+              - generic [ref=e320]: Studio JP Arquitetura
+        - article [ref=e321]:
+          - generic [ref=e322]: ”
+          - generic [ref=e323]: ★★★★★
+          - paragraph [ref=e324]: O relatório mensal é o que mais valorizo. Pela primeira vez entendo para onde vai cada real investido, e os números só crescem.
+          - generic [ref=e325]:
+            - generic [ref=e326]: RC
+            - generic [ref=e327]:
+              - generic [ref=e328]: Renata Castro
+              - generic [ref=e329]: Clínica Vita
+    - generic [ref=e331]:
+      - generic [ref=e334]:
+        - img "Letícia Shibayama, fundadora da Nova Digital" [ref=e335]:
+          - generic:
+            - button "Replace"
+            - button "Remove"
+        - generic [ref=e337]:
+          - generic [ref=e338]: LS
+          - generic [ref=e339]:
+            - generic [ref=e340]: Letícia Shibayama
+            - generic [ref=e341]: Fundadora · Nova Digital
+      - generic [ref=e342]:
+        - generic [ref=e345]: Conheça a agência
+        - paragraph [ref=e346]:
+          - text: Mais do que uma agência, a Nova Digital é um
+          - emphasis [ref=e347]: ponto de conexão
+          - text: entre marcas e pessoas.
+        - paragraph [ref=e348]: "Nascemos para humanizar o digital: transformar dados, cliques e métricas em relações verdadeiras e crescimento real. Criada por Letícia, a Nova Digital carrega a energia de quem fala de marketing de forma descomplicada e acessível, mas sem perder o tom estratégico que garante resultados."
+        - generic [ref=e349]:
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - img [ref=e353]
+              - generic [ref=e357]: Missão
+            - paragraph [ref=e358]: Transformar a presença digital de empresas e empreendedores com estratégias criativas, inovadoras e personalizadas, unindo tecnologia e humanização.
+          - generic [ref=e359]:
+            - generic [ref=e360]:
+              - img [ref=e362]
+              - generic [ref=e365]: Visão
+            - paragraph [ref=e366]: Ser referência em marketing digital, a parceira preferida de marcas que querem se destacar online com estratégia, inovação e proximidade.
+        - generic [ref=e367]:
+          - generic [ref=e368]:
+            - img [ref=e370]
+            - generic [ref=e373]:
+              - generic [ref=e374]: Estratégia direcionada
+              - text: Cada ação com foco em performance e resultado.
+          - generic [ref=e375]:
+            - img [ref=e377]
+            - generic [ref=e379]:
+              - generic [ref=e380]: Humanização do digital
+              - text: Tecnologia com um olhar próximo e acolhedor.
+          - generic [ref=e381]:
+            - img [ref=e383]
+            - generic [ref=e386]:
+              - generic [ref=e387]: Resultados mensuráveis
+              - text: Crescimento real que você acompanha de perto.
+    - generic [ref=e388]:
+      - paragraph [ref=e390]: Grandes Marcas Parceiras
+      - generic [ref=e392]:
+        - generic [ref=e393]:
+          - img [ref=e395]
+          - text: Doce Ponto
+        - generic [ref=e398]:
+          - img [ref=e400]
+          - text: Studio JP
+        - generic [ref=e406]:
+          - img [ref=e408]
+          - text: Clínica Vita
+        - generic [ref=e411]:
+          - img [ref=e413]
+          - text: Verde Café
+        - generic [ref=e415]:
+          - img [ref=e417]
+          - text: Aurora Moda
+        - generic [ref=e419]:
+          - img [ref=e421]
+          - text: Forte Fit
+        - generic [ref=e427]:
+          - img [ref=e429]
+          - text: Lumière
+        - generic [ref=e432]:
+          - img [ref=e434]
+          - text: Raiz Natural
+        - generic [ref=e437]:
+          - img [ref=e439]
+          - text: Doce Ponto
+        - generic [ref=e442]:
+          - img [ref=e444]
+          - text: Studio JP
+        - generic [ref=e450]:
+          - img [ref=e452]
+          - text: Clínica Vita
+        - generic [ref=e455]:
+          - img [ref=e457]
+          - text: Verde Café
+        - generic [ref=e459]:
+          - img [ref=e461]
+          - text: Aurora Moda
+        - generic [ref=e463]:
+          - img [ref=e465]
+          - text: Forte Fit
+        - generic [ref=e471]:
+          - img [ref=e473]
+          - text: Lumière
+        - generic [ref=e476]:
+          - img [ref=e478]
+          - text: Raiz Natural
+    - generic [ref=e481]:
+      - img [ref=e482]
+      - generic [ref=e483]:
+        - generic [ref=e484]:
+          - generic [ref=e485]: 120+
+          - generic [ref=e486]: marcas atendidas
+        - generic [ref=e487]:
+          - generic [ref=e488]: 4.8M
+          - generic [ref=e489]: de alcance gerado
+        - generic [ref=e490]:
+          - generic [ref=e491]: +312%
+          - generic [ref=e492]: crescimento orgânico médio
+        - generic [ref=e493]:
+          - generic [ref=e494]: 98%
+          - generic [ref=e495]: clientes satisfeitos
+    - generic [ref=e497]:
+      - generic [ref=e498]:
+        - generic [ref=e501]: Dúvidas frequentes
+        - heading "Tudo o que você precisa saber antes de começar." [level=2] [ref=e502]
+        - paragraph [ref=e503]:
+          - text: Não encontrou sua dúvida?
+          - link "Fale com a gente" [ref=e504] [cursor=pointer]:
+            - /url: "#contato"
+          - text: . Respondemos como uma conversa entre parceiros.
+      - generic [ref=e505]:
+        - generic [ref=e506]:
+          - button "O que é o Método NOVA™?" [expanded] [ref=e507] [cursor=pointer]:
+            - text: O que é o Método NOVA™?
+            - img [ref=e509]
+          - generic [ref=e513]: "É a metodologia exclusiva da Nova Digital, estruturada em quatro etapas: Narrativa, Organização, Viralização e Análise. Ele conduz a sua marca do posicionamento estratégico à análise contínua de resultados, de forma organizada e mensurável."
+        - generic [ref=e514]:
+          - button "Vocês atendem marcas de fora de São Paulo?" [ref=e515] [cursor=pointer]:
+            - text: Vocês atendem marcas de fora de São Paulo?
+            - img [ref=e517]
+          - generic [ref=e518]: Sim. Somos de São Paulo e atendemos marcas em todo o Brasil. A etapa de gravação presencial é combinada conforme a sua localização e o escopo do projeto.
+        - generic [ref=e519]:
+          - button "Em quanto tempo vejo resultado?" [ref=e520] [cursor=pointer]:
+            - text: Em quanto tempo vejo resultado?
+            - img [ref=e522]
+          - generic [ref=e523]: Cada marca tem seu ritmo, mas a partir do primeiro ciclo já entregamos posicionamento, planejamento e os primeiros conteúdos. Os resultados de alcance e engajamento crescem de forma consistente ao longo dos meses, sempre acompanhados de perto por relatórios.
+        - generic [ref=e524]:
+          - button "Como funciona o diagnóstico gratuito?" [ref=e525] [cursor=pointer]:
+            - text: Como funciona o diagnóstico gratuito?
+            - img [ref=e527]
+          - generic [ref=e528]: Você preenche o formulário com algumas informações da sua marca e, em até 1 dia útil, retornamos com uma análise do seu marketing atual e os primeiros caminhos, sem compromisso.
+        - generic [ref=e529]:
+          - button "A gravação dos vídeos está inclusa?" [ref=e530] [cursor=pointer]:
+            - text: A gravação dos vídeos está inclusa?
+            - img [ref=e532]
+          - generic [ref=e533]: Sim. Na etapa de Viralização nossa equipe visita a sua empresa para captar bastidores, produtos e histórias, com roteirização, edição profissional, ensaio fotográfico e fotos com IA.
+    - generic [ref=e536]:
+      - generic [ref=e537]:
+        - generic [ref=e540]: Vamos conversar
+        - heading "Pronto para colocar sua marca em movimento?" [level=2] [ref=e541]:
+          - text: Pronto para colocar sua marca
+          - emphasis [ref=e542]: em movimento?
+        - paragraph [ref=e543]: Conta pra gente sobre o seu projeto. Você recebe um diagnóstico gratuito e uma proposta clara, próxima e estratégica.
+        - list [ref=e544]:
+          - listitem [ref=e545]:
+            - img [ref=e547]
+            - text: (11) 99999-0000 · WhatsApp
+          - listitem [ref=e549]:
+            - img [ref=e551]
+            - text: ola@novadigital.com.br
+          - listitem [ref=e554]:
+            - img [ref=e556]
+            - text: "@novadigital"
+          - listitem [ref=e559]:
+            - img [ref=e561]
+            - text: São Paulo · atendimento em todo o Brasil
+      - generic [ref=e564]:
+        - heading "Diagnóstico gratuito" [level=3] [ref=e565]
+        - paragraph [ref=e566]: Preencha e receba a análise do marketing da sua marca, sem compromisso.
+        - generic [ref=e567]:
+          - generic [ref=e570]:
+            - generic:
+              - img
+            - textbox "Seu nome" [ref=e571]
+          - generic [ref=e574]:
+            - generic:
+              - img
+            - textbox "@ do Instagram" [ref=e575]
+          - generic [ref=e578]:
+            - generic:
+              - img
+            - textbox "WhatsApp" [ref=e579]
+          - combobox "Faixa de investimento mensal" [ref=e583] [cursor=pointer]:
+            - option "Faixa de investimento mensal" [disabled] [selected]
+            - option "Até R$ 1.000"
+            - option "R$ 1.000 a R$ 3.000"
+            - option "R$ 3.000 a R$ 5.000"
+            - option "Acima de R$ 5.000"
+          - button "Quero meu diagnóstico grátis" [ref=e584] [cursor=pointer]:
+            - text: Quero meu diagnóstico grátis
+            - img [ref=e586]
+          - paragraph [ref=e588]:
+            - img [ref=e589]
+            - text: Seus dados estão seguros. Sem spam.
+    - contentinfo [ref=e592]:
+      - generic [ref=e593]:
+        - generic [ref=e594]:
+          - img "Nova Digital" [ref=e596]
+          - paragraph [ref=e597]: Marketing descomplicado, estratégico e humano. Transformamos presença online em crescimento real.
+          - generic [ref=e598]:
+            - link "Instagram" [ref=e599] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e600]
+            - link "LinkedIn" [ref=e603] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e604]
+            - link "YouTube" [ref=e607] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e608]
+        - generic [ref=e611]:
+          - heading "Serviços" [level=4] [ref=e612]
+          - list [ref=e613]:
+            - listitem [ref=e614]:
+              - link "Gestão de Redes" [ref=e615] [cursor=pointer]:
+                - /url: "#servicos"
+            - listitem [ref=e616]:
+              - link "Tráfego Pago" [ref=e617] [cursor=pointer]:
+                - /url: "#servicos"
+            - listitem [ref=e618]:
+              - link "Branding" [ref=e619] [cursor=pointer]:
+                - /url: "#servicos"
+            - listitem [ref=e620]:
+              - link "Vídeo & Reels" [ref=e621] [cursor=pointer]:
+                - /url: "#servicos"
+        - generic [ref=e622]:
+          - heading "Agência" [level=4] [ref=e623]
+          - list [ref=e624]:
+            - listitem [ref=e625]:
+              - link "Método NOVA" [ref=e626] [cursor=pointer]:
+                - /url: "#metodo"
+            - listitem [ref=e627]:
+              - link "Sobre nós" [ref=e628] [cursor=pointer]:
+                - /url: "#agencia"
+            - listitem [ref=e629]:
+              - link "Depoimentos" [ref=e630] [cursor=pointer]:
+                - /url: "#depoimentos"
+            - listitem [ref=e631]:
+              - link "Contato" [ref=e632] [cursor=pointer]:
+                - /url: "#contato"
+      - generic [ref=e633]:
+        - generic [ref=e634]: © 2026 Nova Digital · Agência de Marketing Estratégico
+        - generic [ref=e635]: Feito com estratégia em São Paulo.
+  - generic [ref=e636]:
+    - img [ref=e637]
+    - text: Recebido! Seu diagnóstico chega em breve.

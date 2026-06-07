@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kinevo — Automação em movimento</title>
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="colors_and_type.css" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--surface); }
+  * { box-sizing: border-box; }
+  #scroll-root { height: 100vh; overflow-y: auto; overflow-x: hidden; scroll-behavior: smooth; }
+  a { -webkit-tap-highlight-color: transparent; }
+  button { font-family: inherit; }
+
+  /* ---- theme variables (the light/dark tweak overrides these) ---- */
+  :root {
+    --surface: #ffffff;
+    --bg-subtle: #F4F6FA;
+    --header-bg: rgba(255,255,255,0.78);
+    /* provisional Kinevo palette + type (electric blue · cyan · graphite, Space Grotesk) */
+    --kv-font-display: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+    --kv-blue: #2D5BFF;
+    --kv-blue-royal: #2247DB;
+    --kv-blue-50: #EEF1FF;
+    --kv-blue-200: #BAC8FF;
+    --kv-blue-600: #2247DB;
+    --kv-link: #2247DB;
+    --kv-fg1: #16181D;
+    --kv-fg2: #4A4F5C;
+    --kv-fg3: #8A909E;
+    --kv-ink: #16181D;
+  }
+  /* dark-dominant theme: re-map the semantic tokens the light sections read from */
+  #scroll-root.theme-dark {
+    --surface: #16181D;
+    --bg-subtle: #0E0F13;
+    --header-bg: rgba(14,15,19,0.78);
+    --kv-fg1: #F4F6FA;
+    --kv-fg2: #AEB6C4;
+    --kv-fg3: #6F7889;
+    --kv-border: #2A2E37;
+    --kv-border-strong: #3A4150;
+    --kv-neutral-25: #1F222A;
+    --kv-neutral-50: #1A1D24;
+    --kv-neutral-100: #22262F;
+    --kv-neutral-300: #3A4150;
+    --kv-neutral-400: #6F7889;
+    --kv-neutral-600: #AEB6C4;
+    --kv-blue-50: rgba(45,91,255,0.16);
+    --kv-blue-200: #2A4BCF;
+    --kv-blue-600: #5C7DFF;
+    --kv-ink: #0E0F13;
+  }
+
+  /* ---- animations ---- */
+  @keyframes kvDash { to { stroke-dashoffset: -120; } }
+  @keyframes kvPing { 0% { box-shadow: 0 0 0 0 rgba(25,224,200,0.5); } 70%,100% { box-shadow: 0 0 0 9px rgba(25,224,200,0); } }
+  @keyframes kvMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes kvMarqueeR { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @keyframes kvFade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes kvPop { from { opacity: 0; transform: translateY(12px) scale(0.98); } to { opacity: 1; transform: none; } }
+
+  /* animated underline on nav links */
+  .kv-navlink::after {
+    content: ''; position: absolute; left: 0; bottom: -5px; height: 2px; width: 100%;
+    background: currentColor; transform: scaleX(0); transform-origin: left;
+    transition: transform 240ms cubic-bezier(0.22,1,0.36,1);
+  }
+  .kv-navlink:hover::after { transform: scaleX(1); }
+  .kv-navlink:hover { color: var(--kv-blue) !important; }
+  #scroll-root.theme-dark .kv-navlink:hover { color: #fff !important; }
+
+  .kv-pain-card:hover { border-color: var(--kv-border-strong); box-shadow: var(--kv-shadow-md); transform: translateY(-3px); }
+
+  /* ---- hero grid: desktop 2-col (text | graphic); mobile prioritizes the graphic ---- */
+  .kv-hero-grid {
+    display: grid;
+    grid-template-columns: 1.04fr 0.96fr;
+    grid-template-areas: "head card" "body card";
+    column-gap: 52px;
+    align-items: center;
+  }
+  .kv-hero-head { grid-area: head; }
+  .kv-hero-body { grid-area: body; }
+  .kv-hero-card { grid-area: card; align-self: center; }
+
+  /* ---- responsive ---- */
+  @media (max-width: 1080px) {
+    /* on smaller screens, show the graphic right after the headline (graphics over text) */
+    .kv-hero-grid { grid-template-columns: 1fr; grid-template-areas: "head" "card" "body"; row-gap: 30px; }
+    .kv-hero-card { display: block; max-width: 460px; }
+  }
+  @media (max-width: 900px) {
+    .kv-nav { display: none !important; }
+    .kv-grid-collapse { grid-template-columns: 1fr !important; gap: 40px !important; }
+    .kv-carousel-slide { grid-template-columns: 1fr !important; }
+    .kv-carousel-slide > div:first-child { border-radius: 16px 16px 0 0 !important; }
+    .kv-carousel-slide > div:last-child { border-radius: 0 0 16px 16px !important; }
+    .kv-svc-grid { grid-template-columns: 1fr 1fr !important; }
+    .kv-process { grid-template-columns: 1fr 1fr !important; gap: 36px 0 !important; }
+    .kv-process-line { display: none !important; }
+    .kv-metrics { grid-template-columns: 1fr 1fr !important; gap: 32px 24px !important; }
+    .kv-bento { grid-template-columns: 1fr !important; }
+    .kv-bento > div { grid-column: span 1 !important; grid-row: span 1 !important; }
+    .kv-footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
+    .kv-sticky { position: static !important; }
+    .kv-svc-row { grid-template-columns: 40px 48px 1fr !important; }
+    .kv-svc-row > p { grid-column: 1 / -1 !important; }
+  }
+  @media (max-width: 560px) {
+    .kv-svc-grid, .kv-pain-grid { grid-template-columns: 1fr !important; }
+    .kv-process, .kv-metrics { grid-template-columns: 1fr !important; }
+    .kv-footer-grid { grid-template-columns: 1fr !important; }
+    .kv-hub { transform: scale(0.78); }
+    /* tiny screens: let the hero graphic lead, drop the secondary paragraph */
+    .kv-hero-lead { display: none; }
+    .kv-hero-card { margin: 0 auto; }
+  }
+
+  /* reduced motion */
+  .kv-no-motion * { animation: none !important; transition: none !important; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="components/shared.jsx"></script>
+<script type="text/babel" src="components/Header.jsx"></script>
+<script type="text/babel" src="components/Hero.jsx"></script>
+<script type="text/babel" src="components/Problem.jsx"></script>
+<script type="text/babel" src="components/Services.jsx"></script>
+<script type="text/babel" src="components/Process.jsx"></script>
+<script type="text/babel" src="components/Sectors.jsx"></script>
+<script type="text/babel" src="components/Integrations.jsx"></script>
+<script type="text/babel" src="components/About.jsx"></script>
+<script type="text/babel" src="components/Proof.jsx"></script>
+<script type="text/babel" src="components/Guarantee.jsx"></script>
+<script type="text/babel" src="components/FAQ.jsx"></script>
+<script type="text/babel" src="components/CTA.jsx"></script>
+
+<script type="text/babel">
+  const { useState, useEffect } = React;
+
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "heroStyle": "crescimento",
+    "servicesLayout": "grid",
+    "pageTheme": "light",
+    "motion": "premium"
+  }/*EDITMODE-END*/;
+
+  function App() {
+    const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+    const openWhats = () => window.open(KV_WHATS_DEFAULT, '_blank', 'noopener');
+
+    useEffect(() => {
+      const root = document.querySelector('#scroll-root');
+      if (!root) return;
+      root.classList.toggle('theme-dark', t.pageTheme === 'dark');
+      root.classList.toggle('kv-no-motion', t.motion === 'off');
+    }, [t.pageTheme, t.motion]);
+
+    return (
+      <div id="scroll-root" className={t.pageTheme === 'dark' ? 'theme-dark' : ''}>
+        <Header onWhats={openWhats} pageTheme={t.pageTheme} />
+        <Hero onWhats={openWhats} heroStyle={t.heroStyle} />
+        <Problem />
+        <Services layout={t.servicesLayout} />
+        <Process />
+        <Sectors />
+        <Integrations />
+        <About />
+        <Proof />
+        <Guarantee onWhats={openWhats} />
+        <FAQ />
+        <CTA onWhats={openWhats} />
+        <Footer onWhats={openWhats} />
+
+        <TweaksPanel>
+          <TweakSection label="Visual do hero" />
+          <TweakRadio label="Ilustração" value={t.heroStyle}
+            options={['crescimento', 'fluxo']}
+            onChange={(v) => setTweak('heroStyle', v)} />
+          <TweakSection label="Layout dos serviços" />
+          <TweakRadio label="Estilo" value={t.servicesLayout}
+            options={['grid', 'list', 'bento']}
+            onChange={(v) => setTweak('servicesLayout', v)} />
+          <TweakSection label="Tema da página" />
+          <TweakRadio label="Predominante" value={t.pageTheme}
+            options={['light', 'dark']}
+            onChange={(v) => setTweak('pageTheme', v)} />
+          <TweakSection label="Animação" />
+          <TweakRadio label="Movimento" value={t.motion}
+            options={['premium', 'off']}
+            onChange={(v) => setTweak('motion', v)} />
+        </TweaksPanel>
+      </div>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

@@ -1,11 +1,12 @@
 # Tom de voz — LP Generator
 
-> Esta LP pode ter qualquer um destes 6 tons. A Carla apresenta as opções ao Patrick e aguarda escolha antes de começar a escrever. Tom é INFERIDO do briefing + referências, nunca imposto silenciosamente.
+> Esta LP pode ter qualquer um destes 7 tons. A Carla apresenta as opções ao Patrick e aguarda escolha antes de começar a escrever. Tom é INFERIDO do briefing + referências, nunca imposto silenciosamente.
 
 ## Quando escolher cada tom
 
 | Tom | Use quando o público é... | Use quando a oferta é... |
 |-----|---------------------------|---------------------------|
+| **Autoridade-Assessoria** | Dono de empresa, CEO, gestor B2B que quer crescer mas não tem time de marketing | Assessoria, agência, consultoria de marketing e vendas |
 | **Autoridade-prática** | Decisor B2B, dev/PM sênior, profissional que valoriza eficiência | SaaS, ferramenta produtiva, infra técnica |
 | **Amigo-mentor** | Iniciante, profissional em transição, quem precisa de confiança | Curso, coaching, comunidade, infoproduto educacional |
 | **Técnico-direto** | Dev, arquiteto, engenheiro, audiência sofisticada de domínio | API, framework, ferramenta para devs, documentação |
@@ -15,7 +16,46 @@
 
 ---
 
-## 1. Autoridade-prática
+## 1. Autoridade-Assessoria
+
+**Como soa:** data-first, sem rodeios, confiança de quem já fez isso centenas de vezes. Autoridade construída por números de mercado (clientes atendidos, receita gerada, anos de operação), não por adjetivos. Framing de "consultoria" e "parceiro", nunca de "agência" ou "serviço". Warmth vem do "a gente" informal + promessa de tempo específica para retorno.
+
+**Estrutura do hero:** [Outcome/transformação de negócio] → [Qualificador de público ou urgência] → [CTA com nível médio de comprometimento: "agendar diagnóstico", não "saiba mais"]
+
+**Vocabulário típico:** "escalar", "ROI", "faturamento", "assessoria", "diagnóstico", "parceria", "especialista", "resultado", "conversão", "tráfego", "a gente".
+
+**Verbos:** imperativo com peso de consequência — Escale, Transforme, Agende, Descubra, Fature.
+
+**Padrões obrigatórios neste tom:**
+1. **Hero com dado de prova imediata** — métrica específica no hero ou sub-hero (ex: "ROI médio de 9,5", "+600% de crescimento durante a parceria").
+2. **Claim de autoridade de mercado com número de escala** — "+X clientes atendidos", "maior [especialidade] da [região]", "+R$ X gerados".
+3. **Framing de escassez legítima** — vagas limitadas, processo seletivo, exclusividade da parceria.
+4. **Two-step no form** — "Passo 1: preencha" + "Passo 2: receba o diagnóstico em [tempo específico]".
+5. **Testimunhos com headline de resultado** — "CRESCIMENTO DE 70% NO ANO A ANO" antes da citação, com nome completo e cargo.
+6. **CTA de comprometimento médio** — "Agendar diagnóstico gratuito", "Falar com um especialista" — nunca "Saiba mais" ou "Enviar".
+
+**Exemplo (hero):**
+> Faça de 2026 o ano mais lucrativo da sua empresa.
+> Para empresas que faturam acima de R$ 100 mil/mês. Agende seu diagnóstico gratuito.
+> [Agendar diagnóstico →]
+> Em até 1 dia útil um especialista entra em contato.
+
+**Exemplo (autoridade de mercado):**
+> +30 mil empresas atendidas · +R$ 16 bi em receita gerada · 13 anos de operação
+
+**Exemplo (escassez):**
+> O nosso trabalho é exclusivo. Nem sempre temos vagas abertas para novos parceiros.
+
+**Exemplo (testimunho):**
+> CRESCIMENTO DE 70% NO ANO A ANO
+> "Comparando ano a ano, crescemos 70%. As decisões certas, com a assessoria certa, geraram o resultado que a gente esperava."
+> Diego Lopes — Head de DTC, MAX Titanium
+
+**Referências de mercado:** V4 Company, Assessoria Alpha, Agência Mestre, Conversion, NP Digital Brasil.
+
+---
+
+## 2. Autoridade-Prática
 
 **Como soa:** sentenças curtas, dado primeiro, opinião segunda. Sem hedge ("talvez", "quem sabe"). Decisão + motivo + próximo passo.
 
@@ -33,7 +73,7 @@
 
 ---
 
-## 2. Amigo-mentor
+## 3. Amigo-Mentor
 
 **Como soa:** tom de café com um colega experiente. Empático, mas firme. Reconhece a dor antes de prescrever.
 
@@ -51,7 +91,7 @@
 
 ---
 
-## 3. Técnico-direto
+## 4. Técnico-Direto
 
 **Como soa:** copy de doc técnica que vende. Pressupõe sofisticação do leitor. Snippet de código vale mais que adjetivo.
 
@@ -69,7 +109,7 @@
 
 ---
 
-## 4. Descontraído
+## 5. Descontraído
 
 **Como soa:** linguagem cotidiana, gírias permitidas com moderação, emoji ocasional. Quebra a quarta parede.
 
@@ -87,7 +127,7 @@
 
 ---
 
-## 5. Inspiracional
+## 6. Inspiracional
 
 **Como soa:** future-pacing. Pinta a transformação concreta. Linguagem de promessa, com prova.
 
@@ -105,7 +145,7 @@
 
 ---
 
-## 6. Didático
+## 7. Didático
 
 **Como soa:** professor calmo, paciente. Define termos antes de usar. Numera etapas. Reduz pressuposições.
 

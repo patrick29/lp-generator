@@ -93,3 +93,33 @@
 - **Promessa sem prova:** todo claim significativo exige número, fonte ou social proof imediato.
 - **Tom inferido em silêncio:** se o briefing está ambíguo sobre tom, perguntar (Carla) ou apresentar referências (Diana). Nunca chutar.
 - **Pular a regra do 1 CTA dominante:** independente de framework, 1 ação principal na LP.
+
+---
+
+## Anti-patterns específicos — LP de Assessoria / Agência de Marketing
+
+> Aplicar quando o tom escolhido for **Autoridade-Assessoria** ou quando a oferta for assessoria, agência ou consultoria de marketing e vendas.
+
+### Never Do
+
+1. **CTA "Saiba mais" ou "Enviar" em LP de assessoria B2B.** Audiência que quer resolver problema urgente precisa de CTA de comprometimento médio: "Agendar diagnóstico gratuito", "Falar com um especialista", "Solicitar avaliação". "Saiba mais" é passivo e faz a oferta parecer rasa.
+
+2. **Promessa de benefício sem prova numérica.** "Aumentamos seus resultados" ou "Marketing que funciona" sem número específico (ROI médio, % de crescimento, volume de receita gerada) destrói credibilidade imediata. Todo claim de resultado exige métrica real ou case nomeado.
+
+3. **Seção "Quem Somos" sem claim de escala ou autoridade de mercado.** Texto corporativo sobre história da empresa sem número de clientes, anos de operação, receita gerada ou prêmio recebido é espaço desperdiçado. O leitor quer saber por que confiar, não ler uma biografia.
+
+4. **Testimunhos sem headline de resultado e sem cargo completo.** "Adorei o serviço — João" é inútil. O padrão correto: headline de resultado em caixa alta ("ROI DE 9,5"), citação específica, nome completo + cargo + empresa. Sem isso, o social proof não converte.
+
+5. **Form sem framing de dois passos.** Form solto sem "Passo 1: preencha" + "Passo 2: receba o diagnóstico em [tempo específico]" perde a oportunidade de reduzir ansiedade do preenchimento e gerenciar expectativa de retorno. Sempre mostrar o que acontece depois do envio.
+
+6. **Ausência de scarcity legítima.** Assessorias de qualidade têm capacidade limitada de atendimento. Não mencionar vagas limitadas, processo seletivo ou exclusividade de parceria é uma oportunidade perdida de criar urgência real (sem inventar).
+
+7. **"Agência" no lugar de "assessoria" ou "consultoria" quando o posicionamento for premium.** "Agência" posiciona como executor. "Assessoria" ou "consultoria" posiciona como parceiro estratégico e justifica ticket mais alto. Alinhar ao posicionamento real da marca.
+
+### Always Do
+
+1. **Métrica específica no hero ou sub-hero** — ROI, % crescimento, volume de receita gerada, número de clientes atendidos. Específico ("ROI médio de 9,5") converte mais que redondo ("100% de crescimento").
+2. **Claim de autoridade de mercado com número de escala** — "+X clientes", "maior [especialidade] da [região]", "+R$ X gerados para parceiros".
+3. **Qualificador de público visível** — "Para empresas que faturam acima de R$ X/mês" filtra o lead errado e eleva percepção de exclusividade.
+4. **Two-step no form** — "Passo 1" + "Passo 2" com tempo de retorno explícito.
+5. **Testimunho com headline de resultado em caixa alta** antes da citação, com cargo e empresa do autor.

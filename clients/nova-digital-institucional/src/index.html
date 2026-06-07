@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-density="compact">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nova Digital · Agência de Marketing Estratégico</title>
+<meta name="description" content="Nova Digital, agência de marketing estratégico. Criatividade, estratégia e tecnologia para transformar sua presença online em resultados reais.">
+<link rel="icon" href="assets/icon/icon-orange.png">
+<link rel="stylesheet" href="ds/styles.css">
+<link rel="stylesheet" href="lp.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<script>document.body.parentElement.classList.add('js');</script>
+
+<div class="scrollbar" id="scrollbar"></div>
+
+<div class="lp">
+
+  <!-- ============ HEADER ============ -->
+  <header class="hdr" id="hdr">
+    <div class="wrap hdr__in">
+      <a class="lp-logo" href="#topo" aria-label="Nova Digital"><img src="assets/logo/nova-digital-wordmark.png" alt="Nova Digital · Agência"></a>
+      <nav class="hdr__nav">
+        <ul class="hdr__links">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#metodo">Método NOVA</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#agencia">A agência</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+        <a class="nd-btn nd-btn--primary nd-btn--sm hdr__cta" href="#contato">Diagnóstico grátis</a>
+        <button class="nd-iconbtn hdr__burger" id="burger" aria-label="Menu" style="border-color:var(--border-on-dark);border-width:2px;border-style:solid;color:#fff"><i data-lucide="menu"></i></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- mobile menu -->
+  <div class="mnav" id="mnav">
+    <div class="mnav__top">
+      <span class="lp-logo" style="height:30px"><img src="assets/logo/nova-digital-wordmark.png" alt="Nova Digital"></span>
+      <button class="nd-iconbtn" id="mclose" aria-label="Fechar" style="color:#fff"><i data-lucide="x"></i></button>
+    </div>
+    <a href="#servicos" data-close>Serviços</a>
+    <a href="#metodo" data-close>Método NOVA</a>
+    <a href="#depoimentos" data-close>Depoimentos</a>
+    <a href="#agencia" data-close>A agência</a>
+    <a href="#faq" data-close>Dúvidas</a>
+    <a class="nd-btn nd-btn--primary" href="#contato" data-close style="align-self:flex-start;margin-top:var(--space-4)">Diagnóstico grátis</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="topo">
+    <div class="hero__deco">
+      <div class="hero__grid"></div>
+      <div class="hero__circle" data-parallax="0.18"></div>
+      <div class="hero__glow" data-parallax="-0.12"></div>
+      <img class="hero__mark" src="assets/icon/mark-orange.svg" alt="" data-parallax="0.28">
+    </div>
+    <div class="wrap hero__in">
+      <div class="hero__copy">
+        <div class="nova-eyebrow hero__eyebrow reveal"><span class="nova-rule nova-rule--h"></span>Agência · Marketing Estratégico</div>
+        <h1 class="reveal" id="heroTitle">Marketing que <em>move</em> marcas no digital.</h1>
+        <p class="hero__sub reveal">Unimos criatividade, estratégia e tecnologia para transformar a sua presença online em resultados reais, sem perder o olhar humano que torna cada projeto único.</p>
+        <div class="hero__cta reveal">
+          <a class="nd-btn nd-btn--primary nd-btn--lg" href="#contato">Quero meu diagnóstico<span class="nd-btn__ic"><i data-lucide="arrow-right"></i></span></a>
+          <a class="nd-btn nd-btn--on-purple-ghost nd-btn--lg" href="#metodo"><span class="nd-btn__ic"><i data-lucide="play"></i></span>Conheça o Método</a>
+        </div>
+        <div class="hero__trust reveal">
+          <div class="hero__avatars">
+            <span class="nd-avatar nd-avatar--sm nd-avatar--orange">MA</span>
+            <span class="nd-avatar nd-avatar--sm">JP</span>
+            <span class="nd-avatar nd-avatar--sm nd-avatar--orange">RC</span>
+            <span class="nd-avatar nd-avatar--sm">LF</span>
+          </div>
+          <div class="hero__trust-txt">
+            <div class="hero__stars">★★★★★</div>
+            <b>+120 marcas</b> em movimento com a Nova Digital.
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__formcard reveal" id="heroFormCard">
+        <span class="hero__formbadge nd-badge nd-badge--solid"><span class="nd-badge__dot"></span>Sem compromisso</span>
+        <div class="hero__formhead">
+          <span class="hero__formic"><i data-lucide="rocket"></i></span>
+          <div>
+            <h2 class="hero__formtitle">Diagnóstico gratuito</h2>
+            <p class="hero__formsub">Receba uma análise do marketing da sua marca em até 1 dia útil.</p>
+          </div>
+        </div>
+        <form id="heroForm" novalidate>
+          <div class="form-single">
+            <label class="nd-field"><span class="nd-input-wrap nd-input-wrap--ic"><span class="nd-input-wrap__ic"><i data-lucide="user"></i></span><input class="nd-input nd-input--has-icon" name="nome" aria-label="Seu nome" placeholder="Seu nome" required></span></label>
+          </div>
+          <div class="form-single">
+            <label class="nd-field"><span class="nd-input-wrap nd-input-wrap--ic"><span class="nd-input-wrap__ic"><i data-lucide="at-sign"></i></span><input class="nd-input nd-input--has-icon" name="instagram" aria-label="@ do Instagram" placeholder="@ do Instagram" required></span></label>
+          </div>
+          <div class="form-single">
+            <label class="nd-field"><span class="nd-input-wrap nd-input-wrap--ic"><span class="nd-input-wrap__ic"><i data-lucide="message-circle"></i></span><input class="nd-input nd-input--has-icon" name="whatsapp" aria-label="WhatsApp" placeholder="WhatsApp" inputmode="tel" required></span></label>
+          </div>
+          <div class="form-single">
+            <label class="nd-field"><span class="nd-input-wrap"><select class="nd-input nd-select" name="investimento" aria-label="Faixa de investimento mensal" required>
+              <option value="" disabled selected>Faixa de investimento mensal</option>
+              <option>Até R$ 1.000</option>
+              <option>R$ 1.000 a R$ 3.000</option>
+              <option>R$ 3.000 a R$ 5.000</option>
+              <option>Acima de R$ 5.000</option>
+            </select></span></label>
+          </div>
+          <button type="submit" class="nd-btn nd-btn--primary nd-btn--lg nd-btn--full hero__btn-full">Quero meu diagnóstico grátis<span class="nd-btn__ic"><i data-lucide="arrow-right"></i></span></button>
+          <p class="hero__formnote"><i data-lucide="lock"></i> Seus dados estão seguros. Sem spam.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVIÇOS ============ -->
+  <section class="section" id="servicos">
+    <div class="wrap">
+      <div class="shead reveal">
+        <div class="shead__lead"><span class="nova-rule nova-rule--h"></span><span class="nova-eyebrow shead__eyebrow">O que fazemos</span></div>
+        <h2>Soluções completas, <em>do plano ao resultado.</em></h2>
+        <p>Cada serviço é pensado de forma integrada e bem direcionada, porque marketing de verdade conecta estratégia, criatividade e dados.</p>
+      </div>
+
+      <div class="svc-filters reveal" id="svcFilters">
+        <span class="nd-tag nd-tag--selected nd-tag--selectable" data-filter="all">Tudo</span>
+        <span class="nd-tag nd-tag--selectable" data-filter="conteudo">Conteúdo</span>
+        <span class="nd-tag nd-tag--selectable" data-filter="aquisicao">Aquisição</span>
+        <span class="nd-tag nd-tag--selectable" data-filter="marca">Marca</span>
+        <span class="nd-tag nd-tag--selectable" data-filter="audiovisual">Audiovisual</span>
+      </div>
+
+      <div class="svc-grid reveal-stagger" id="svcGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ MÉTODO NOVA ============ -->
+  <section class="section metodo" id="metodo">
+    <div class="metodo__bgletters" data-parallax="0.06" aria-hidden="true">NOVA</div>
+    <div class="wrap">
+      <div class="shead shead--center reveal">
+        <div class="shead__lead"><span class="nova-rule nova-rule--h"></span><span class="nova-eyebrow shead__eyebrow">Nossa metodologia</span><span class="nova-rule nova-rule--h"></span></div>
+        <h2>Método <em>NOVA<span class="metodo__tm">™</span></em></h2>
+        <p>O sistema completo que transforma sua marca em referência digital. Quatro etapas que conduzem do posicionamento à análise contínua. Cada letra é uma fase do processo.</p>
+      </div>
+    </div>
+    <div class="metodo__stage" id="metodoStage"></div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section class="section depo" id="depoimentos">
+    <div class="wrap">
+      <div class="shead shead--center reveal">
+        <div class="shead__lead"><span class="nova-rule nova-rule--h"></span><span class="nova-eyebrow shead__eyebrow">Quem caminha com a gente</span><span class="nova-rule nova-rule--h"></span></div>
+        <h2>Histórias de quem colocou a marca <em>em movimento.</em></h2>
+      </div>
+      <div class="depo__grid reveal-stagger" id="depoGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE / FUNDADORA ============ -->
+  <section class="section about" id="agencia">
+    <div class="wrap about__in">
+      <div class="about__media reveal">
+        <div class="about__circle"></div>
+        <div class="about__photo">
+          <image-slot id="founder" role="img" aria-label="Letícia Shibayama, fundadora da Nova Digital" shape="rounded" radius="44" fit="cover" src="assets/images/founder.webp" position="50% 12%" placeholder="Foto da Letícia / equipe"></image-slot>
+          <div class="about__badge">
+            <span class="nd-avatar nd-avatar--md nd-avatar--orange nd-avatar--ring">LS</span>
+            <div>
+              <div class="about__badge-name">Letícia Shibayama</div>
+              <div class="about__badge-role">Fundadora · Nova Digital</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__copy reveal">
+        <div class="shead__lead" style="margin-bottom:var(--space-4)"><span class="nova-rule nova-rule--h"></span><span class="nova-eyebrow shead__eyebrow">Conheça a agência</span></div>
+        <p class="about__statement">Mais do que uma agência, a Nova Digital é um <em>ponto de conexão</em> entre marcas e pessoas.</p>
+        <p class="about__body">Nascemos para humanizar o digital: transformar dados, cliques e métricas em relações verdadeiras e crescimento real. Criada por Letícia, a Nova Digital carrega a energia de quem fala de marketing de forma descomplicada e acessível, mas sem perder o tom estratégico que garante resultados.</p>
+        <div class="mv-grid">
+          <div class="mv-card">
+            <div class="mv-card__h"><span class="mv-card__ic"><i data-lucide="target"></i></span><span class="mv-card__t">Missão</span></div>
+            <p>Transformar a presença digital de empresas e empreendedores com estratégias criativas, inovadoras e personalizadas, unindo tecnologia e humanização.</p>
+          </div>
+          <div class="mv-card">
+            <div class="mv-card__h"><span class="mv-card__ic"><i data-lucide="eye"></i></span><span class="mv-card__t">Visão</span></div>
+            <p>Ser referência em marketing digital, a parceira preferida de marcas que querem se destacar online com estratégia, inovação e proximidade.</p>
+          </div>
+        </div>
+        <div class="pillars">
+          <div class="pillar"><span class="pillar__dot"><i data-lucide="compass"></i></span><span><b>Estratégia direcionada</b>Cada ação com foco em performance e resultado.</span></div>
+          <div class="pillar"><span class="pillar__dot"><i data-lucide="heart-handshake"></i></span><span><b>Humanização do digital</b>Tecnologia com um olhar próximo e acolhedor.</span></div>
+          <div class="pillar"><span class="pillar__dot"><i data-lucide="trending-up"></i></span><span><b>Resultados mensuráveis</b>Crescimento real que você acompanha de perto.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARCEIRAS / CLIENTES ============ -->
+  <section class="partners">
+    <div class="wrap">
+      <p class="partners__lead">Grandes Marcas Parceiras</p>
+    </div>
+    <div class="marquee">
+      <div class="marquee__track" id="partnersTrack"></div>
+    </div>
+  </section>
+
+  <!-- ============ STATS STRIP ============ -->
+  <section class="strip">
+    <img class="strip__mark" src="assets/icon/mark-white.svg" alt="" aria-hidden="true">
+    <div class="wrap strip__in reveal-stagger" id="statsStrip">
+      <div class="strip__item"><span class="strip__num" data-count="120" data-suffix="+">120+</span><span class="strip__lbl">marcas atendidas</span></div>
+      <div class="strip__item"><span class="strip__num" data-count="4.8" data-suffix="M" data-dec="1">4.8M</span><span class="strip__lbl">de alcance gerado</span></div>
+      <div class="strip__item"><span class="strip__num" data-count="312" data-prefix="+" data-suffix="%">+312%</span><span class="strip__lbl">crescimento orgânico médio</span></div>
+      <div class="strip__item"><span class="strip__num" data-count="98" data-suffix="%">98%</span><span class="strip__lbl">clientes satisfeitos</span></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section faq" id="faq">
+    <div class="wrap faq__in">
+      <div class="reveal">
+        <div class="shead__lead" style="margin-bottom:var(--space-4)"><span class="nova-rule nova-rule--h"></span><span class="nova-eyebrow shead__eyebrow">Dúvidas frequentes</span></div>
+        <h2 style="font-size:clamp(1.8rem, 1.3rem + 2vw, 2.8rem)">Tudo o que você precisa saber antes de começar.</h2>
+        <p style="color:var(--text-body);line-height:var(--leading-relaxed);margin-top:var(--space-4)">Não encontrou sua dúvida? <a href="#contato" style="color:var(--lp-accent);font-weight:600">Fale com a gente</a>. Respondemos como uma conversa entre parceiros.</p>
+      </div>
+      <div class="faq__list reveal" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="section contact" id="contato">
+    <div class="contact__circle"></div>
+    <div class="wrap contact__in">
+      <div class="reveal">
+        <div class="shead__lead" style="margin-bottom:var(--space-4)"><span class="nova-rule nova-rule--h"></span><span class="nova-eyebrow" style="color:var(--lp-accent-on-purple)">Vamos conversar</span></div>
+        <h2 style="font-size:clamp(2rem, 1.4rem + 2.4vw, 3.2rem)">Pronto para colocar sua marca <em>em movimento?</em></h2>
+        <p class="contact__lead">Conta pra gente sobre o seu projeto. Você recebe um diagnóstico gratuito e uma proposta clara, próxima e estratégica.</p>
+        <ul class="contact__list">
+          <li><span class="ic"><i data-lucide="message-circle"></i></span> (11) 99999-0000 · WhatsApp</li>
+          <li><span class="ic"><i data-lucide="mail"></i></span> ola@novadigital.com.br</li>
+          <li><span class="ic"><i data-lucide="at-sign"></i></span> @novadigital</li>
+          <li><span class="ic"><i data-lucide="map-pin"></i></span> São Paulo · atendimento em todo o Brasil</li>
+        </ul>
+      </div>
+      <div class="reveal contact__panel">
+        <h3 class="contact__paneltitle">Diagnóstico gratuito</h3>
+        <p class="contact__panelsub">Preencha e receba a análise do marketing da sua marca, sem compromisso.</p>
+        <form id="leadForm" novalidate>
+          <div class="form-single">
+            <label class="nd-field"><span class="nd-input-wrap nd-input-wrap--ic"><span class="nd-input-wrap__ic"><i data-lucide="user"></i></span><input class="nd-input nd-input--has-icon" name="nome" aria-label="Seu nome" placeholder="Seu nome" required></span></label>
+          </div>
+          <div class="form-single">
+            <label class="nd-field"><span class="nd-input-wrap nd-input-wrap--ic"><span class="nd-input-wrap__ic"><i data-lucide="at-sign"></i></span><input class="nd-input nd-input--has-icon" name="instagram" aria-label="@ do Instagram" placeholder="@ do Instagram" required></span></label>
+          </div>
+          <div class="form-single">
+            <label class="nd-field"><span class="nd-input-wrap nd-input-wrap--ic"><span class="nd-input-wrap__ic"><i data-lucide="message-circle"></i></span><input class="nd-input nd-input--has-icon" name="whatsapp" aria-label="WhatsApp" placeholder="WhatsApp" inputmode="tel" required></span></label>
+          </div>
+          <div class="form-single">
+            <label class="nd-field"><span class="nd-input-wrap"><select class="nd-input nd-select" name="investimento" aria-label="Faixa de investimento mensal" required>
+              <option value="" disabled selected>Faixa de investimento mensal</option>
+              <option>Até R$ 1.000</option>
+              <option>R$ 1.000 a R$ 3.000</option>
+              <option>R$ 3.000 a R$ 5.000</option>
+              <option>Acima de R$ 5.000</option>
+            </select></span></label>
+          </div>
+          <button type="submit" class="nd-btn nd-btn--primary nd-btn--lg nd-btn--full">Quero meu diagnóstico grátis<span class="nd-btn__ic"><i data-lucide="arrow-right"></i></span></button>
+          <p class="hero__formnote"><i data-lucide="lock"></i> Seus dados estão seguros. Sem spam.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="ftr">
+    <div class="wrap ftr__in">
+      <div>
+        <span class="lp-logo" style="height:36px"><img src="assets/logo/nova-digital-wordmark.png" alt="Nova Digital"></span>
+        <p>Marketing descomplicado, estratégico e humano. Transformamos presença online em crescimento real.</p>
+        <div class="ftr__social">
+          <a class="nd-iconbtn nd-iconbtn--soft" href="#" aria-label="Instagram"><i data-lucide="at-sign"></i></a>
+          <a class="nd-iconbtn nd-iconbtn--soft" href="#" aria-label="LinkedIn"><i data-lucide="globe"></i></a>
+          <a class="nd-iconbtn nd-iconbtn--soft" href="#" aria-label="YouTube"><i data-lucide="play-circle"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Gestão de Redes</a></li>
+          <li><a href="#servicos">Tráfego Pago</a></li>
+          <li><a href="#servicos">Branding</a></li>
+          <li><a href="#servicos">Vídeo &amp; Reels</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Agência</h4>
+        <ul>
+          <li><a href="#metodo">Método NOVA</a></li>
+          <li><a href="#agencia">Sobre nós</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap ftr__bottom">
+      <span>© 2026 Nova Digital · Agência de Marketing Estratégico</span>
+      <span>Feito com estratégia em São Paulo.</span>
+    </div>
+  </footer>
+
+</div>
+
+<!-- toast -->
+<div class="toast" id="toast"><i data-lucide="check-circle"></i> Recebido! Seu diagnóstico chega em breve.</div>
+
+<!-- immersive scroll rail (populated by JS) -->
+<div class="mimm__rail" id="immRail" aria-hidden="true"></div>
+
+<!-- Tweaks panel mount -->
+<div id="tweaks-root"></div>
+
+<script src="image-slot.js"></script>
+<script src="lp.js"></script>
+
+<!-- React + Babel (Tweaks panel island only) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="lp-tweaks.jsx"></script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+- generic [ref=e4]:
+  - navigation [ref=e8]:
+    - img "Framer Logo" [ref=e10]:
+      - img [ref=e12]
+    - generic [ref=e14]:
+      - paragraph [ref=e16]:
+        - link "Depoimentos" [ref=e17] [cursor=pointer]:
+          - /url: ./go-modular-b#depoimentos
+      - paragraph [ref=e19]:
+        - link "Pra quem é" [ref=e20] [cursor=pointer]:
+          - /url: ./go-modular-b#problema
+      - paragraph [ref=e22]:
+        - link "O que a V4 faz" [ref=e23] [cursor=pointer]:
+          - /url: ./go-modular-b#solucao
+      - paragraph [ref=e25]:
+        - link "FAQ" [ref=e26] [cursor=pointer]:
+          - /url: ./go-modular-b#faq
+  - generic [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e38]
+          - paragraph [ref=e42]: para EMPRESAS QUE FATURAM ACIMA DE R$ 100 MIL/MÊS
+        - paragraph [ref=e45]: Faça de 2026 o ano mais lucrativo da sua empresa
+      - generic [ref=e46]:
+        - paragraph [ref=e49]: Agende seu diagnóstico gratuito e descubra como podemos transformar seu marketing em uma máquina de geração de receita.
+        - generic [ref=e50]:
+          - paragraph [ref=e56]: Marketing e comercial focados no seu ROI
+          - paragraph [ref=e62]: Tecnologia e I.A. aplicadas à sua operação
+          - paragraph [ref=e68]: Especialistas dedicados com soluções sob medida
+        - paragraph [ref=e72]: Certificados pelas maiores companhias
+    - main [ref=e86]:
+      - generic [ref=e87]:
+        - textbox "Qual é o seu nome e sobrenome?" [ref=e89]
+        - textbox "Qual seu e-mail corporativo?" [ref=e91]
+        - textbox "Qual o nome da sua empresa?" [ref=e93]
+        - generic [ref=e95]:
+          - combobox [ref=e96]:
+            - img [ref=e97]
+          - combobox [ref=e98]
+          - textbox "Qual seu telefone?" [ref=e99]
+        - generic [ref=e100]:
+          - combobox [ref=e101]:
+            - generic: Qual o faturamento mensal da sua empresa?
+            - generic [ref=e102]:
+              - img
+          - combobox [ref=e103]
+        - generic [ref=e104]:
+          - combobox [ref=e105]:
+            - generic: Qual o seu segmento?
+            - generic [ref=e106]:
+              - img
+          - combobox [ref=e107]
+        - generic [ref=e108]:
+          - text: Do not fill this out
+          - textbox [ref=e109]
+        - button "Receber mais informações" [ref=e111] [cursor=pointer]
+  - generic [ref=e113]:
+    - generic [ref=e114]:
+      - generic [ref=e115]:
+        - generic [ref=e117]:
+          - paragraph [ref=e120]: Conselheiro Estratégico
+          - paragraph [ref=e123]:
+            - generic [ref=e124]: V4 Company
+        - paragraph [ref=e128]: Trazemos para a sua operação o rigor e a mentalidade de um dos maiores empresários do país.
+        - link "Saber Mais" [ref=e129] [cursor=pointer]:
+          - /url: ./go-modular-b#formulario
+          - paragraph [ref=e131]: Saber Mais
+          - img [ref=e134]
+      - img "Flávio Augusto, Founder da Wise UP e Conselheiro Estratégico da V4 Company" [ref=e140]
+    - generic [ref=e141]:
+      - paragraph [ref=e147]: As empresas que mais crescem no Brasil passam pela V4
+      - generic [ref=e150]:
+        - list [ref=e151]:
+          - listitem "1 of 5" [ref=e152]:
+            - generic [ref=e158] [cursor=pointer]:
+              - paragraph [ref=e170]:
+                - strong [ref=e171]: Crescimento de 70% no ano a ano
+              - paragraph [ref=e175]: "\"Se a gente comparar ano x ano, a gente cresceu 70%.Isso mostra que as decisões, e a V4 entre essas decisões, estão gerando o resultado que a gente espera.\""
+              - generic [ref=e176]:
+                - img "Diego Lopes, Head de OTC da MAX Titanium, cliente da V4 Company" [ref=e179]
+                - generic [ref=e180]:
+                  - paragraph [ref=e183]: Diego Lopes
+                  - paragraph [ref=e186]: Head de DTC | MAX Titanium
+          - listitem "2 of 5" [ref=e187]:
+            - generic [ref=e193] [cursor=pointer]:
+              - paragraph [ref=e205]:
+                - strong [ref=e206]: De pequenas empresas até multinacionais
+              - paragraph [ref=e210]: "\"A dor que a V4 atende pega desde uma empresa com 5 colaboradores, até uma multinacional de consumo.\""
+              - generic [ref=e211]:
+                - img "Sandro Magaldi, CEO da Gestão do Amanhã, cliente da V4 Company" [ref=e214]
+                - generic [ref=e215]:
+                  - paragraph [ref=e218]: Sandro Magaldi
+                  - paragraph [ref=e221]: CEO | Gestão do Amanhã
+          - listitem [ref=e222]:
+            - generic [ref=e228] [cursor=pointer]:
+              - paragraph [ref=e240]:
+                - strong [ref=e241]: Preocupação em entregar venda
+              - paragraph [ref=e245]: “Antes, a gente trabalhava com uma agência, e essa agência estava preocupada em entregar lead apenas e com a V4 isso mudou um pouco, porque há uma preocupação em entregar a venda, o resultado final lá na ponta.”
+              - generic [ref=e246]:
+                - img [ref=e249]
+                - generic [ref=e250]:
+                  - paragraph [ref=e253]: Max Constâncio
+                  - paragraph [ref=e256]: Sócio-diretor MAXMD Movelaria e Design
+          - listitem [ref=e257]:
+            - generic [ref=e263] [cursor=pointer]:
+              - paragraph [ref=e275]:
+                - strong [ref=e276]: ROI de 9,5
+              - paragraph [ref=e280]: "\"A gente vendeu, através da V4, 45 unidades. Nós temos um investimento considerável e o nosso ROI está na casa de 9,5.\""
+              - generic [ref=e281]:
+                - img [ref=e284]
+                - generic [ref=e285]:
+                  - paragraph [ref=e288]: Jonas Esteves
+                  - paragraph [ref=e291]: Diretor de Marketing da Lugano Chocolates.
+          - listitem [ref=e292]:
+            - generic [ref=e298] [cursor=pointer]:
+              - paragraph [ref=e310]:
+                - strong [ref=e311]: A V4 veste a camisa do seu negócio
+              - paragraph [ref=e315]: “O que eu veja da V4, o escritório que atende a gente, eles vestem a camisa, então isso me dá uma confiança. E outra, são muito rápidos, estão sempre disponíveis e isso dá uma segurança muito boa.”
+              - generic [ref=e316]:
+                - img [ref=e319]
+                - generic [ref=e320]:
+                  - paragraph [ref=e323]: André Vieira
+                  - paragraph [ref=e326]: CEO | Venum Brasil
+        - group "Carousel pagination controls":
+          - button "Previous"
+          - button "Next" [ref=e327] [cursor=pointer]
+  - generic [ref=e328]:
+    - generic [ref=e329]:
+      - generic [ref=e330]:
+        - paragraph [ref=e333]: "Liderança absoluta: A maior assessoria de Marketing e Vendas da América Latina"
+        - paragraph [ref=e336]: Mais de 13 anos profissionalizando Marketing e Vendas em todo o Brasil.
+      - group [ref=e339]:
+        - listitem [ref=e340]:
+          - generic [ref=e343]:
+            - paragraph [ref=e345]: "+200"
+            - paragraph [ref=e347]: Escritórios espalhados por todo o país
+        - listitem [ref=e348]:
+          - generic [ref=e351]:
+            - paragraph [ref=e353]: +R$ 16 Bi
+            - paragraph [ref=e355]: Receita gerada para nossos clientes
+        - listitem [ref=e356]:
+          - generic [ref=e359]:
+            - paragraph [ref=e361]: +5 Mil
+            - paragraph [ref=e363]: Especialistas certificados para atuar no seu negócio
+        - listitem [ref=e364]:
+          - generic [ref=e367]:
+            - paragraph [ref=e369]: +30 Mil
+            - paragraph [ref=e371]: Empresas atendidas em todos os setores
+      - link "Agendar Reunião" [ref=e372] [cursor=pointer]:
+        - /url: ./go-modular-b#formulario
+        - paragraph [ref=e374]: Agendar Reunião
+        - img [ref=e377]
+    - generic [ref=e379]:
+      - generic [ref=e380]:
+        - paragraph [ref=e384]: Tenha uma operação completa de marketing e vendas sem contratar e gerenciar pessoas.
+        - paragraph [ref=e387]: Atendemos todas demanda que surgem no marketing. Conheça alguns dos nossos serviços.
+      - generic [ref=e391]:
+        - generic [ref=e392]:
+          - generic [ref=e395] [cursor=pointer]:
+            - paragraph [ref=e397]: Tráfego Pago
+            - img [ref=e400]
+          - paragraph [ref=e406] [cursor=pointer]: Dashboards & Dados
+          - paragraph [ref=e411] [cursor=pointer]: Criativos e LPs
+          - paragraph [ref=e416] [cursor=pointer]: Growth Strategy
+          - paragraph [ref=e421] [cursor=pointer]: Consultoria Comercial
+        - generic [ref=e424]:
+          - paragraph [ref=e426]: Gestão profissional nos maiores canais de aquisição do mundo.
+          - paragraph [ref=e428]: Gestão de alta performance com foco obsessivo em ROI. Atraímos o público qualificado para que cada centavo investido retorne como receita para o seu caixa.
+      - link "Falar com um consultor" [ref=e429] [cursor=pointer]:
+        - /url: ./go-modular-b#formulario
+        - paragraph [ref=e431]: Falar com um consultor
+        - img [ref=e434]
+    - generic [ref=e437]:
+      - generic [ref=e438]:
+        - generic [ref=e439]:
+          - paragraph [ref=e442]: Inteligência Artificial e Tecnologia
+          - paragraph [ref=e444]: Nós fazemos a curadoria e a implementação da tecnologia certa para o seu negócio enquanto você foca no lucro
+        - generic [ref=e445]:
+          - paragraph [ref=e451]: Identificação de soluções de IA para automatizar processos operacionais e reduzir custos.
+          - paragraph [ref=e457]: Implementação rápida de tecnologia nas campanhas de marketing para gerar insights de alta performance.
+          - paragraph [ref=e463]: Análise contínua de dados com IA para otimizar a conversão e aumentar as margens de lucro.
+        - link "Saber Mais" [ref=e464] [cursor=pointer]:
+          - /url: ./go-modular-b#formulario
+          - paragraph [ref=e466]: Saber Mais
+          - img [ref=e469]
+      - 'img "Ecossistema de ferramentas de Inteligência Artificial e tecnologia curadas e implementadas pela V4 Company: ChatGPT, Google Gemini, Google, Anthropic Claude, Meta AI e outras soluções de IA integradas à operação de marketing" [ref=e474]'
+    - generic [ref=e476]:
+      - paragraph [ref=e479]: Tire suas dúvidas antes de começar
+      - generic [ref=e481]:
+        - paragraph [ref=e490] [cursor=pointer]: Para qual tamanho de empresa a V4 Company é indicada?
+        - paragraph [ref=e499] [cursor=pointer]: Já tenho uma equipe de marketing interna. Por que contratar a V4?
+        - paragraph [ref=e508] [cursor=pointer]: Como saber se funciona para o meu segmento?
+        - paragraph [ref=e517] [cursor=pointer]: O que diferencia a V4 de uma agência de marketing comum?
+        - paragraph [ref=e526] [cursor=pointer]: Quanto tempo leva para os resultados aparecerem?
+        - paragraph [ref=e535] [cursor=pointer]: Vocês garantem resultados de vendas?
+  - banner [ref=e536]:
+    - link "Retornar ao topo" [ref=e539] [cursor=pointer]:
+      - /url: ./go-modular-b#formulario
+      - img [ref=e542]
+      - heading "Retornar ao topo" [level=1] [ref=e545]
+    - generic [ref=e549]:
+      - text: 2026 © V4 Company. Todos os direitos reservados.
+      - link "Políticas de privacidade" [ref=e550] [cursor=pointer]:
+        - /url: https://v4company.com/politica-de-privacidade

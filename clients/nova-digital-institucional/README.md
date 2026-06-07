@@ -67,7 +67,7 @@ Para um **build público enxuto**, remova a ilha sem nenhuma mudança visual: ap
 ## Antes de publicar
 
 1. **Conteúdo placeholder** — números (Resultados), depoimentos e logos de parceiras são exemplos; substituir por dados reais. Dados de contato (WhatsApp `(11) 99999-0000`, e-mail, @, endereço) também são placeholder.
-2. **Formulários** — `heroForm` e `leadForm` só disparam um toast; conectar a um backend/CRM/e-mail real.
+2. **Formulários** — `heroForm` e `leadForm` enviam os leads para uma planilha do Google via Apps Script (`mode:'no-cors'` + honeypot/token). Falta colar a URL `/exec` em `LEAD_ENDPOINT` e o token em `LEAD_TOKEN` no `lp.js` — passo a passo em [`deploy/apps-script/SETUP.md`](deploy/apps-script/SETUP.md).
 3. **Fonte do logotipo** — o display usa **Quicksand** como substituto livre da **Qalget Trial** (comercial). Subir os webfonts licenciados de Qalget para fidelidade total do logotipo.
 4. **Lucide** — os ícones carregam de `unpkg.com/lucide@latest`; **fixar uma versão** (ex.: `lucide@0.460.0`) antes de publicar para não quebrar com releases futuras.
 5. **Foto da fundadora** — já incluída (`assets/images/founder.webp`); trocar/recortar se quiser. O atributo `position="50% 12%"` ancora o corte pelo topo.

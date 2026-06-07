@@ -55,7 +55,7 @@ Decisões de marca/produto ou itens cosméticos, deixados para o cliente decidir
 
 ## Antes de publicar (resumo — ver README)
 
-1. Conectar `heroForm`/`leadForm` a um backend/CRM real (hoje só exibem toast).
+1. `heroForm`/`leadForm` agora enviam para uma planilha do Google via Apps Script (`deploy/apps-script/`). Falta só colar `LEAD_ENDPOINT`/`LEAD_TOKEN` no `lp.js` — ver `apps-script/SETUP.md`.
 2. Substituir conteúdo placeholder: números (Resultados), depoimentos, logos de parceiras e dados de contato.
 3. Fixar versão do Lucide; subir webfonts licenciados da Qalget (hoje substituída por Quicksand).
 4. Contraste WCAG AA: laranja-sobre-roxo **corrigido**; restam (por opção) os eyebrows laranja sobre fundo branco e o placeholder cinza.

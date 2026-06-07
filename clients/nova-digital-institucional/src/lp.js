@@ -503,13 +503,31 @@
   };
 
   /* ---------------- Forms + toast ---------------- */
+  // Endpoint do Apps Script (Web App). Cole a URL /exec e o mesmo token do Code.gs.
+  // Passo a passo em deploy/apps-script/SETUP.md.
+  const LEAD_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwXAKagfgwxeNo6Nl39QKPXzMr99WocCxHFcEHC-EdmEt044g4SqrpCO5_RvIdZAqIt/exec'; // ex.: https://script.google.com/macros/s/XXXX/exec
+  const LEAD_TOKEN    = 'ed5bd7937a8d43800bd1b9e51f1497922cf4df1725ecce8e';     // idêntico ao TOKEN no Code.gs
+  const LEAD_ORIGEM   = { heroForm: 'hero', leadForm: 'contato' };
+
   function setupForms() {
     const toast = $('#toast');
     const show = () => { if (!toast) return; toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 3400); };
     ['heroForm', 'leadForm', 'newsForm'].forEach(id => {
       const f = document.getElementById(id);
       if (!f) return;
-      f.addEventListener('submit', (e) => { e.preventDefault(); show(); f.reset(); });
+      f.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const origem = LEAD_ORIGEM[id];
+        if (origem && /^https?:/.test(LEAD_ENDPOINT)) {
+          const body = new URLSearchParams(new FormData(f)); // inclui o honeypot "website"
+          body.append('token', LEAD_TOKEN);
+          body.append('origem', origem);
+          fetch(LEAD_ENDPOINT, { method: 'POST', mode: 'no-cors', body })
+            .catch((err) => console.error('lead submit falhou', err));
+        }
+        show();
+        f.reset();
+      });
     });
   }
 

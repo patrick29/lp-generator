@@ -102,7 +102,7 @@ body { background: var(--bg-surface); overflow-x: hidden; }
 }
 .hero__in {
   position: relative; display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(2rem, 5vw, 5rem);
-  align-items: center; padding-block: clamp(4.5rem, 9vw, 8.5rem) clamp(4rem, 7vw, 7rem);
+  align-items: center; padding-block: clamp(2.25rem, 5vw, 4.5rem) clamp(4rem, 7vw, 7rem);
 }
 .hero__eyebrow {
   display: inline-flex; align-items: center; gap: var(--space-3); color: var(--lp-accent-on-purple);
@@ -476,8 +476,8 @@ body { background: var(--bg-surface); overflow-x: hidden; }
 .contact h2 em { font-style: italic; color: var(--nova-orange); }
 .contact__lead { color: var(--text-on-purple-soft); line-height: var(--leading-relaxed); margin-bottom: var(--space-8); font-size: var(--text-md); }
 .contact__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-4); }
-.contact__list li { display: flex; align-items: center; gap: var(--space-4); color: var(--nova-white); font-family: var(--font-display); }
-.contact__list .ic { width: 46px; height: 46px; border-radius: 50%; background: rgba(255,255,255,.08); border: 1px solid var(--border-on-dark); color: var(--nova-orange); display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.contact__list li { display: flex; align-items: center; gap: var(--space-4); color: var(--nova-white); font-family: var(--font-body); }
+.contact__list .ic { width: 46px; height: 46px; border-radius: 50%; background: var(--lp-accent-soft); color: var(--lp-accent-deep); display: inline-flex; align-items: center; justify-content: center; flex: none; }
 .contact__list .ic svg { width: 19px; height: 19px; }
 .contact__panel { background: var(--nova-white); border-radius: var(--radius-2xl); padding: clamp(2rem, 4vw, 3rem); box-shadow: var(--shadow-xl); }
 .contact__panel .nd-field__label { color: var(--text-primary); }
@@ -485,6 +485,9 @@ body { background: var(--bg-surface); overflow-x: hidden; }
 .contact__panelsub { color: var(--text-body); font-size: var(--text-sm); margin-bottom: var(--space-6); }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-bottom: var(--space-4); }
 .form-single { margin-bottom: var(--space-4); }
+
+/* honeypot anti-spam: fora da tela, mas preenchível por bots (sem display:none) */
+.nd-hp { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
 
 /* ============================================================
    FOOTER

@@ -41,35 +41,58 @@
 
   const FAQ = [
     { q: 'O que é o Método NOVA™?', a: 'É a metodologia exclusiva da Nova Digital, estruturada em quatro etapas: Narrativa, Organização, Viralização e Análise. Ele conduz a sua marca do posicionamento estratégico à análise contínua de resultados, de forma organizada e mensurável.' },
-    { q: 'Vocês atendem marcas de fora de São Paulo?', a: 'Sim. Somos de São Paulo e atendemos marcas em todo o Brasil. A etapa de gravação presencial é combinada conforme a sua localização e o escopo do projeto.' },
+    { q: 'Vocês atendem marcas de qualquer lugar do Brasil?', a: 'Sim. Atendemos marcas em todo o Brasil. A etapa de gravação presencial é combinada conforme a sua localização e o escopo do projeto.' },
     { q: 'Em quanto tempo vejo resultado?', a: 'Cada marca tem seu ritmo, mas a partir do primeiro ciclo já entregamos posicionamento, planejamento e os primeiros conteúdos. Os resultados de alcance e engajamento crescem de forma consistente ao longo dos meses, sempre acompanhados de perto por relatórios.' },
     { q: 'Como funciona o diagnóstico gratuito?', a: 'Você preenche o formulário com algumas informações da sua marca e, em até 1 dia útil, retornamos com uma análise do seu marketing atual e os primeiros caminhos, sem compromisso.' },
     { q: 'A gravação dos vídeos está inclusa?', a: 'Sim. Na etapa de Viralização nossa equipe visita a sua empresa para captar bastidores, produtos e histórias, com roteirização, edição profissional, ensaio fotográfico e fotos com IA.' },
   ];
 
+  // fill: true → logo has a solid colored background; let it fill the rounded
+  // tile edge-to-edge (app-icon style) instead of floating with white padding.
   const PARTNERS = [
-    { name: 'Doce Ponto', ic: 'cake', tone: 'orange' },
-    { name: 'Studio JP', ic: 'ruler', tone: 'purple' },
-    { name: 'Clínica Vita', ic: 'heart-pulse', tone: 'orange' },
-    { name: 'Verde Café', ic: 'coffee', tone: 'purple' },
-    { name: 'Aurora Moda', ic: 'shirt', tone: 'orange' },
-    { name: 'Forte Fit', ic: 'dumbbell', tone: 'purple' },
-    { name: 'Lumière', ic: 'gem', tone: 'orange' },
-    { name: 'Raiz Natural', ic: 'leaf', tone: 'purple' },
+    { name: 'iFood',       src: 'assets/logo/partners/ifood.jpg' },
+    { name: 'Marisa',      src: 'assets/logo/partners/marisa.png',      fill: true },
+    { name: 'C&A',         src: 'assets/logo/partners/c-e-a.png' },
+    { name: 'O Boticário', src: 'assets/logo/partners/o-boticario.png' },
+    { name: 'Seara',       src: 'assets/logo/partners/seara.png' },
+    { name: 'Santa Lolla', src: 'assets/logo/partners/santa-lolla.png', fill: true },
+    { name: '99 Food',     src: 'assets/logo/partners/99-food.png',     fill: true },
   ];
 
   /* ---------------- RENDER: partners ---------------- */
+  const PARTNER_SCROLL_SPEED = 70; // px per second — constant regardless of logo count
+
   function renderPartners() {
     const track = $('#partnersTrack');
     if (!track) return;
-    const make = (p) => {
-      const bg = p.tone === 'orange' ? 'var(--orange-100)' : 'var(--purple-100)';
-      const fg = p.tone === 'orange' ? 'var(--orange-700)' : 'var(--nova-purple)';
-      return `<span class="partner-logo"><span class="partner-logo__dot" style="background:${bg};color:${fg}"><i data-lucide="${p.ic}"></i></span>${p.name}</span>`;
-    };
-    const set = PARTNERS.map(make).join('');
-    track.innerHTML = set + set; // duplicate for seamless loop
-    icons();
+    const make = (p) =>
+      `<span class="partner-logo${p.fill ? ' partner-logo--fill' : ''}" title="${p.name}"><img src="${p.src}" alt="${p.name}" loading="lazy" data-name="${p.name}"></span>`;
+
+    // One full pass over the logos.
+    const onePass = PARTNERS.map(make).join('');
+    // Repeat the pass until a single "half" is wider than the viewport, so the
+    // strip never runs out of content (no empty gap). Two identical halves +
+    // a -50% scroll make the loop perfectly seamless (truly infinite).
+    const itemW = 116 + 32; // tile width + margin-right (--space-8)
+    const viewport = (track.parentElement && track.parentElement.clientWidth) || window.innerWidth || 1280;
+    const passes = Math.max(2, Math.ceil(viewport / (PARTNERS.length * itemW)) + 1);
+    const half = onePass.repeat(passes);
+    track.innerHTML = half + half; // duplicate the half → seamless loop
+
+    // Keep a constant scroll speed: duration scales with the distance travelled
+    // (one half-width, which is what the -50% keyframe moves).
+    const halfWidth = track.scrollWidth / 2;
+    if (halfWidth > 0) track.style.animationDuration = (halfWidth / PARTNER_SCROLL_SPEED).toFixed(1) + 's';
+
+    // graceful fallback: if a logo file is missing, show the brand name as text
+    track.querySelectorAll('.partner-logo img').forEach((img) => {
+      img.addEventListener('error', () => {
+        const span = document.createElement('span');
+        span.className = 'partner-logo__fallback';
+        span.textContent = img.dataset.name;
+        img.replaceWith(span);
+      });
+    });
   }
 
   /* ---------------- RENDER: services ---------------- */

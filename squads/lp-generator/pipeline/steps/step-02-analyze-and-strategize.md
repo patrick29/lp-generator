@@ -17,6 +17,7 @@ Depois carregue (substituindo `{slug}` pelo valor lido):
 - `squads/lp-generator/pipeline/data/research-brief.md` — frameworks, awareness levels, padrões de mercado.
 - `squads/lp-generator/pipeline/data/domain-framework.md` — metodologia operacional unificada.
 - `squads/lp-generator/pipeline/data/anti-patterns.md` — armadilhas a evitar.
+- `squads/lp-generator/resources/wireframe_lp.md` — **blueprint estrutural de LP de serviço/consultoria**: cardápio de 14 seções na ordem ideal de fluxo, com o racional de UX/conversão de cada uma. É a base para arquitetar as seções (passo 5).
 - URLs de referência citadas no briefing.md (via WebFetch skill).
 
 ## Instructions
@@ -27,7 +28,7 @@ Depois carregue (substituindo `{slug}` pelo valor lido):
 2. **Diagnosticar audiência (Schwartz).** Definir awareness level (Unaware → Most Aware) e market sophistication (stage 1-5) com rationale escrito.
 3. **Decidir stack** (task `decide-stack.md`). Aplicar a matriz: HTML+Tailwind single-file (default) / Astro / Next.js App Router. Documentar features que justificam.
 4. **Definir Big Idea + driver dominante** (task `design-structure.md`). Big Idea: inimigo, mecanismo, promessa. Driver único entre medo de perda / status / pertencimento / liberdade / segurança / conquista / controle. Aplicar teste "concorrente não escreveria igual".
-5. **Arquitetar seções.** Escolher framework (StoryBrand/AIDA/PAS/4Ps) por awareness+sophistication. Listar cada seção com objetivo de funil, social proof, CTA intensity. 1 CTA dominante.
+5. **Arquitetar seções.** Escolher framework (StoryBrand/AIDA/PAS/4Ps) por awareness+sophistication. **Partir do cardápio de 14 seções do `wireframe_lp.md` como menu de referência** — incluir o núcleo essencial (Hero, Confiança, Problema, Como funciona, Resultados, Depoimentos, Sobre, Oferta, CTA final) e adicionar/descartar as demais (Serviços detalhados, FAQ, Popup de saída) conforme o caso: tráfego frio + oferta cara pedem mais seções; tráfego quente + oferta simples pedem menos. Respeitar as convenções de conversão do wireframe (sem menu de navegação, 1 CTA dominante repetido, barra de confiança cedo). Listar cada seção escolhida com objetivo de funil, social proof e CTA intensity. Justificar qualquer seção do núcleo que for omitida.
 6. **Escrever especificações para Carla, Diana e Davi.** Tom, paleta sugerida, stack, breakpoints, SEO requirements.
 7. **Salvar strategy.md** em `clients/{slug}/brief/strategy.md` (sobrescreve qualquer versão anterior).
 
@@ -132,4 +133,5 @@ Reject and redo se QUALQUER for verdadeiro:
 - [ ] Big Idea passa o teste anti-commodity.
 - [ ] Driver psicológico é único.
 - [ ] Cada seção tem objetivo de funil.
+- [ ] Arquitetura parte do cardápio do `wireframe_lp.md`: núcleo essencial presente (ou omissão justificada) e seções extras incluídas só quando o caso pede.
 - [ ] Especificações acionáveis para Carla, Diana e Davi.

@@ -18,6 +18,7 @@ Depois carregue:
 - `clients/{slug}/content/copy.md` — copy final para saber o que cada imagem precisa comunicar.
 - `squads/lp-generator/pipeline/data/anti-patterns.md` — armadilhas visuais.
 - `squads/lp-generator/pipeline/data/quality-criteria.md` — critérios do eixo Visual.
+- `squads/lp-generator/resources/wireframe_lp.md` — layout/composição de cada seção (esboços ASCII): hero com mídia ao lado, barra de confiança discreta em cinza, grids escaneáveis, métricas com cor diferente do CTA, depoimentos com rosto, bloco de oferta destacado. Use ao planejar imagens e hierarquia visual por seção.
 
 ## Instructions
 

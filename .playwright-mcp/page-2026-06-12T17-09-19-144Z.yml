@@ -1,0 +1,264 @@
+- generic [active] [ref=e1]:
+  - link "Pular para o conteúdo" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "MF Logística" [ref=e5] [cursor=pointer]:
+        - /url: "#main"
+        - generic [ref=e6]: MF
+        - generic [ref=e7]: Logística
+      - link "Solicitar cotação" [ref=e8] [cursor=pointer]:
+        - /url: "#cotacao"
+  - main [ref=e9]:
+    - region "+16 mil entregas no último ano. Nenhuma você precisou caçar." [ref=e10]:
+      - img "Caminhão de carga seca da MF Logística em rodovia no eixo São Paulo ao Pará" [ref=e11]
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - paragraph [ref=e15]: Transporte rodoviário de carga seca
+          - heading "+16 mil entregas no último ano. Nenhuma você precisou caçar." [level=1] [ref=e16]:
+            - text: +16 mil entregas no último ano.
+            - text: Nenhuma você precisou caçar.
+          - paragraph [ref=e17]: Transporte de carga seca no eixo SP ao Pará, com frota 100% própria, rastreio em tempo real e seguro total contra avarias e perdas.
+          - list "Provas de credibilidade" [ref=e18]:
+            - listitem [ref=e19]: 14 anos de estrada
+            - listitem [ref=e20]: +16 mil entregas/ano
+            - listitem [ref=e21]: 100% nacional
+          - link "Falar no WhatsApp" [ref=e22] [cursor=pointer]:
+            - /url: https://wa.me/5591992111003?text=Ol%C3%A1!%20Quero%20uma%20cota%C3%A7%C3%A3o%20de%20frete%20com%20a%20MF%20Log%C3%ADstica.
+            - img [ref=e23]
+            - text: Falar no WhatsApp
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - heading "Solicite sua cotação" [level=2] [ref=e27]
+            - paragraph [ref=e28]:
+              - strong [ref=e29]: "Passo 1:"
+              - text: preencha.
+              - strong [ref=e30]: "Passo 2:"
+              - text: receba sua cotação.
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - generic [ref=e33]:
+                - generic [ref=e34]: Origem (cidade/UF)
+                - textbox "Origem (cidade/UF)" [ref=e35]:
+                  - /placeholder: "Ex.: São Paulo/SP"
+              - generic [ref=e36]:
+                - generic [ref=e37]: Destino (cidade/UF)
+                - textbox "Destino (cidade/UF)" [ref=e38]:
+                  - /placeholder: "Ex.: Castanhal/PA"
+            - generic [ref=e39]:
+              - generic [ref=e40]:
+                - generic [ref=e41]: Tipo de carga
+                - combobox "Tipo de carga" [ref=e42]:
+                  - option "Selecione" [disabled] [selected]
+                  - option "Carga geral / paletizada"
+                  - option "Produto industrializado"
+                  - option "Material de construção"
+                  - option "Insumos / agro"
+                  - option "Outro"
+              - generic [ref=e43]:
+                - generic [ref=e44]: Peso/volume aprox.
+                - textbox "Peso/volume aprox." [ref=e45]:
+                  - /placeholder: "Ex.: 5 toneladas"
+            - generic [ref=e46]:
+              - generic [ref=e47]:
+                - generic [ref=e48]: Nome
+                - textbox "Nome" [ref=e49]:
+                  - /placeholder: Seu nome
+              - generic [ref=e50]:
+                - generic [ref=e51]: Empresa
+                - textbox "Empresa" [ref=e52]:
+                  - /placeholder: Nome da empresa
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - generic [ref=e55]: E-mail
+                - textbox "E-mail" [ref=e56]:
+                  - /placeholder: voce@empresa.com
+              - generic [ref=e57]:
+                - generic [ref=e58]: Telefone/WhatsApp
+                - textbox "Telefone/WhatsApp" [ref=e59]:
+                  - /placeholder: (00) 00000-0000
+            - button "Solicitar cotação →" [ref=e60] [cursor=pointer]
+            - paragraph [ref=e61]: Cotação sem compromisso. Nossa equipe comercial retorna o quanto antes.
+            - status [ref=e62]
+    - region "MF Logística em números" [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]: 14 anos
+          - generic [ref=e67]: levando carga com segurança
+        - generic [ref=e68]:
+          - generic [ref=e69]: +16 mil
+          - generic [ref=e70]: entregas no último ano
+        - generic [ref=e71]:
+          - generic [ref=e72]: 100%
+          - generic [ref=e73]: frota própria
+        - generic [ref=e74]:
+          - generic [ref=e75]: Seguro total
+          - generic [ref=e76]: da carga, de ponta a ponta
+        - generic [ref=e77]:
+          - generic [ref=e78]: 48+
+          - generic [ref=e79]: municípios atendidos no Norte
+    - region "Frete pro Norte não pode ser aposta." [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - heading "Frete pro Norte não pode ser aposta." [level=2] [ref=e83]
+          - paragraph [ref=e84]: "Carga que atrasa. Carga que chega avariada. Carga que some no trajeto, e quando você liga pra cobrar, ninguém sabe dizer onde ela está. No eixo de São Paulo ao Pará, isso custa caro: linha de produção parada, reposição, cliente sem atendimento. A MF existe pra tirar o risco dessa conta."
+        - generic [ref=e85]:
+          - article [ref=e86]:
+            - img [ref=e88]
+            - heading "Frota 100% própria" [level=3] [ref=e91]
+            - paragraph [ref=e92]: Sua carga não passa pela mão de terceiro. Caminhões da MF, equipados com rastreamento e comunicação digital, do embarque à entrega.
+          - article [ref=e93]:
+            - img [ref=e95]
+            - heading "Seguro total" [level=3] [ref=e98]
+            - paragraph [ref=e99]: Cobertura contra avarias e perdas. Se algo acontecer no caminho, o prejuízo não é seu.
+          - article [ref=e100]:
+            - img [ref=e102]
+            - heading "Entrega na data certa" [level=3] [ref=e105]
+            - paragraph [ref=e106]: A gente combina a data e cumpre a data. Previsibilidade pra você planejar a sua operação.
+          - article [ref=e107]:
+            - img [ref=e109]
+            - heading "Especialista no eixo SP ↔ Norte" [level=3] [ref=e112]
+            - paragraph [ref=e113]: 14 anos rodando o corredor São Paulo–Pará. A gente conhece a rota, os pontos críticos e o que é prazo real.
+    - region "Logística de carga seca, da coleta à entrega." [ref=e114]:
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - heading "Logística de carga seca, da coleta à entrega." [level=2] [ref=e117]
+          - paragraph [ref=e118]: Gestão e execução de ponta a ponta. Você acompanha cada etapa.
+        - list [ref=e119]:
+          - listitem [ref=e120]: Transporte rodoviário de carga seca
+          - listitem [ref=e121]: Gestão de logística integrada
+          - listitem [ref=e122]: Coleta na origem
+          - listitem [ref=e123]: Rastreamento em tempo real
+          - listitem [ref=e124]: Distribuição até o ponto de consumo
+        - list "Como funciona" [ref=e125]:
+          - listitem [ref=e126]:
+            - generic [ref=e127]: "1"
+            - heading "Cotação" [level=3] [ref=e128]
+            - paragraph [ref=e129]: Você envia origem, destino e o tipo de carga. A gente calcula.
+          - listitem [ref=e130]:
+            - generic [ref=e131]: "2"
+            - heading "Coleta" [level=3] [ref=e132]
+            - paragraph [ref=e133]: Recolhemos sua carga na origem, na data combinada.
+          - listitem [ref=e134]:
+            - generic [ref=e135]: "3"
+            - heading "Rastreamento" [level=3] [ref=e136]
+            - paragraph [ref=e137]: Você acompanha a carga em tempo real, com comunicação digital direta com a operação.
+          - listitem [ref=e138]:
+            - generic [ref=e139]: "4"
+            - heading "Entrega" [level=3] [ref=e140]
+            - paragraph [ref=e141]: Sua carga chega no destino na data certa, segurada do começo ao fim.
+    - region "Frota própria. Controle de verdade." [ref=e142]:
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - heading "Frota própria. Controle de verdade." [level=2] [ref=e145]
+          - paragraph [ref=e146]: Cada caminhão é da MF, equipado com rastreamento e comunicação digital. Sua carga não viaja com quem você não conhece.
+        - generic [ref=e147]:
+          - figure [ref=e148]:
+            - img "Caminhão baú da frota própria da MF Logística" [ref=e149]
+          - figure [ref=e150]:
+            - img "Carreta da MF Logística carregando carga seca paletizada" [ref=e151]
+          - figure [ref=e152]:
+            - img "Frota de caminhões da MF Logística no pátio" [ref=e153]
+    - region "De São Paulo ao Pará. E em 48+ municípios pelo caminho." [ref=e154]:
+      - generic [ref=e155]:
+        - generic [ref=e156]:
+          - heading "De São Paulo ao Pará. E em 48+ municípios pelo caminho." [level=2] [ref=e157]:
+            - text: De São Paulo ao Pará.
+            - text: E em 48+ municípios pelo caminho.
+          - paragraph [ref=e158]: Matriz em Castanhal (PA), filial em São Paulo (SP). A gente liga o Sudeste ao Norte e distribui a carga até o ponto de consumo, de Belém a Paragominas.
+          - list "Exemplos de cidades atendidas" [ref=e159]:
+            - listitem [ref=e160]: Belém
+            - listitem [ref=e161]: Ananindeua
+            - listitem [ref=e162]: Castanhal
+            - listitem [ref=e163]: Paragominas
+            - listitem [ref=e164]: + 44 municípios
+        - img [ref=e166]:
+          - generic [ref=e171]: SP
+          - generic [ref=e174]: PA
+    - region "Quem confia a carga pra MF." [ref=e175]:
+      - generic [ref=e176]:
+        - generic [ref=e177]:
+          - heading "Quem confia a carga pra MF." [level=2] [ref=e178]
+          - paragraph [ref=e179]: De indústria a varejo, movemos a carga seca de quem não pode parar.
+        - generic [ref=e180]:
+          - article [ref=e181]:
+            - img [ref=e183]
+            - heading "Indústria" [level=3] [ref=e186]
+            - paragraph [ref=e187]: Matéria-prima e produto acabado no ritmo da sua produção.
+          - article [ref=e188]:
+            - img [ref=e190]
+            - heading "Varejo" [level=3] [ref=e193]
+            - paragraph [ref=e194]: Reposição de estoque com data certa e previsibilidade.
+          - article [ref=e195]:
+            - img [ref=e197]
+            - heading "Distribuição e atacado" [level=3] [ref=e200]
+            - paragraph [ref=e201]: Volume com rastreio e seguro total.
+          - article [ref=e202]:
+            - img [ref=e204]
+            - heading "Agro e insumos" [level=3] [ref=e206]
+            - paragraph [ref=e207]: Carga seca pro interior, mesmo nos pontos mais distantes.
+        - generic "Espaço para logos de clientes" [ref=e208]:
+          - generic [ref=e209]: sua marca aqui
+          - generic [ref=e210]: sua marca aqui
+          - generic [ref=e211]: sua marca aqui
+          - generic [ref=e212]: sua marca aqui
+        - paragraph [ref=e213]: A sua empresa pode ser a próxima.
+    - region "Perguntas frequentes" [ref=e214]:
+      - generic [ref=e215]:
+        - heading "Perguntas frequentes" [level=2] [ref=e217]
+        - generic [ref=e218]:
+          - group [ref=e219]:
+            - generic "Que tipos de carga a MF transporta? +" [ref=e220] [cursor=pointer]
+          - group [ref=e221]:
+            - generic "Quais regiões vocês atendem? +" [ref=e222] [cursor=pointer]
+          - group [ref=e223]:
+            - generic "Como acompanho minha carga? +" [ref=e224] [cursor=pointer]
+          - group [ref=e225]:
+            - generic "A minha carga é segurada? +" [ref=e226] [cursor=pointer]
+          - group [ref=e227]:
+            - generic "A frota é própria ou terceirizada? +" [ref=e228] [cursor=pointer]
+          - group [ref=e229]:
+            - generic "Como peço uma cotação? +" [ref=e230] [cursor=pointer]
+    - region "Sua próxima carga pode sair com rastreio e seguro total." [ref=e231]:
+      - generic [ref=e232]:
+        - heading "Sua próxima carga pode sair com rastreio e seguro total." [level=2] [ref=e233]
+        - paragraph [ref=e234]: Conte de onde ela sai e pra onde vai. A gente cuida do resto.
+        - generic [ref=e235]:
+          - link "Solicitar cotação →" [ref=e236] [cursor=pointer]:
+            - /url: "#cotacao"
+          - link "Falar no WhatsApp" [ref=e237] [cursor=pointer]:
+            - /url: https://wa.me/5591992111003?text=Ol%C3%A1!%20Quero%20uma%20cota%C3%A7%C3%A3o%20de%20frete%20com%20a%20MF%20Log%C3%ADstica.
+        - paragraph [ref=e238]: Cotação sem compromisso. Nossa equipe comercial retorna o quanto antes.
+  - contentinfo [ref=e239]:
+    - generic [ref=e240]:
+      - generic [ref=e241]:
+        - link "MF Logística" [ref=e242] [cursor=pointer]:
+          - /url: "#main"
+          - generic [ref=e243]: MF
+          - generic [ref=e244]: Logística
+        - paragraph [ref=e245]: Há 14 anos levando segurança em tudo que faz.
+      - generic [ref=e246]:
+        - generic [ref=e247]:
+          - heading "Matriz (PA)" [level=3] [ref=e248]
+          - paragraph [ref=e249]: Castanhal/PA
+          - paragraph [ref=e250]:
+            - link "+55 91 3711-1503" [ref=e251] [cursor=pointer]:
+              - /url: tel:+559137111503
+          - paragraph [ref=e252]:
+            - link "mf@mf.log.br" [ref=e253] [cursor=pointer]:
+              - /url: mailto:mf@mf.log.br
+        - generic [ref=e254]:
+          - heading "Filial (SP)" [level=3] [ref=e255]
+          - paragraph [ref=e256]: São Paulo/SP
+          - paragraph [ref=e257]:
+            - link "+55 11 3843-1048" [ref=e258] [cursor=pointer]:
+              - /url: tel:+551138431048
+          - paragraph [ref=e259]:
+            - link "filial.sp@mf.log.br" [ref=e260] [cursor=pointer]:
+              - /url: mailto:filial.sp@mf.log.br
+        - generic [ref=e261]:
+          - heading "WhatsApp" [level=3] [ref=e262]
+          - paragraph [ref=e263]:
+            - link "+55 91 99211-1003" [ref=e264] [cursor=pointer]:
+              - /url: https://wa.me/5591992111003
+    - paragraph [ref=e266]: © 2026 MF Logística. Todos os direitos reservados.

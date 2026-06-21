@@ -20,6 +20,7 @@ Depois carregue:
 - `clients/{slug}/brief/briefing.md` — verificar `mode:` no frontmatter (brief-driven vs design-handoff).
 - `squads/lp-generator/pipeline/data/quality-criteria.md` — critérios do eixo Código.
 - `squads/lp-generator/pipeline/data/anti-patterns.md` — armadilhas de implementação.
+- `squads/lp-generator/resources/wireframe_lp.md` — layout e convenções de conversão por seção (barra superior só com logo + 1 CTA, **sem menu de navegação**; CTA fixo acessível no scroll; hero com mídia ao lado; barra de confiança em cinza; FAQ em acordeão; CTA final em alto contraste; rodapé enxuto; popup exit-intent opcional). Seguir ao montar o HTML das seções definidas no strategy.md.
 
 ## Modo "design handoff"
 
@@ -44,7 +45,7 @@ Se `mode: design-handoff` no frontmatter do brief, **pular steps 1-7** abaixo. F
    - `build-astro.md` para Astro.
    - `build-nextjs.md` para Next.js App Router.
 2. **Setup da stack.** HTML+Tailwind: 1 `index.html` com Tailwind CDN, Google Fonts via link. Astro: scaffold + `@astrojs/tailwind`. Next.js: App Router + Tailwind dep + `next/font`.
-3. **Construir do hero para baixo.** Seção por seção na ordem do strategy.md. Hero primeiro (peso desproporcional). Mobile-first: CSS começa em 390px, escala com sm/md/lg/xl.
+3. **Construir do hero para baixo.** Seção por seção na ordem do strategy.md, aplicando o layout e as convenções de cada bloco do `wireframe_lp.md` (barra superior sem menu de navegação — só logo + 1 CTA; CTA primário consistente e acessível no scroll; barra de confiança discreta; FAQ em acordeão; CTA final em alto contraste, sem links concorrentes). Hero primeiro (peso desproporcional). Mobile-first: CSS começa em 390px, escala com sm/md/lg/xl.
 4. **Aplicar SEO técnico.** Title + meta description (do copy.md) + Open Graph (og:title, og:description, og:image) + Twitter Card + canonical. JSON-LD (Product/Organization/Course) quando aplicável.
 5. **Imagens otimizadas.** Cada `<img>` com `alt`, `width`, `height`. Hero priority/eager; resto lazy. WebP/AVIF.
 6. **Semântica + a11y.** `<main>`, `<section>`, `<article>`, `<nav>`, `<footer>`. H1 único na hero. Skip-to-content link no topo. Tap targets min 48px.
@@ -110,6 +111,7 @@ Reject and redo se QUALQUER for verdadeiro:
 2. Falta `<title>`, `<meta description>`, OG ou canonical.
 3. Tailwind via CDN em projeto Next.js ou Astro de produção.
 4. Alguma `<img>` sem `alt`, `width` ou `height`.
+5. Barra superior com menu de navegação multi-link (LP de conversão usa só logo + 1 CTA, conforme `wireframe_lp.md`).
 
 ## Quality Criteria
 

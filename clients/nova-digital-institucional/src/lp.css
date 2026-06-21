@@ -489,6 +489,22 @@ body { background: var(--bg-surface); overflow-x: hidden; }
 /* honeypot anti-spam: fora da tela, mas preenchível por bots (sem display:none) */
 .nd-hp { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
 
+/* ---- Telefone internacional (intl-tel-input) integrado ao design system ---- */
+.iti {
+  display: block; width: 100%;
+  /* harmoniza o widget com os tokens do nd-input */
+  --iti-border-color: var(--border-default);
+  --iti-country-selector-bg: transparent;   /* funde o seletor ao fundo do input */
+  --iti-hover-color: var(--purple-50, rgba(124, 58, 237, .07));
+  --iti-arrow-padding: 8px;
+}
+.nd-input-wrap .iti { flex: 1 1 auto; }
+.iti .nd-input { width: 100%; }
+/* foco/erro ficam no próprio input (.nd-input); o seletor só arredonda o canto esquerdo */
+.iti__selected-country-primary { border-radius: var(--radius-md) 0 0 var(--radius-md); }
+.iti__country-list { font-family: var(--font-body); border-radius: var(--radius-md); }
+.iti__search-input { font-family: var(--font-body); }
+
 /* ============================================================
    FOOTER
    ============================================================ */
@@ -527,10 +543,50 @@ body { background: var(--bg-surface); overflow-x: hidden; }
 .anim-off .marquee__track { animation: none; flex-wrap: wrap; justify-content: center; row-gap: var(--space-6); }
 .anim-off .marquee__track > .partner-logo:nth-child(n+8) { display: none; }
 
-/* ---------- Toast ---------- */
-.toast { position: fixed; left: 50%; bottom: 28px; transform: translate(-50%, 160%); background: var(--nova-purple); color: var(--nova-white); padding: 15px 24px; border-radius: var(--radius-pill); box-shadow: var(--shadow-lg); font-family: var(--font-display); font-weight: 600; font-size: var(--text-sm); display: flex; align-items: center; gap: 10px; z-index: 95; transition: transform .45s var(--ease-spring); }
-.toast.show { transform: translate(-50%, 0); }
-.toast svg { width: 18px; height: 18px; color: var(--nova-orange); }
+/* ---------- Thank-you modal ---------- */
+body.nd-modal-open { overflow: hidden; }
+.nd-modal { position: fixed; inset: 0; z-index: 120; display: flex; align-items: center; justify-content: center; padding: var(--space-5); }
+.nd-modal[hidden] { display: none; }
+.nd-modal__backdrop { position: absolute; inset: 0; background: rgba(36,9,43,.55); backdrop-filter: blur(8px) saturate(120%); -webkit-backdrop-filter: blur(8px) saturate(120%); opacity: 0; transition: opacity var(--dur-base) var(--ease-standard); }
+.nd-modal.open .nd-modal__backdrop { opacity: 1; }
+.nd-modal__card {
+  position: relative; z-index: 1; width: min(440px, 100%); background: var(--nova-white);
+  border-radius: var(--radius-2xl); box-shadow: var(--shadow-xl);
+  padding: clamp(2rem, 4vw, 2.75rem); text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: var(--space-4);
+  opacity: 0; transform: translateY(16px) scale(.96);
+  transition: transform var(--dur-base) var(--ease-spring), opacity var(--dur-base) var(--ease-out);
+}
+.nd-modal.open .nd-modal__card { opacity: 1; transform: none; }
+/* orange gradient border — same treatment as the hero form card */
+.nd-modal__card::before {
+  content: ""; position: absolute; inset: -1px; border-radius: inherit; padding: 1px; z-index: -1;
+  background: linear-gradient(150deg, rgba(243,140,51,.6), transparent 50%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+}
+.nd-modal__close { position: absolute; top: 14px; right: 14px; color: var(--nova-purple); }
+.nd-modal__close:hover { background: var(--purple-50); }
+.nd-modal__icon {
+  position: relative; width: 76px; height: 76px; border-radius: var(--radius-circle); flex: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: linear-gradient(150deg, var(--orange-400), var(--orange-600));
+  color: var(--nova-white); box-shadow: var(--shadow-orange);
+}
+.nd-modal__icon svg { width: 38px; height: 38px; stroke-width: 2.4; }
+.nd-modal__icon::after { content: ""; position: absolute; inset: 0; border-radius: inherit; border: 2px solid var(--nova-orange); opacity: 0; }
+.nd-modal.open .nd-modal__icon::after { animation: nd-modal-ring .85s var(--ease-out) .15s; }
+@keyframes nd-modal-ring { from { transform: scale(1); opacity: .6; } to { transform: scale(1.65); opacity: 0; } }
+.nd-modal__title { font-family: var(--font-serif); font-weight: var(--fw-bold); font-size: var(--text-2xl); color: var(--text-primary); line-height: var(--leading-tight); }
+.nd-modal__text { color: var(--text-body); font-size: var(--text-md); line-height: var(--leading-normal); }
+.nd-modal__actions { display: flex; flex-direction: column; gap: var(--space-2); width: 100%; margin-top: var(--space-2); }
+/* reduced motion / anim-off — keep modal visible & usable, no motion */
+@media (prefers-reduced-motion: reduce) {
+  .nd-modal__backdrop, .nd-modal__card { transition: none; }
+  .nd-modal.open .nd-modal__icon::after { animation: none; }
+}
+.anim-off .nd-modal__backdrop, .anim-off .nd-modal__card { transition: none; }
+.anim-off .nd-modal.open .nd-modal__icon::after { animation: none; }
 
 /* ---------- Mobile menu ---------- */
 .mnav { position: fixed; inset: 0; z-index: 100; background: var(--nova-purple); padding: var(--page-gutter); display: none; flex-direction: column; gap: var(--space-6); }

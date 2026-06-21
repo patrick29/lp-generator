@@ -509,14 +509,110 @@
   const LEAD_TOKEN    = 'ed5bd7937a8d43800bd1b9e51f1497922cf4df1725ecce8e';     // idêntico ao TOKEN no Code.gs
   const LEAD_ORIGEM   = { heroForm: 'hero', leadForm: 'contato' };
 
+  // Máscara de telefone internacional (intl-tel-input) nos campos WhatsApp.
+  // Mostra seletor de país + bandeira, formata enquanto digita e valida.
+  // O bundle "WithUtils" já traz o libphonenumber, então getNumber()/isValidNumber()
+  // funcionam de forma síncrona. Se o CDN não carregar, os campos seguem como tel comum.
+  function setupPhoneInputs() {
+    if (typeof window.intlTelInput !== 'function') return;
+    $$('input[name="whatsapp"]').forEach((input) => {
+      input.__iti = window.intlTelInput(input, {
+        initialCountry: 'br',
+        countryOrder: ['br', 'pt', 'us'],
+        separateDialCode: true,
+        formatAsYouType: true,
+        strictMode: true,
+        countryNameLocale: 'pt',
+        placeholderNumberPolicy: 'AGGRESSIVE', // sempre mostra um número-exemplo do país
+        dropdownParent: document.body,         // escapa de overflow:hidden / transforms das seções
+      });
+      // limpa o estado de erro assim que o usuário volta a digitar
+      input.addEventListener('input', () => setPhoneError(input, false));
+    });
+  }
+
+  // Marca/limpa o estado de erro do campo de telefone (padrão do design system).
+  function setPhoneError(input, on) {
+    const field = input.closest('.nd-field');
+    const msg = field && field.querySelector('.nd-tel-err');
+    if (field) field.classList.toggle('nd-field--error', on);
+    if (msg) msg.hidden = !on;
+  }
+
+  // Normaliza o telefone para E.164 (ex.: +5591984422929) antes do envio.
+  // Retorna false se o número for inválido (bloqueia o submit).
+  function normalizePhone(f) {
+    const input = f.querySelector('input[name="whatsapp"]');
+    if (!input || !input.__iti) return true;            // sem máscara: comportamento antigo
+    if (!input.value.trim()) { setPhoneError(input, false); return true; } // vazio: deixa o "required"
+    if (!input.__iti.isValidNumber()) {
+      setPhoneError(input, true);
+      input.focus();
+      return false;
+    }
+    setPhoneError(input, false);
+    input.value = input.__iti.getNumber();              // E.164, independente do país
+    return true;
+  }
+
   function setupForms() {
-    const toast = $('#toast');
-    const show = () => { if (!toast) return; toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 3400); };
+    const modal   = $('#thanksModal');
+    const titleEl = $('#thanksModalTitle');
+    const descEl  = $('#thanksModalDesc');
+    let lastFocus = null;
+    let onKeydown = null;
+
+    const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+    const openThanks = (nome) => {
+      if (!modal) return;
+      const first = (nome || '').trim().split(/\s+/)[0] || '';
+      if (titleEl) titleEl.textContent = first ? `Obrigado, ${first}!` : 'Recebido com sucesso!';
+      if (descEl)  descEl.textContent  = 'Recebemos seus dados — seu diagnóstico gratuito chega em breve.';
+
+      lastFocus = document.activeElement;
+      modal.hidden = false;
+      document.body.classList.add('nd-modal-open');
+      void modal.offsetWidth;            // força reflow para a transição de entrada
+      modal.classList.add('open');
+
+      const closeBtn = modal.querySelector('.nd-modal__close');
+      if (closeBtn) closeBtn.focus();
+
+      onKeydown = (e) => {
+        if (e.key === 'Escape') { closeThanks(); return; }
+        if (e.key !== 'Tab') return;
+        const items = [...modal.querySelectorAll(FOCUSABLE)].filter(el => el.offsetParent !== null);
+        if (!items.length) return;
+        const firstEl = items[0], lastEl = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === firstEl) { e.preventDefault(); lastEl.focus(); }
+        else if (!e.shiftKey && document.activeElement === lastEl) { e.preventDefault(); firstEl.focus(); }
+      };
+      document.addEventListener('keydown', onKeydown);
+    };
+
+    const closeThanks = () => {
+      if (!modal || modal.hidden) return;
+      modal.classList.remove('open');
+      document.body.classList.remove('nd-modal-open');
+      if (onKeydown) { document.removeEventListener('keydown', onKeydown); onKeydown = null; }
+      const finish = () => { modal.hidden = true; };
+      if (reduceMotion || document.documentElement.classList.contains('anim-off')) finish();
+      else setTimeout(finish, 260);     // ~ --dur-base
+      if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+      lastFocus = null;
+    };
+
+    if (modal) {
+      modal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeThanks));
+    }
+
     ['heroForm', 'leadForm', 'newsForm'].forEach(id => {
       const f = document.getElementById(id);
       if (!f) return;
       f.addEventListener('submit', (e) => {
         e.preventDefault();
+        if (!normalizePhone(f)) return;   // telefone inválido: não envia
         const origem = LEAD_ORIGEM[id];
         if (origem && /^https?:/.test(LEAD_ENDPOINT)) {
           const body = new URLSearchParams(new FormData(f)); // inclui o honeypot "website"
@@ -525,7 +621,8 @@
           fetch(LEAD_ENDPOINT, { method: 'POST', mode: 'no-cors', body })
             .catch((err) => console.error('lead submit falhou', err));
         }
-        show();
+        const nome = f.querySelector('[name="nome"]') ? f.querySelector('[name="nome"]').value : '';
+        openThanks(nome);
         f.reset();
       });
     });
@@ -546,6 +643,7 @@
     setupMobileMenu();
     setupFilters();
     setupMetodoNav();
+    setupPhoneInputs();
     setupForms();
     observeReveals();
     window.addEventListener('scroll', checkReveals, { passive: true });

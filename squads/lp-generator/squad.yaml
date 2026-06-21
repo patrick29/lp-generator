@@ -28,6 +28,7 @@ data:
   - pipeline/data/output-examples.md
   - pipeline/data/anti-patterns.md
   - pipeline/data/tone-of-voice.md
+  - resources/wireframe_lp.md   # blueprint estrutural/UX de LP de serviço/consultoria (cardápio de 14 seções + racional de conversão). Guia Bruno, Carla, Diana e Davi.
 
 # Entry point do pipeline
 pipeline: pipeline/pipeline.yaml

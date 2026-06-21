@@ -19,6 +19,7 @@ Depois carregue:
 - `squads/lp-generator/pipeline/data/tone-of-voice.md` — 6 tons disponíveis.
 - `squads/lp-generator/pipeline/data/anti-patterns.md` — clichês a evitar, regras de CTA.
 - `squads/lp-generator/pipeline/data/output-examples.md` — exemplos de hero e seções.
+- `squads/lp-generator/resources/wireframe_lp.md` — função de conversão de cada seção (ex.: hero com headline no resultado do cliente + microcopy de baixa fricção; problema na linguagem do cliente; resultados com números reais). Use como guia do que cada bloco precisa comunicar.
 
 ## Instructions
 
@@ -26,7 +27,7 @@ Depois carregue:
 
 1. **Confirmar tom com o Patrick.** Ler `tone-of-voice.md`. Detectar tom inferido do brief+strategy. Apresentar 2-3 tons mais aderentes ao público + oferta, com 1 frase de motivo + mini-exemplo de hero em cada um. AGUARDAR escolha antes de gerar hooks. Se o brief já é explícito sobre tom, citar a passagem e confirmar — não inferir em silêncio.
 2. **Gerar 3 hooks A/B/C** (task `generate-hooks.md`). Estruturas distintas (provocação / dado / contrarian / pergunta / promessa / pattern-interrupt). Cada hook com 1 frase de racional (estrutura + driver + scroll-stop). Apresentar e AGUARDAR seleção do Patrick.
-3. **Escrever seções no framework** (task `write-sections.md`). Hook confirmado guia o resto. Aplicar rhythm rules (uma ideia por parágrafo, max 3 linhas mobile). Driver psicológico do strategy presente em cada seção.
+3. **Escrever seções no framework** (task `write-sections.md`). Hook confirmado guia o resto. Para cada seção da arquitetura, escrever a copy cumprindo a função de conversão que o `wireframe_lp.md` define para ela (hero → resultado do cliente + microcopy de baixa fricção; problema → linguagem do cliente, 3 dores; como funciona → máx. 3 passos; resultados → números reais; oferta → faixa de preço "a partir de"; CTA final → mesma ação do hero). Aplicar rhythm rules (uma ideia por parágrafo, max 3 linhas mobile). Driver psicológico do strategy presente em cada seção.
 4. **Injetar proof + neutralizador.** Toda promessa significativa com número/social proof. Neutralizador antes de cada CTA primário.
 5. **CTA em escada (Intensity Ladder).** Primário no nível do funil; secundários menores.
 6. **Escrever meta SEO** (task `write-meta-seo.md`). Title <=60 chars, meta 150-160 chars, H1 final, alt text descritivo por imagem.

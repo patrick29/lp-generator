@@ -20,6 +20,7 @@ Depois carregue:
 - `clients/{slug}/src/` — código entregue por Davi.
 - `squads/lp-generator/pipeline/data/quality-criteria.md` — rubrica completa por eixo.
 - `squads/lp-generator/pipeline/data/anti-patterns.md` — armadilhas a checar.
+- `squads/lp-generator/resources/wireframe_lp.md` — convenções estruturais/UX de LP de conversão. Checar conformidade ao pontuar (sem menu de navegação, 1 CTA dominante repetido, barra de confiança cedo, núcleo de seções coberto).
 
 ## Instructions
 
@@ -31,7 +32,7 @@ Depois carregue:
 4. **Pontuar 4 eixos com score 1-10:**
    - **Copy:** alinha com strategy (awareness, Big Idea, driver, framework)? hooks A/B/C apresentados? CTA na Intensity Ladder? proof, neutralizador, anti-commodity?
    - **Visual:** design system documentado? WCAG AA? hierarquia clara? imagens consistentes com tom? sem stock genérico?
-   - **Código:** stack correta? mobile-first? Lighthouse > 90? LCP < 2.5s? CLS < 0.1? semantic HTML? a11y básico?
+   - **Código:** stack correta? mobile-first? Lighthouse > 90? LCP < 2.5s? CLS < 0.1? semantic HTML? a11y básico? convenções do `wireframe_lp.md` respeitadas (sem menu de navegação, 1 CTA dominante, barra de confiança discreta, CTA final em alto contraste)?
    - **SEO+Meta:** title/meta/H1/OG/canonical/alt? structured data? keyword na H1?
    Cada score com 1-3 linhas de justificativa citando arquivo + seção/linha.
 5. **Aplicar veredito.** APPROVE (média >= 7 E nenhum eixo < 4); CONDITIONAL (média >= 7 mas 1 eixo entre 4-6); REJECT (média < 7 OU qualquer eixo < 4).

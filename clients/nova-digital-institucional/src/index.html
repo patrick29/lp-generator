@@ -7,6 +7,7 @@
 <meta name="description" content="Nova Digital, agência de marketing estratégico. Criatividade, estratégia e tecnologia para transformar sua presença online em resultados reais.">
 <link rel="icon" type="image/png" href="assets/icon/mark-orange-solid.png">
 <link rel="stylesheet" href="ds/styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@29.0.5/dist/css/intlTelInput.min.css">
 <link rel="stylesheet" href="lp.css">
 <script src="https://unpkg.com/lucide@0.460.0"></script>
 </head>
@@ -105,7 +106,7 @@
             <label class="nd-field"><span class="nd-input-wrap nd-input-wrap--ic"><span class="nd-input-wrap__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-instagram"/></svg></span><input class="nd-input nd-input--has-icon" name="instagram" aria-label="@ do Instagram" placeholder="@ do Instagram" required></span></label>
           </div>
           <div class="form-single">
-            <label class="nd-field"><span class="nd-input-wrap nd-input-wrap--ic"><span class="nd-input-wrap__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-whatsapp"/></svg></span><input class="nd-input nd-input--has-icon" name="whatsapp" aria-label="WhatsApp" placeholder="WhatsApp" inputmode="tel" required></span></label>
+            <label class="nd-field"><span class="nd-input-wrap"><input class="nd-input nd-tel" type="tel" name="whatsapp" aria-label="WhatsApp" placeholder="WhatsApp" inputmode="tel" autocomplete="tel" required></span><span class="nd-field__msg nd-tel-err" hidden>Informe um número de telefone válido.</span></label>
           </div>
           <div class="form-single">
             <label class="nd-field"><span class="nd-input-wrap"><select class="nd-input nd-select" name="investimento" aria-label="Faixa de investimento mensal" required>
@@ -268,7 +269,7 @@
             <label class="nd-field"><span class="nd-input-wrap nd-input-wrap--ic"><span class="nd-input-wrap__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-instagram"/></svg></span><input class="nd-input nd-input--has-icon" name="instagram" aria-label="@ do Instagram" placeholder="@ do Instagram" required></span></label>
           </div>
           <div class="form-single">
-            <label class="nd-field"><span class="nd-input-wrap nd-input-wrap--ic"><span class="nd-input-wrap__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-whatsapp"/></svg></span><input class="nd-input nd-input--has-icon" name="whatsapp" aria-label="WhatsApp" placeholder="WhatsApp" inputmode="tel" required></span></label>
+            <label class="nd-field"><span class="nd-input-wrap"><input class="nd-input nd-tel" type="tel" name="whatsapp" aria-label="WhatsApp" placeholder="WhatsApp" inputmode="tel" autocomplete="tel" required></span><span class="nd-field__msg nd-tel-err" hidden>Informe um número de telefone válido.</span></label>
           </div>
           <div class="form-single">
             <label class="nd-field"><span class="nd-input-wrap"><select class="nd-input nd-select" name="investimento" aria-label="Faixa de investimento mensal" required>
@@ -329,8 +330,20 @@
 
 </div>
 
-<!-- toast -->
-<div class="toast" id="toast"><i data-lucide="check-circle"></i> Recebido! Seu diagnóstico chega em breve.</div>
+<!-- thank-you modal -->
+<div class="nd-modal" id="thanksModal" role="dialog" aria-modal="true" aria-labelledby="thanksModalTitle" aria-describedby="thanksModalDesc" hidden>
+  <div class="nd-modal__backdrop" data-close></div>
+  <div class="nd-modal__card" role="document">
+    <button class="nd-iconbtn nd-iconbtn--md nd-modal__close" type="button" aria-label="Fechar" data-close><i data-lucide="x"></i></button>
+    <span class="nd-modal__icon"><i data-lucide="check"></i></span>
+    <h2 class="nd-modal__title" id="thanksModalTitle">Recebido com sucesso!</h2>
+    <p class="nd-modal__text" id="thanksModalDesc">Recebemos seus dados — seu diagnóstico gratuito chega em breve.</p>
+    <div class="nd-modal__actions">
+      <a class="nd-btn nd-btn--primary nd-btn--lg nd-btn--full" href="https://wa.me/5591984422929" target="_blank" rel="noopener">Falar agora no WhatsApp<span class="nd-btn__ic"><i data-lucide="arrow-right"></i></span></a>
+      <button class="nd-btn nd-btn--ghost" type="button" data-close>Fechar</button>
+    </div>
+  </div>
+</div>
 
 <!-- immersive scroll rail (populated by JS) -->
 <div class="mimm__rail" id="immRail" aria-hidden="true"></div>
@@ -338,6 +351,7 @@
 <!-- Tweaks panel mount -->
 <div id="tweaks-root"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@29.0.5/dist/js/intlTelInputWithUtils.min.js"></script>
 <script src="image-slot.js"></script>
 <script src="lp.js"></script>
 

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visttor | Vistoria veicular completa pelo celular, em minutos</title>
+<meta name="description" content="Faça a vistoria inteira pelo celular: fotos guiadas, dados e assinatura prontos em minutos. Funciona offline, salva na nuvem e gera o relatório na hora. Teste grátis.">
+<meta name="theme-color" content="#1840A4">
+<link rel="canonical" href="https://visttor.com.br/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Visttor | Sistema de Vistoria Veicular">
+<meta property="og:description" content="Chega de vistoria no papel e foto perdida no WhatsApp. Vistoria completa pelo celular, mesmo sem internet.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://visttor.com.br/">
+<meta property="og:site_name" content="Visttor">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://visttor.com.br/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Visttor — vistoria veicular completa pelo celular, em minutos.">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Visttor | Sistema de Vistoria Veicular">
+<meta name="twitter:description" content="Vistoria completa pelo celular: fotos guiadas, dados e assinatura em minutos. Funciona offline e salva na nuvem.">
+<meta name="twitter:image" content="https://visttor.com.br/assets/og-cover.png">
+
+<link rel="icon" type="image/png" href="assets/icon/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<!-- ===================== STRUCTURED DATA (JSON-LD) ===================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://visttor.com.br/#organization",
+      "name": "Visttor",
+      "url": "https://visttor.com.br/",
+      "logo": "https://visttor.com.br/assets/icon/logo-icon.png",
+      "description": "Sistema de vistoria veicular pelo celular: fotos guiadas, dados, assinatura, modo offline e sincronização na nuvem."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://visttor.com.br/#website",
+      "url": "https://visttor.com.br/",
+      "name": "Visttor",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://visttor.com.br/#organization" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Visttor",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Android, iOS, Web",
+      "url": "https://visttor.com.br/",
+      "description": "Vistoria veicular completa pelo celular, com fotos guiadas, assinatura digital e modo offline.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Grátis",
+          "price": "0",
+          "priceCurrency": "BRL",
+          "description": "1 vistoriador, até 10 vistorias por mês, fotos guiadas, assinatura digital e modo offline."
+        },
+        {
+          "@type": "Offer",
+          "name": "PRO",
+          "price": "97",
+          "priceCurrency": "BRL",
+          "description": "Vistoriadores e vistorias ilimitados, relatório em PDF com sua logo, histórico na nuvem e suporte prioritário."
+        },
+        {
+          "@type": "Offer",
+          "name": "Business",
+          "price": "297",
+          "priceCurrency": "BRL",
+          "description": "Para frotas e locadoras: API e integrações, relatórios avançados e gerente de conta dedicado."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Preciso de internet para usar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Você faz a vistoria inteira offline: fotos, dados e assinatura ficam salvos no próprio aparelho. Assim que o celular pega sinal de novo, tudo é enviado para a nuvem automaticamente, sem você precisar fazer nada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funciona em qualquer celular?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O Visttor roda em celulares Android e iPhone, direto pelo navegador ou pelo app. Não precisa de aparelho potente nem de instalação complicada. Abriu, fez login e já está pronto para vistoriar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Minha equipe vai conseguir usar sem treinamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O fluxo é guiado passo a passo: o app pede cada dado e cada foto na ordem certa. Qualquer pessoa da equipe consegue fazer a primeira vistoria sozinha, sem manual e sem treinamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona o teste grátis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Você cria a conta sem cartão de crédito e já começa a usar. O plano Grátis não tem prazo para acabar, e quando precisar de mais vistoriadores ou recursos é só fazer o upgrade para o PRO. Sem fidelidade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Meus dados e fotos ficam seguros?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ficam. Cada vistoria é salva com data e hora, armazenada na nuvem com backup e acessível só por quem você autorizar. A foto datada e a assinatura do cliente servem como prova sempre que houver qualquer discussão sobre um dano."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- scroll progress -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#topo" class="brand" aria-label="Visttor: início">
+      <img src="assets/icon/logo-icon.png" alt="Logo Visttor" width="34" height="34">
+      <span>Visttor</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a class="nav-link" href="#problema">Problemas</a>
+      <a class="nav-link" href="#como-funciona">Como funciona</a>
+      <a class="nav-link" href="#offline">Offline</a>
+      <a class="nav-link" href="#planos">Planos</a>
+      <a class="nav-link" href="#faq">Dúvidas</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost btn-sm" href="https://vistoria-app.netlify.app">Entrar</a>
+      <a class="btn btn-primary btn-sm" href="https://vistoria-app.netlify.app/signup">Teste grátis</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" width="22" height="22"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#problema">Problemas</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#offline">Offline</a>
+    <a href="#planos">Planos</a>
+    <a href="#faq">Dúvidas</a>
+    <a class="btn btn-primary btn-block" href="https://vistoria-app.netlify.app/signup">Começar teste grátis</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="topo">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="mesh mesh-1" data-parallax="0.10"></span>
+      <span class="mesh mesh-2" data-parallax="0.06"></span>
+      <span class="mesh mesh-3" data-parallax="0.04"></span>
+      <span class="dots"></span>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="pill reveal"><span class="dot"></span> Sistema de Vistoria Veicular</span>
+        <h1 class="reveal" data-delay="1">Vistoria completa pelo celular, <span class="grad">pronta em minutos.</span></h1>
+        <p class="hero-sub reveal" data-delay="2">Chega de ficha no papel e foto perdida no WhatsApp. Com o Visttor você registra fotos, dados e assinatura num fluxo guiado. Fica tudo organizado, salvo na nuvem e pronto pra enviar ao cliente.</p>
+        <div class="hero-cta reveal" data-delay="3">
+          <a class="btn btn-primary btn-lg" href="https://vistoria-app.netlify.app/signup">
+            Começar teste grátis
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#como-funciona">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            Ver como funciona
+          </a>
+        </div>
+        <div class="hero-trust reveal" data-delay="4">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Sem cartão para começar</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Configure em minutos</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Funciona offline</span>
+        </div>
+      </div>
+
+      <!-- DEVICE -->
+      <div class="hero-device reveal" data-delay="2">
+        <div class="float-chip chip-a" data-parallax="0.05">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span><span class="t">Relatório pronto</span><br><span class="s">em 4 minutos</span></span>
+        </div>
+        <div class="float-chip chip-b" data-parallax="0.08">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></span>
+          <span><span class="t">Salvo na nuvem</span><br><span class="s">sincroniza sozinho</span></span>
+        </div>
+
+        <div class="phone" data-tilt>
+          <div class="phone-screen">
+            <div class="app-bar">
+              <span class="title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--slate-600)"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Nova Vistoria
+              </span>
+              <span class="saved-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                Salvo
+              </span>
+            </div>
+            <div class="app-body">
+              <div class="app-code">#VST-20260621-478</div>
+              <div class="stepper">
+                <span class="step done"><span class="bead"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Dados</span>
+                <span class="line fill"></span>
+                <span class="step active"><span class="bead">2</span>Fotos</span>
+                <span class="line"></span>
+                <span class="step todo"><span class="bead">3</span></span>
+              </div>
+              <div class="app-label">Registro Fotográfico</div>
+              <div class="app-meta">4 de 10 pontos registrados</div>
+              <div class="photo-grid">
+                <!-- FRENTE -->
+                <div class="photo">
+                  <img class="pimg" src="assets/photos/frente.jpg" alt="Foto da frente do veículo" loading="lazy" decoding="async">
+                  <span class="plabel">Frente</span>
+                  <span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                </div>
+                <!-- LATERAL -->
+                <div class="photo">
+                  <img class="pimg" src="assets/photos/lateral.jpg" alt="Foto da lateral do veículo" loading="lazy" decoding="async">
+                  <span class="plabel">Lateral</span>
+                  <span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                </div>
+                <!-- TRASEIRA -->
+                <div class="photo">
+                  <img class="pimg" src="assets/photos/traseira.jpg" alt="Foto da traseira do veículo" loading="lazy" decoding="async">
+                  <span class="plabel">Traseira</span>
+                  <span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                </div>
+                <!-- PAINEL -->
+                <div class="photo">
+                  <img class="pimg" src="assets/photos/painel.jpg" alt="Foto do painel do veículo" loading="lazy" decoding="async">
+                  <span class="plabel">Painel</span>
+                  <span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                </div>
+                <!-- MOTOR (pendente) -->
+                <div class="photo empty">
+                  <svg class="ins" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span class="plabel">Motor</span>
+                </div>
+                <!-- ODÔMETRO (pendente) -->
+                <div class="photo empty">
+                  <svg class="ins" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span class="plabel">Odômetro</span>
+                </div>
+              </div>
+              <div class="app-cta">Salvar e Continuar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AUDIENCE STRIP ===================== -->
+  <section class="audience">
+    <div class="container audience-inner">
+      <span class="label">Feito para o dia a dia de</span>
+      <span class="who"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> Oficinas</span>
+      <span class="who"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Guinchos</span>
+      <span class="who"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2v-3.34a4 4 0 0 0-1.17-2.83L17 8H7L4.17 10.83A4 4 0 0 0 3 13.66V17h2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="16.5" cy="17.5" r="2.5"/></svg> Frotas</span>
+      <span class="who"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg> Locadoras</span>
+      <span class="who"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Seguradoras</span>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat reveal"><div class="num"><span data-count="4" data-suffix="min"></span></div><div class="lbl">Vistoria completa, do início ao envio</div></div>
+      <div class="stat reveal" data-delay="1"><div class="num"><span data-count="10" data-suffix=""></span></div><div class="lbl">Pontos fotográficos guiados, sem esquecer nenhum</div></div>
+      <div class="stat reveal" data-delay="2"><div class="num"><span data-count="100" data-suffix="%"></span></div><div class="lbl">Funciona offline, sincroniza ao voltar o sinal</div></div>
+      <div class="stat reveal" data-delay="3"><div class="num"><span data-count="0" data-suffix=""></span></div><div class="lbl">Papel, planilha e foto perdida no WhatsApp</div></div>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEM ===================== -->
+  <section class="section problem" id="problema">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">O problema</span>
+        <h2>Você reconhece esses problemas?</h2>
+        <p>Quando a vistoria não fica bem registrada, sobra retrabalho, cliente desconfiado e nenhuma prova na hora em que aparece um dano. A gente sabe como isso cansa.</p>
+      </div>
+      <div class="card-grid">
+        <div class="pain-card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9.5" y1="12.5" x2="14.5" y2="17.5"/><line x1="14.5" y1="12.5" x2="9.5" y2="17.5"/></svg></div>
+          <h3>Papel que se perde</h3>
+          <p>Fichas no papel e fotos soltas no WhatsApp somem justo quando o cliente questiona.</p>
+        </div>
+        <div class="pain-card reveal" data-delay="1">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3>Tempo perdido</h3>
+          <p>Montar o relatório à mão leva horas e atrasa a liberação do veículo.</p>
+        </div>
+        <div class="pain-card reveal" data-delay="2">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg></div>
+          <h3>Cada um de um jeito</h3>
+          <p>Sem padrão entre vistoriadores, o resultado fica inconsistente e difícil de auditar.</p>
+        </div>
+        <div class="pain-card reveal" data-delay="3">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <h3>Sem prova nenhuma</h3>
+          <p>Quando surge um dano, falta o registro fotográfico e a assinatura para te proteger.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="section how" id="como-funciona">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">A solução</span>
+        <h2>Da entrada à assinatura em 3 passos</h2>
+        <p>É tudo guiado, então qualquer pessoa da equipe consegue fazer sozinha, sem treinamento e direto do celular.</p>
+      </div>
+      <div class="steps">
+        <div class="step-card reveal">
+          <div class="step-head">
+            <div class="step-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11H3v10h6V11z"/><path d="M21 3h-6v18h6V3z"/><path d="M15 7H9v14h6V7z"/></svg></div>
+            <span class="step-tag">PASSO 1</span>
+          </div>
+          <h3>Dados do veículo</h3>
+          <p>Proprietário, placa, modelo e odômetro. Preenchimento rápido, com exemplos em cada campo.</p>
+        </div>
+        <div class="step-card reveal" data-delay="1">
+          <div class="step-head">
+            <div class="step-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+            <span class="step-tag">PASSO 2</span>
+          </div>
+          <h3>Fotos guiadas</h3>
+          <p>O app pede cada um dos 10 pontos: frente, lateral, motor, chassi e odômetro. Assim, nada fica para trás.</p>
+        </div>
+        <div class="step-card success reveal" data-delay="2">
+          <div class="step-head">
+            <div class="step-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+            <span class="step-tag">PASSO 3</span>
+          </div>
+          <h3>Assinatura e envio</h3>
+          <p>Vistoriador e cliente assinam na tela. Finalize e envie o relatório completo em segundos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OFFLINE ===================== -->
+  <section class="section offline" id="offline">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" style="width:15px;height:15px"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg> O grande diferencial</span>
+        <h2>Sem internet? Sem problema.</h2>
+        <p>No pátio, no subsolo ou na estrada, o Visttor não trava. Você trabalha offline e o sistema cuida do resto quando o sinal voltar.</p>
+      </div>
+      <div class="offline-flow">
+        <!-- step 1 -->
+        <div class="flow-step reveal">
+          <div class="mini-phone-wrap">
+            <span class="mini-badge" style="background:var(--navy-900)">1</span>
+            <div class="mini-phone">
+              <div class="mini-screen danger">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/><path d="M10.71 5.05A16 16 0 0 1 22.58 9"/><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                <span class="big">SEM SINAL</span>
+              </div>
+            </div>
+          </div>
+          <div><div class="cap-t">Aparelho sem sinal</div><div class="cap-s">Você tira as fotos e preenche tudo, mesmo sem internet no local.</div></div>
+        </div>
+
+        <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+
+        <!-- step 2 -->
+        <div class="flow-step reveal" data-delay="1">
+          <div class="mini-phone-wrap">
+            <span class="mini-badge" style="background:var(--brand-600)">2</span>
+            <div class="mini-phone">
+              <div class="mini-screen">
+                <div class="topbar brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>SALVANDO</span></div>
+                <div class="center">
+                  <div class="disc brand">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span class="badge-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  </div>
+                  <span style="font-size:11px;font-weight:700;color:var(--navy-900)">10 fotos salvas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div><div class="cap-t">Guarda no próprio aparelho</div><div class="cap-s">Fotos e dados ficam salvos no celular na hora, sem risco de perder nada.</div></div>
+        </div>
+
+        <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+
+        <!-- step 3 -->
+        <div class="flow-step reveal" data-delay="2">
+          <div class="mini-phone-wrap">
+            <span class="mini-badge" style="background:var(--success)">3</span>
+            <div class="mini-phone">
+              <div class="mini-screen">
+                <div class="topbar ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg><span>ONLINE</span></div>
+                <div class="center">
+                  <div class="disc ok">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/><polyline points="9 15 11 17 15 12"/></svg>
+                  </div>
+                  <span style="font-size:11px;font-weight:700;color:var(--navy-900)">Enviado para a nuvem</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div><div class="cap-t">Sincroniza ao pegar internet</div><div class="cap-s">Voltou o sinal, o aparelho envia tudo sozinho. Você não faz nada.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFITS ===================== -->
+  <section class="section benefits">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" style="color:var(--brand-600)">Por que o Visttor</span>
+        <h2>Mais controle, menos dor de cabeça</h2>
+      </div>
+      <div class="benefit-grid">
+        <div class="benefit reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><circle cx="11.5" cy="14.5" r="2.5"/><line x1="13.5" y1="16.5" x2="15" y2="18"/></svg></div>
+          <div><h3>Histórico sempre à mão</h3><p>Toda vistoria fica guardada e organizada, fácil de encontrar e reenviar depois.</p></div>
+        </div>
+        <div class="benefit reveal" data-delay="1">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+          <div><h3>Padrão para a equipe</h3><p>Todo vistoriador segue o mesmo roteiro. Qualidade consistente em toda vistoria.</p></div>
+        </div>
+        <div class="benefit reveal" data-delay="2">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+          <div><h3>Prova com assinatura</h3><p>A foto datada e a assinatura do cliente ficam ao seu lado em qualquer discussão.</p></div>
+        </div>
+        <div class="benefit reveal" data-delay="3">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div><h3>Gestão de vistoriadores</h3><p>O admin controla a equipe, papéis e acessos em um só lugar, com total visibilidade.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="section pricing" id="planos">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Planos</span>
+        <h2>Comece grátis. Cresça quando precisar.</h2>
+        <p>Sem fidelidade e sem surpresa. Você troca de plano ou cancela quando quiser.</p>
+      </div>
+      <div class="price-grid">
+        <!-- GRÁTIS -->
+        <div class="price-card reveal">
+          <div class="price-name">Grátis</div>
+          <div class="price-desc">Para experimentar e fazer suas primeiras vistorias.</div>
+          <div class="price-amount"><span class="free-plain">Grátis</span></div>
+          <a class="btn btn-ghost btn-block" href="https://vistoria-app.netlify.app/signup">Criar conta grátis</a>
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 1 vistoriador</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Até 10 vistorias por mês</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Fotos guiadas e assinatura digital</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Modo offline</li>
+            <li class="muted"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg> Relatório com sua logo</li>
+          </ul>
+        </div>
+
+        <!-- PRO (featured) -->
+        <div class="price-card featured reveal" data-delay="1">
+          <span class="price-badge">Mais popular</span>
+          <div class="price-name">PRO</div>
+          <div class="price-desc">Para profissionais e pequenas equipes que vivem de vistoria.</div>
+          <div class="price-amount"><span class="cur">R$</span><span class="val">97</span><span class="per">/mês</span></div>
+          <a class="btn btn-primary btn-block" href="https://vistoria-app.netlify.app/signup">Assinar</a>
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Vistoriadores ilimitados</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Vistorias ilimitadas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Relatório em PDF com sua logo</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Histórico completo na nuvem</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Suporte prioritário em português</li>
+          </ul>
+        </div>
+
+        <!-- BUSINESS -->
+        <div class="price-card business reveal" data-delay="2">
+          <div class="price-name">Business</div>
+          <div class="price-desc">Para frotas, locadoras e operações com muitas unidades.</div>
+          <div class="price-amount"><span class="cur">R$</span><span class="val">297</span><span class="per">/mês</span></div>
+          <a class="btn btn-primary btn-block" href="https://vistoria-app.netlify.app/signup">Assinar</a>
+          <ul class="price-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Vistoriadores ilimitados</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> API e integrações</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Relatórios e exportações avançadas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Gerente de conta dedicado</li>
+          </ul>
+        </div>
+      </div>
+      <p class="price-note">Todos os planos incluem modo offline, atualizações e dados seguros. Preços em reais (BRL), sem taxa de instalação.</p>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow" style="color:var(--brand-600)">Dúvidas frequentes</span>
+        <h2>Tudo que você precisa saber</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Preciso de internet para usar?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Não. Você faz a vistoria inteira offline: fotos, dados e assinatura ficam salvos no próprio aparelho. Assim que o celular pega sinal de novo, tudo é enviado para a nuvem automaticamente, sem você precisar fazer nada.</div></div>
+        </div>
+        <div class="faq-item reveal" data-delay="1">
+          <button class="faq-q" aria-expanded="false">Funciona em qualquer celular?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Sim. O Visttor roda em celulares Android e iPhone, direto pelo navegador ou pelo app. Não precisa de aparelho potente nem de instalação complicada. Abriu, fez login e já está pronto para vistoriar.</div></div>
+        </div>
+        <div class="faq-item reveal" data-delay="2">
+          <button class="faq-q" aria-expanded="false">Minha equipe vai conseguir usar sem treinamento?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Sim. O fluxo é guiado passo a passo: o app pede cada dado e cada foto na ordem certa. Qualquer pessoa da equipe consegue fazer a primeira vistoria sozinha, sem manual e sem treinamento.</div></div>
+        </div>
+        <div class="faq-item reveal" data-delay="3">
+          <button class="faq-q" aria-expanded="false">Como funciona o teste grátis?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Você cria a conta sem cartão de crédito e já começa a usar. O plano Grátis não tem prazo para acabar, e quando precisar de mais vistoriadores ou recursos é só fazer o upgrade para o PRO. Sem fidelidade.</div></div>
+        </div>
+        <div class="faq-item reveal" data-delay="4">
+          <button class="faq-q" aria-expanded="false">Meus dados e fotos ficam seguros?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Ficam. Cada vistoria é salva com data e hora, armazenada na nuvem com backup e acessível só por quem você autorizar. A foto datada e a assinatura do cliente servem como prova sempre que houver qualquer discussão sobre um dano.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="cta" id="cadastro">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="cta-inner reveal">
+      <span class="eyebrow">Comece agora</span>
+      <h2>Em menos de 2 minutos você já está fazendo a sua vistoria.</h2>
+      <p>Crie sua conta grátis e leve o Visttor para a sua equipe hoje mesmo. Sem instalação e sem cartão para começar.</p>
+      <div class="cta-actions">
+        <a class="btn btn-light btn-lg" href="https://vistoria-app.netlify.app/signup">Criar conta grátis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn btn-outline-light btn-lg" href="https://vistoria-app.netlify.app">Já tenho conta</a>
+      </div>
+      <div class="cta-trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Plano grátis sem prazo</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Sem cartão para começar</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Suporte 100% em português</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/icon/logo-icon.png" alt="Logo Visttor" width="28" height="28">
+        <span class="name">Visttor</span>
+        <span class="tag">Sistema de Vistoria Veicular</span>
+      </div>
+      <div class="footer-links">
+        <a href="#problema">Problemas</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#planos">Planos</a>
+        <a href="#faq">Dúvidas</a>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Visttor. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -39,3 +39,9 @@ pnpm-debug.log*
 # Assets brutos pesados (mantenha apenas os otimizados versionados)
 # Descomente se quiser ignorar PSDs, AIs, vídeos brutos, etc.
 # **/assets/raw/
+
+# Local Netlify folder
+.netlify
+
+# Playwright MCP browser artifacts (temporários)
+.playwright-mcp/

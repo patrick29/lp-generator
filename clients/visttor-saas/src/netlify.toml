@@ -1,6 +1,9 @@
 # Netlify config — Visttor landing page (static, no build)
 [build]
   publish = "."
+  # Só publica quando algo na pasta do Visttor muda (monorepo multi-cliente).
+  # Sai 0 (sem mudanças) => Netlify cancela o build; sai 1 => build roda.
+  ignore = "git diff --quiet HEAD^ HEAD ."
 
 # Long cache for fingerprint-stable assets
 [[headers]]

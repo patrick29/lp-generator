@@ -15,8 +15,8 @@ Pasta-template para um novo cliente. Copie esta pasta inteira, renomeie para o s
 
 ## Fluxo
 
-1. Preencher `brief/`, `content/`, `design/` e `assets/` — é o input do opensquad.
-2. Acionar opensquad apontando para esta pasta. Os agentes leem os artefatos acima e produzem código em `src/`.
+1. Preencher `brief/`, `content/`, `design/` e `assets/` — é o input da geração.
+2. Gerar/editar o código da LP em `src/` a partir dos artefatos acima.
 3. QA, deploy e ajustes iterativos.
 
 ## Metadata

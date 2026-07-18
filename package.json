@@ -1,5 +1,5 @@
 {
-  "name": "opensquad-project",
+  "name": "lp-generator",
   "version": "1.0.0",
   "private": true,
   "dependencies": {

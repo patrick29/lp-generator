@@ -15,9 +15,6 @@ out/
 .env.local
 .env.*.local
 
-# Opensquad core (gerado pelo framework)
-_opensquad/
-
 # Editor / OS
 .vscode/
 .idea/

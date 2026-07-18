@@ -1,6 +1,6 @@
 # lp-generator
 
-Repositório central de landing pages para múltiplos clientes. Cada cliente vive isolado em sua própria pasta sob `clients/`, com briefing, conteúdo, design e código próprios. A implementação é feita pelo **opensquad** (skill de orquestração multi-agente), que lê os artefatos da pasta do cliente como input.
+Repositório central de landing pages para múltiplos clientes. Cada cliente vive isolado em sua própria pasta sob `clients/`, com briefing, conteúdo, design e código próprios.
 
 ## Estrutura
 
@@ -10,7 +10,7 @@ lp-generator/
 │   ├── _template/       # Molde para novos clientes — copie e renomeie
 │   └── <nome-cliente>/  # Pasta de cada cliente real
 ├── shared/              # Recursos compartilhados entre clientes
-│   ├── prompts/         # Prompts/instruções para o opensquad
+│   ├── prompts/         # Prompts/instruções de apoio
 │   └── checklists/      # Checklists de QA, performance, SEO, etc.
 └── docs/                # Documentação do fluxo de trabalho
 ```
@@ -21,7 +21,7 @@ lp-generator/
 
 1. Copie `clients/_template/` → `clients/<slug-do-cliente>/`
 2. Preencha os arquivos em `brief/`, `content/`, `design/` e jogue assets em `assets/`
-3. Acione o opensquad apontando para a pasta do cliente para gerar a LP em `src/`
+3. Gere/edite a LP em `src/` a partir dos artefatos da pasta do cliente
 
 Detalhes em [docs/novo-cliente.md](docs/novo-cliente.md).
 

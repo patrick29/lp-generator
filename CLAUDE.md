@@ -1,43 +1,29 @@
-# Opensquad — Project Instructions
+# lp-generator — Instruções do Projeto
 
-This project uses **Opensquad**, a multi-agent orchestration framework.
+Monorepo de landing pages para múltiplos clientes. Cada cliente é isolado em sua própria pasta sob `clients/`.
 
-## Quick Start
+## Estrutura
 
-Type `/opensquad` to open the main menu, or use any of these commands:
-- `/opensquad create` — Create a new squad
-- `/opensquad run <name>` — Run a squad
-- `/opensquad help` — See all commands
+- `clients/` — uma pasta por cliente, isoladas entre si. `clients/_template/` é o molde para novos clientes.
+- `dashboard/` — app (Vite/TS) de apoio.
+- `shared/` — tooling/processo compartilhado (`prompts/`, `checklists/`). Nunca dependência de runtime das LPs.
+- `docs/` — documentação do fluxo ([novo-cliente.md](docs/novo-cliente.md), [stack.md](docs/stack.md)).
+- `skills/` — skills auxiliares (image-*, canva, resend, template-designer, etc.).
+- `.claude/skills/` — skills do Claude Code deste projeto.
 
-## Directory Structure
+## Regras
 
-- `_opensquad/` — Opensquad core files (do not modify manually)
-- `_opensquad/_memory/` — Persistent memory (company context, preferences)
-- `squads/` — User-created squads
-- `squads/{name}/_investigations/` — Sherlock content investigations (profile analyses)
-- `squads/{name}/output/` — Generated content and files
-- `_opensquad/_browser_profile/` — Persistent browser sessions (login cookies, localStorage)
+- **Clientes são isolados:** nada de código/componentes compartilhados entre `clients/X` e `clients/Y`. O comum vai em `shared/`, só como tooling.
+- A stack é decidida por cliente dentro de `clients/<cliente>/src/` (HTML puro, Astro, Next, etc.).
+- Deploy é por cliente (ex.: Visttor via Netlify na pasta `clients/visttor-saas/`).
 
-## How It Works
+## Copywriting
 
-1. The `/opensquad` skill is the entry point for all interactions
-2. The **Architect** agent creates and modifies squads
-3. During squad creation, the **Sherlock** investigator can analyze reference profiles (Instagram, YouTube, Twitter/X, LinkedIn) to extract real content patterns
-4. The **Pipeline Runner** executes squads automatically
-5. Agents communicate via persona switching (inline) or subagents (background)
-6. Checkpoints pause execution for user input/approval
+Para escrever, revisar ou refinar copy de LP (headlines, hooks, CTAs, prova social, FAQ), use a skill **`copy-lp`** (`.claude/skills/copy-lp/`) — copywriter sênior pt-BR orientada a conversão. Dispara sozinha em pedidos de copy ou via `/copy-lp`.
 
-## Rules
+- **Padronização por cliente:** cada cliente tem um decision log em `clients/<slug>/content/decisoes-copy.md` (a skill lê ANTES de escrever). Registra tom aprovado, driver, números de prova confirmados, palavras proibidas e CTAs aprovados. É o que garante consistência entre sessões.
+- **Evolução:** lições que se repetem entre clientes graduam para `.claude/skills/copy-lp/references/aprendizados.md` (memória transversal da skill).
 
-- Always use `/opensquad` commands to interact with the system
-- Do not manually edit files in `_opensquad/core/` unless you know what you're doing
-- Squad YAML files can be edited manually if needed, but prefer using `/opensquad edit`
-- Company context in `_opensquad/_memory/company.md` is loaded for every squad run
+## SEO
 
-## Browser Sessions
-
-Opensquad uses a persistent Playwright browser profile to keep you logged into social media platforms.
-- Sessions are stored in `_opensquad/_browser_profile/` (gitignored, private to you)
-- First time accessing a platform, you'll log in manually once
-- Subsequent runs will reuse your saved session
-- **Important:** The native Claude Code Playwright plugin must be disabled. Opensquad uses its own `@playwright/mcp` server configured in `.mcp.json`.
+Para auditoria de SEO, otimização on-page ou geração de HTML otimizado, use a skill **`seo-lp`** (`.claude/skills/seo-lp/`) — especialista em SEO pt-BR para sites e LPs. Dispara sozinha em pedidos de SEO ou via `/seo-lp`.

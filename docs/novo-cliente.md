@@ -14,12 +14,10 @@ Na ordem:
 4. `assets/` — logos, imagens, fontes do cliente
 5. `design/references/` — screenshots, mood boards, links de inspiração
 
-> ⚠️ Não pule o briefing. Os agentes do opensquad usam ele como verdade.
+> ⚠️ Não pule o briefing. Ele é a fonte da verdade para a geração da LP.
 
-## 3. Acionar o opensquad
-Apontando para `clients/<slug>/`. O prompt base está em [shared/prompts/opensquad-lp.md](../shared/prompts/opensquad-lp.md).
-
-Os agentes produzem código em `clients/<slug>/src/`.
+## 3. Gerar a LP
+A partir dos artefatos em `clients/<slug>/`, gere/edite o código em `clients/<slug>/src/`. Para SEO, use a skill `seo-lp`.
 
 ## 4. QA e deploy
 - Rodar checklist de [shared/checklists/qa.md](../shared/checklists/qa.md)

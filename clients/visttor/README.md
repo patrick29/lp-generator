@@ -25,6 +25,11 @@ src/
 - **Tipografia:** Plus Jakarta Sans (UI/display) + JetBrains Mono (placas/códigos)
 - **Sucesso:** `#16A34A` · **Erro:** `#EF4444`
 
+> **Design system completo em [`brand/`](brand/)** — fonte da verdade para todo projeto
+> Visttor futuro. Comece por [brand/design-system.md](brand/design-system.md) e importe
+> [brand/tokens.css](brand/tokens.css) (tokens) + [brand/components.css](brand/components.css)
+> (componentes). Extraídos do design importado de `claude.ai/design`.
+
 ## Seções
 
 Header (sticky + barra de progresso) · Hero com mockup do app · Strip de público · Stats com contadores · Problemas · Como funciona (3 passos) · **Offline-first** (diferencial) · Benefícios · **Planos (Grátis / PRO / Business)** · FAQ · CTA final · Footer.

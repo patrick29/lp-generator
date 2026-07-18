@@ -49,4 +49,4 @@ python -m http.server 8000
 
 ## Deploy (Vercel)
 
-Aponte o Root Directory para `clients/visttor-saas/src`. É um site estático — sem build command.
+Aponte o Root Directory (Vercel) / base directory (Netlify) para `projects/visttor-saas-v1/src`. É um site estático — sem build command.

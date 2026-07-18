@@ -25,11 +25,13 @@ do tempo.
 
 Antes de qualquer copy para um cliente que já existe em `clients/<slug>/`:
 
-1. **Leia `clients/<slug>/content/decisoes-copy.md`** (o decision log). Ele contém o
+1. **Leia `clients/<slug>/decisoes-copy.md`** (o decision log — nível do cliente,
+   persiste entre projetos/versões). Ele contém o
    tom aprovado, drivers, números de prova confirmados, palavras proibidas, wording
    de CTA aprovado, hooks rejeitados e o porquê. **Isso é lei para aquele cliente** —
    é o que garante padronização entre sessões e entre pessoas.
-2. Leia também `brief/strategy.md`, `brief/briefing.md` e `content/copy.md` se existirem.
+2. Leia também `clients/<slug>/brief/strategy.md`, `clients/<slug>/brief/briefing.md`
+   e a copy do projeto em `projects/<slug>-<projeto>-<versão>/content/copy.md` se existirem.
 3. Se o decision log não existir, crie-o a partir de
    `references/decisoes-copy-template.md` na primeira decisão relevante (ver
    "Protocolo de registro" abaixo). O `clients/_template/` já traz o arquivo em branco.
@@ -74,7 +76,7 @@ ver referência) e mapeie **cada seção a um papel no funil**. Nenhuma seção 
 - **CTA:** verbo de ação alinhado ao compromisso ("Solicitar cotação", "Agendar diagnóstico", "Falar com especialista"). **Nunca "Saiba mais" ou "Enviar".**
 - **Prova social:** só o que é real e confirmado; deixe slot explícito (comentário) para o que falta.
 - **FAQ:** cada par pergunta/resposta neutraliza uma objeção real. Respostas curtas e factuais.
-- Preencha/atualize `clients/<slug>/content/copy.md` (espelha os blocos da LP).
+- Preencha/atualize `projects/<slug>-<projeto>-<versão>/content/copy.md` (espelha os blocos da LP).
 
 ### 4. Registro de decisões (o que faz a skill "lembrar")
 Ver "Protocolo de registro" abaixo. Toda decisão de copy que valha reusar vira uma
@@ -87,7 +89,7 @@ para a memória do Claude Code. Ver "Protocolo de evolução".
 
 ## Protocolo de registro (decision log por cliente)
 
-Arquivo: `clients/<slug>/content/decisoes-copy.md` (template em `references/decisoes-copy-template.md`).
+Arquivo: `clients/<slug>/decisoes-copy.md` (template em `references/decisoes-copy-template.md`).
 
 **Registre uma decisão quando:**
 - O Patrick aprovar ou rejeitar um hook/headline/CTA (registre o vencedor **e** o rejeitado com o porquê).

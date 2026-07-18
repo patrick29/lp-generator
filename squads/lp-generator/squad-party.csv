@@ -1,6 +1,0 @@
-id,name,title,icon,execution,path
-bruno-briefing,Bruno Briefing,Estrategista de LP,🧭,inline,./agents/bruno-briefing.agent.md
-carla-copy,Carla Copy,Copywriter de LP,✍️,inline,./agents/carla-copy.agent.md
-diana-design,Diana Design,Diretora visual,🎨,inline,./agents/diana-design.agent.md
-davi-dev,Davi Dev,Frontend developer,💻,inline,./agents/davi-dev.agent.md
-rita-revisao,Rita Revisao,Revisora de LP,🔍,inline,./agents/rita-revisao.agent.md

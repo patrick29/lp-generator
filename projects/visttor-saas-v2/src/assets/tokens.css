@@ -1,0 +1,228 @@
+/* ============================================================
+   Visttor — Sistema de Vistoria Veicular
+   Design Foundations: Colors + Type (design tokens)
+   ------------------------------------------------------------
+   FONTE DA VERDADE dos tokens da marca Visttor.
+   Importe este arquivo em qualquer projeto Visttor (LP ou app)
+   e construa em cima das variáveis — nunca hardcode hex.
+   Origem: claude.ai/design — projeto "Landing page para SaaS"
+   (ea7b691e-9072-407b-97da-100d0b71ca4d), arquivo colors_and_type.css.
+   ============================================================ */
+
+/* Fonts: Plus Jakarta Sans (UI/display) + JetBrains Mono (placas & códigos).
+   Carregadas via Google Fonts para manter os @font-face no closure de tokens.
+   Se subir arquivos de fonte locais, troque este @import por @font-face
+   locais — mantenha os mesmos nomes de família. */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap");
+
+:root {
+  /* ---------- BRAND (royal blue oficial — do ícone do carro Visttor) ---------- */
+  --brand-700: #122F7A;   /* pressed */
+  --brand-600: #1840A4;   /* PRIMARY — azul da marca, casa com o logo */
+  --brand-500: #2A55C2;   /* hover / lighter */
+  --brand-soft: #E9EEFA;  /* tint suave — linhas selecionadas, fills de info */
+
+  /* Alias da ação primária (repontue o sistema inteiro aqui) */
+  --primary: var(--brand-600);
+  --primary-hover: var(--brand-500);
+  --primary-active: var(--brand-700);
+  --primary-soft: var(--brand-soft);
+
+  /* ---------- INK (navy quase-preto — títulos & texto) ---------- */
+  --navy-900: #0F172A;   /* títulos, texto primário, badges escuros */
+  --navy-800: #1E293B;   /* ícone forte, hover de badge escuro */
+  --navy-700: #334155;   /* pressed / ícone forte */
+
+  /* ---------- NEUTRAL / SLATE SCALE ---------- */
+  --slate-50:  #F8FAFC;  /* fundo do app */
+  --slate-100: #F1F5F9;  /* fills sutis, bg de botão muted, hover de linha */
+  --slate-200: #E2E8F0;  /* bordas, divisores, track */
+  --slate-300: #CBD5E1;  /* bordas de input, dropzones tracejados */
+  --slate-400: #94A3B8;  /* placeholders, disabled, ícone de empty-state */
+  --slate-500: #64748B;  /* texto secundário / muted */
+  --slate-600: #475569;  /* texto de corpo no claro, títulos secundários */
+  --slate-700: #334155;  /* texto de corpo forte */
+
+  /* ---------- SEMANTIC ---------- */
+  --success: #16A34A;        /* "Finalizar Vistoria", nuvem de estado salvo */
+  --success-hover: #15803D;
+  --success-soft: #DCFCE7;   /* badge / fill suave de sucesso */
+  --danger: #EF4444;         /* confirmação destrutiva */
+  --danger-hover: #DC2626;
+  --danger-soft: #FEE2E2;    /* fill suave destrutivo */
+  --danger-text: #B91C1C;
+  --warning: #D97706;
+  --warning-soft: #FEF3C7;
+  --info: #1840A4;           /* links informativos / accent de foco (azul da marca) */
+  --info-soft: #E9EEFA;
+
+  /* ---------- SURFACES ---------- */
+  --bg: var(--slate-50);
+  --surface: #FFFFFF;        /* cards, modais, inputs */
+  --surface-muted: var(--slate-50);
+  --overlay: rgba(15, 23, 42, 0.45);  /* scrim de modal */
+
+  /* ---------- TEXT ROLES ---------- */
+  --fg: var(--navy-900);     /* texto primário + títulos */
+  --fg-secondary: var(--slate-600);
+  --fg-muted: var(--slate-500);
+  --fg-subtle: var(--slate-400);
+  --fg-on-dark: #FFFFFF;
+  --fg-on-dark-muted: #CBD5E1;
+
+  /* ---------- BORDERS ---------- */
+  --border: var(--slate-200);
+  --border-strong: var(--slate-300);
+  --border-input: var(--slate-300);
+  --ring: rgba(24, 64, 164, 0.14);       /* focus ring padrão (brand) */
+  --ring-info: rgba(24, 64, 164, 0.32);  /* focus de input ativo (brand) */
+
+  /* ============================================================
+     TYPE SYSTEM
+     ============================================================ */
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo,
+               Consolas, monospace;
+
+  /* Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* Type scale (px) — densidade de app utilitário, ritmo profissional.
+     Em LP, é aceitável escalar display/hero acima de --text-4xl,
+     mantendo a mesma família, pesos e tracking negativo. */
+  --text-xs:   12px;   /* version tag, micro-labels, texto de badge */
+  --text-sm:   13px;   /* helper text, meta, células de tabela */
+  --text-base: 14px;   /* corpo padrão + texto de input */
+  --text-md:   15px;   /* corpo enfatizado */
+  --text-lg:   16px;   /* títulos de card, títulos de item de lista */
+  --text-xl:   18px;   /* headings de seção dentro de cards */
+  --text-2xl:  22px;   /* títulos de página (barra de header) */
+  --text-3xl:  28px;   /* título grande / wordmark da marca */
+  --text-4xl:  34px;   /* hero / brand de auth */
+
+  /* Line heights */
+  --lh-tight: 1.2;
+  --lh-snug: 1.35;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.6;
+
+  /* Letter spacing */
+  --ls-tight: -0.02em;   /* display grande */
+  --ls-snug: -0.01em;    /* headings */
+  --ls-normal: 0;
+  --ls-wide: 0.04em;     /* eyebrow / overline */
+  --ls-wider: 0.08em;    /* labels de tab, "PASSO 1", "FOTOS ADICIONAIS" */
+
+  /* ============================================================
+     RADII
+     ============================================================ */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;    /* inputs, botões (padrão) */
+  --radius-lg: 12px;   /* cards */
+  --radius-xl: 16px;   /* cards grandes, modais */
+  --radius-2xl: 20px;  /* card de auth, bottom tab bar */
+  --radius-pill: 9999px;
+
+  /* ============================================================
+     SHADOWS / ELEVATION — suaves, low-spread, tingidas de navy
+     ============================================================ */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.10);
+  --shadow-xl: 0 20px 50px rgba(15, 23, 42, 0.16);     /* modais */
+  --shadow-tabbar: 0 -2px 16px rgba(15, 23, 42, 0.10); /* nav flutuante inferior */
+  --shadow-focus: 0 0 0 3px var(--ring-info);
+
+  /* ============================================================
+     SPACING (grid base 4px)
+     ============================================================ */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Layout */
+  --container-narrow: 460px;  /* auth + forms single-column */
+  --container-form: 540px;    /* wizard / nova vistoria */
+  --container-wide: 1200px;   /* lista + grids de admin */
+  --header-h: 64px;
+  --tabbar-h: 64px;
+}
+
+/* ============================================================
+   DEFAULTS SEMÂNTICOS
+   Aplique com a classe .vt-scope ou globalmente, como preferir.
+   ============================================================ */
+.vt-scope {
+  font-family: var(--font-sans);
+  color: var(--fg);
+  background: var(--bg);
+  font-size: var(--text-base);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.vt-scope h1, .vt-h1 {
+  font-size: var(--text-3xl);
+  font-weight: var(--fw-extrabold);
+  letter-spacing: var(--ls-snug);
+  line-height: var(--lh-tight);
+  color: var(--fg);
+}
+.vt-scope h2, .vt-h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-snug);
+  line-height: var(--lh-tight);
+  color: var(--fg);
+}
+.vt-scope h3, .vt-h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  color: var(--fg);
+}
+.vt-card-title {
+  font-size: var(--text-lg);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  color: var(--fg);
+}
+.vt-p {
+  font-size: var(--text-base);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--fg-secondary);
+}
+.vt-muted {
+  color: var(--fg-muted);
+  font-size: var(--text-sm);
+}
+/* Eyebrow / overline: PASSO 1, FOTOS ADICIONAIS, labels de tab */
+.vt-overline {
+  font-size: var(--text-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+/* Monospace para placas, códigos de vistoria (#VST-…, DEM0A01) */
+.vt-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}

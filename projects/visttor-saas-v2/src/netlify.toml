@@ -1,0 +1,20 @@
+# Netlify config — Visttor LP v2 (estático, sem build)
+[build]
+  publish = "."
+  # Só publica quando algo na pasta da v2 muda (monorepo multi-cliente).
+  # Sai 0 (sem mudanças) => Netlify cancela o build; sai 1 => build roda.
+  ignore = "git diff --quiet HEAD^ HEAD ."
+
+# Cache longo para assets versionados (imagens, tokens, ícones)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"

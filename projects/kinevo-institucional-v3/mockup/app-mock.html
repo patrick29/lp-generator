@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Kinevo — app mock (fonte das telas do site)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+:root{
+  --bg:#F4F5F7; --card:#FFFFFF; --ink:#16171A; --ink2:#4E5158; --ink3:#84878E;
+  --line:#E5E6E8; --line2:#EDEEF0;
+  --blue:#0254EA; --blue-soft:#E8EFFD; --blue-line:#B9CEF7;
+  --danger:#B3261E; --danger-soft:#FCECEA;
+  --warn:#8F5A00; --warn-soft:#FBF1DC;
+  --ok:#1E6B33; --ok-soft:#E7F3E9;
+  --mono:'IBM Plex Mono',monospace;
+}
+body{font-family:Inter,sans-serif;font-size:13px;color:var(--ink);background:#DDE0E4;padding:40px;display:grid;gap:48px;justify-items:start}
+
+/* ===== app frame (tela cheia) ===== */
+.app{width:1360px;height:790px;background:var(--bg);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:216px 1fr;border:1px solid #C9CBD0}
+.side{background:var(--card);border-right:1px solid var(--line);display:flex;flex-direction:column;padding:18px 14px}
+.brand{display:flex;align-items:center;gap:9px;padding:4px 8px 18px;border-bottom:1px solid var(--line2);margin-bottom:14px}
+.brand svg{height:22px;width:auto}
+.brand b{font-family:Sora,sans-serif;font-size:15px;letter-spacing:-.02em}
+.nav{display:grid;gap:2px}
+.nav a{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;color:var(--ink2);font-weight:500;font-size:12.5px;text-decoration:none}
+.nav a svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.nav a.on{background:var(--blue-soft);color:var(--blue)}
+.nav .sep{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;color:var(--ink3);text-transform:uppercase;padding:14px 10px 6px}
+.side-foot{margin-top:auto;display:flex;align-items:center;gap:9px;padding:10px;border-top:1px solid var(--line2)}
+.ava{width:26px;height:26px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;font-weight:700;font-size:10.5px;flex-shrink:0}
+.side-foot .nm{font-weight:600;font-size:12px}
+.side-foot .rl{font-size:10.5px;color:var(--ink3)}
+.main{display:flex;flex-direction:column;min-width:0}
+.top{display:flex;align-items:center;gap:14px;background:var(--card);border-bottom:1px solid var(--line);padding:12px 22px}
+.top h1{font-size:15px;font-weight:700}
+.top .per{font-family:var(--mono);font-size:11px;color:var(--ink2);background:var(--bg);border:1px solid var(--line);border-radius:7px;padding:5px 10px}
+.top .search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 12px;color:var(--ink3);width:230px;font-size:12px}
+.top .search svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2}
+.bellw{position:relative}
+.bellw svg{width:17px;height:17px;stroke:var(--ink2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bellw i{position:absolute;top:-3px;right:-4px;background:var(--danger);color:#fff;font-style:normal;font-size:8.5px;font-weight:700;border-radius:999px;padding:1px 4px}
+.content{padding:20px 22px;display:grid;gap:16px;overflow:hidden}
+
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:14px 16px}
+.kpi .l{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3)}
+.kpi .v{font-family:Sora,sans-serif;font-size:21px;font-weight:700;margin-top:5px;letter-spacing:-.02em}
+.kpi .d{font-size:11px;margin-top:3px;color:var(--ink3)}
+.kpi .d.up{color:var(--ok)} .kpi .d.bad{color:var(--danger)}
+
+.grid2{display:grid;grid-template-columns:1fr 330px;gap:16px;align-items:start}
+.card{background:var(--card);border:1px solid var(--line);border-radius:11px;overflow:hidden}
+.card .hd{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.card .hd b{font-size:13px;font-weight:600}
+.card .hd .all{margin-left:auto;font-size:11.5px;color:var(--blue);font-weight:600;text-decoration:none}
+
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3);text-align:left;padding:9px 16px;border-bottom:1px solid var(--line);background:#FAFAFB}
+td{padding:10px 16px;border-bottom:1px solid var(--line2);vertical-align:middle;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td .sub{display:block;font-size:10.5px;color:var(--ink3);margin-top:1px}
+td.r,th.r{text-align:right}
+.pill{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:500;border-radius:999px;padding:3px 9px}
+.p-danger{background:var(--danger-soft);color:var(--danger)}
+.p-warn{background:var(--warn-soft);color:var(--warn)}
+.p-ok{background:var(--ok-soft);color:var(--ok)}
+.p-quiet{background:var(--bg);color:var(--ink2);border:1px solid var(--line)}
+.p-blue{background:var(--blue-soft);color:var(--blue)}
+.who{display:inline-flex;align-items:center;gap:7px}
+.who .ava{width:20px;height:20px;font-size:8.5px}
+
+.synclist{padding:6px 0}
+.syncrow{display:flex;align-items:center;gap:10px;padding:8px 16px;font-size:12px}
+.syncrow .nm{font-weight:500}
+.syncrow .tm{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--ink3)}
+.okdot{width:7px;height:7px;border-radius:50%;background:var(--ok);flex-shrink:0}
+.sync-note{display:flex;align-items:center;gap:8px;margin:8px 16px 12px;padding:8px 11px;background:var(--ok-soft);border-radius:8px;font-size:11px;color:var(--ok);font-weight:500}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.mbars{padding:14px 16px;display:grid;gap:12px}
+.mbar .mh{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-bottom:5px}
+.mbar .mh b{font-family:Inter;font-size:12px;color:var(--ink)}
+.mtrack{height:14px;border-radius:5px;background:var(--bg);border:1px solid var(--line2);overflow:hidden;position:relative}
+.mfill{position:absolute;inset:0 auto 0 0;background:var(--blue)}
+.mfill.soft{background:#A8C3F5}
+.foot-line{padding:11px 16px;border-top:1px solid var(--line);display:flex;align-items:center;gap:9px;font-size:11.5px;color:var(--ink2)}
+
+/* ===== module shots (recortes) ===== */
+.shot{width:980px;background:var(--card);border:1px solid #C9CBD0;border-radius:12px;overflow:hidden}
+.shot .mtop{display:flex;align-items:center;gap:12px;padding:13px 18px;border-bottom:1px solid var(--line)}
+.shot .mtop .crumb{font-family:var(--mono);font-size:10.5px;color:var(--ink3)}
+.shot .mtop h2{font-size:14.5px;font-weight:700}
+.shot .mtop .chips{margin-left:auto;display:flex;gap:6px}
+.chip{font-family:var(--mono);font-size:10.5px;color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:4px 11px;background:var(--card)}
+.chip.on{background:var(--blue-soft);color:var(--blue);border-color:var(--blue-line)}
+.mdot{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:middle}
+.mdot.on{background:var(--ink)}
+.mdot.off{border:1.5px dashed #C9CBD0}
+td.hlv{background:var(--blue-soft)}
+th.hlv{background:#DCE7FB}
+td.hlv .mdot.off{border-color:var(--blue)}
+.sum{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+.sum>div{padding:13px 18px;border-right:1px solid var(--line2)}
+.sum>div:last-child{border-right:none}
+.sum .l{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3)}
+.sum .v{font-family:Sora,sans-serif;font-size:18px;font-weight:700;margin-top:4px}
+.sum .v.red{color:var(--danger)}
+.tog{width:30px;height:17px;border-radius:999px;background:var(--blue);position:relative;display:inline-block;vertical-align:middle}
+.tog::after{content:"";position:absolute;top:2px;right:2px;width:13px;height:13px;border-radius:50%;background:#fff}
+.num-red{color:var(--danger);font-weight:600}
+.num-mut{color:var(--ink3)}
+</style>
+</head>
+<body>
+
+<!-- ============ TELA 1: app completo — visão geral ============ -->
+<div class="app" id="shot-dashboard">
+  <aside class="side">
+    <div class="brand">
+      <svg viewBox="288 304 504 472" fill="#0254EA"><path d="M783.91,768.91h-182.57l-95.8-135.48-1.76-2.49c-4.93-6.97-12.94-11.1-21.47-11.1h-148.22l79.69-116.14,63.25-92.21,61.04-88.98c4.91-7.15,13.02-11.42,21.69-11.42h166.92l-131.25,191.29v.02l-80.56,117.44h150.01c8.54,0,16.55,4.14,21.48,11.12l97.56,137.95Z"/><path d="M296.09,382.22v313.73h37.99l39.47-322.5h-68.69c-4.84,0-8.77,3.93-8.77,8.77Z"/></svg>
+      <b>Kinevo</b>
+    </div>
+    <nav class="nav">
+      <a class="on" href="#"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>Visão geral</a>
+      <a href="#"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Carteira</a>
+      <a href="#"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/></svg>Renovações</a>
+      <a href="#"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6"/><path d="M19 8v6M22 11h-6"/></svg>Cross-sell</a>
+      <a href="#"><svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Comissões</a>
+      <a href="#"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>Automações</a>
+      <div class="sep">Cadastros</div>
+      <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0 1 14 0v1"/></svg>Clientes</a>
+      <a href="#"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-8"/></svg>Relatórios</a>
+    </nav>
+    <div class="side-foot">
+      <span class="ava">RM</span>
+      <div><div class="nm">Ricardo M.</div><div class="rl">Corretora Meira</div></div>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="top">
+      <h1>Visão geral</h1>
+      <span class="per">junho 2026</span>
+      <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>Buscar cliente, apólice, seguradora…</div>
+      <span class="bellw"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><i>3</i></span>
+      <span class="ava">RM</span>
+    </div>
+    <div class="content">
+      <div class="kpis">
+        <div class="kpi"><div class="l">Apólices ativas</div><div class="v">312</div><div class="d up">+8 no mês</div></div>
+        <div class="kpi"><div class="l">Prêmio da carteira</div><div class="v">R$ 1,84 mi</div><div class="d">5 seguradoras</div></div>
+        <div class="kpi"><div class="l">Vencem em 30 dias</div><div class="v">9</div><div class="d bad">2 sem proposta</div></div>
+        <div class="kpi"><div class="l">Comissão a recuperar</div><div class="v">R$ 2.360</div><div class="d">junho · 2 seguradoras</div></div>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <div class="hd"><b>Apólices a vencer</b><a class="all" href="#">ver todas →</a></div>
+          <table>
+            <tr><th>Cliente</th><th>Ramo</th><th>Seguradora</th><th class="r">Prêmio</th><th class="r">Vencimento</th></tr>
+            <tr><td>Transportes Aurora<span class="sub">frota · 32 veículos</span></td><td>Frota</td><td>Atlântica Seguros</td><td class="r">R$ 84.200</td><td class="r"><span class="pill p-danger">12 dias</span></td></tr>
+            <tr><td>Marcondes Ltda<span class="sub">empresarial</span></td><td>Empresarial</td><td>Meridional</td><td class="r">R$ 22.480</td><td class="r"><span class="pill p-warn">34 dias</span></td></tr>
+            <tr><td>Clínica Vale Verde<span class="sub">vida em grupo · 41 vidas</span></td><td>Vida</td><td>Cruzeiro Vida</td><td class="r">R$ 18.940</td><td class="r"><span class="pill p-quiet">61 dias</span></td></tr>
+            <tr><td>Nogueira Alimentos<span class="sub">transporte de carga</span></td><td>RE</td><td>Horizonte RE</td><td class="r">R$ 31.750</td><td class="r"><span class="pill p-quiet">88 dias</span></td></tr>
+            <tr><td>Colégio Monte Azul<span class="sub">empresarial + vida</span></td><td>Empresarial</td><td>Pilar Seguros</td><td class="r">R$ 12.310</td><td class="r"><span class="pill p-quiet">92 dias</span></td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <div class="hd"><b>Sincronização dos portais</b></div>
+          <div class="synclist">
+            <div class="syncrow"><span class="okdot"></span><span class="nm">Atlântica Seguros</span><span class="tm">hoje · 06:12</span></div>
+            <div class="syncrow"><span class="okdot"></span><span class="nm">Meridional</span><span class="tm">hoje · 06:14</span></div>
+            <div class="syncrow"><span class="okdot"></span><span class="nm">Cruzeiro Vida</span><span class="tm">hoje · 06:15</span></div>
+            <div class="syncrow"><span class="okdot"></span><span class="nm">Horizonte RE</span><span class="tm">hoje · 06:17</span></div>
+            <div class="syncrow"><span class="okdot"></span><span class="nm">Pilar Seguros</span><span class="tm">hoje · 06:18</span></div>
+          </div>
+          <div class="sync-note">✓ 47 apólices atualizadas na sincronização de hoje</div>
+        </div>
+      </div>
+      <div class="duo">
+        <div class="card">
+          <div class="hd"><b>Comissões · junho</b><a class="all" href="#">conferir →</a></div>
+          <div class="mbars">
+            <div class="mbar"><div class="mh"><span>devido</span><b>R$ 48.230</b></div><div class="mtrack"><span class="mfill" style="width:100%"></span></div></div>
+            <div class="mbar"><div class="mh"><span>pago</span><b>R$ 45.870</b></div><div class="mtrack"><span class="mfill soft" style="width:95%"></span></div></div>
+          </div>
+          <div class="foot-line"><span class="pill p-danger">R$ 2.360 de diferença</span>Meridional e Horizonte RE</div>
+        </div>
+        <div class="card">
+          <div class="hd"><b>Cross-sell</b><a class="all" href="#">ver mapa →</a></div>
+          <div class="mbars">
+            <div class="mbar"><div class="mh"><span>clientes com auto e sem vida</span><b>12</b></div><div class="mtrack"><span class="mfill" style="width:38%"></span></div></div>
+            <div class="mbar"><div class="mh"><span>sem proposta há 12+ meses</span><b>7</b></div><div class="mtrack"><span class="mfill soft" style="width:23%"></span></div></div>
+          </div>
+          <div class="foot-line"><span class="pill p-blue">12 oportunidades</span>prêmio potencial R$ 96 mil/ano</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TELA 2: renovações ============ -->
+<div class="shot" id="shot-renovacoes">
+  <div class="mtop"><span class="crumb">Kinevo /</span><h2>Renovações</h2>
+    <div class="chips"><span class="chip on">próximos 90 dias</span><span class="chip">30 dias</span><span class="chip">vencidas</span></div>
+  </div>
+  <table>
+    <tr><th>Cliente</th><th>Apólice</th><th>Seguradora</th><th class="r">Vencimento</th><th>Aviso</th><th>Produtor</th></tr>
+    <tr><td>Transportes Aurora<span class="sub">frota · 32 veículos</span></td><td>0093-4412</td><td>Atlântica Seguros</td><td class="r"><span class="pill p-danger">04/08 · 12 dias</span></td><td><span class="pill p-ok">✓ 90 · 60 · 30</span></td><td><span class="who"><span class="ava">CT</span>Carla T.</span></td></tr>
+    <tr><td>Marcondes Ltda<span class="sub">empresarial</span></td><td>1187-0244</td><td>Meridional</td><td class="r"><span class="pill p-warn">26/08 · 34 dias</span></td><td><span class="pill p-ok">✓ 90 · 60</span></td><td><span class="who"><span class="ava">JP</span>João P.</span></td></tr>
+    <tr><td>Clínica Vale Verde<span class="sub">vida em grupo · 41 vidas</span></td><td>7720-1031</td><td>Cruzeiro Vida</td><td class="r"><span class="pill p-quiet">22/09 · 61 dias</span></td><td><span class="pill p-ok">✓ 90</span></td><td><span class="who"><span class="ava">CT</span>Carla T.</span></td></tr>
+    <tr><td>Nogueira Alimentos<span class="sub">transporte de carga</span></td><td>5541-8804</td><td>Horizonte RE</td><td class="r"><span class="pill p-quiet">19/10 · 88 dias</span></td><td><span class="pill p-ok">✓ 90</span></td><td><span class="who"><span class="ava">RM</span>Ricardo M.</span></td></tr>
+    <tr><td>Colégio Monte Azul<span class="sub">empresarial + vida</span></td><td>2299-6172</td><td>Pilar Seguros</td><td class="r"><span class="pill p-quiet">23/10 · 92 dias</span></td><td><span class="pill p-quiet">programado</span></td><td><span class="who"><span class="ava">JP</span>João P.</span></td></tr>
+    <tr><td>TransLog Sul<span class="sub">frota · 18 veículos</span></td><td>0093-5108</td><td>Atlântica Seguros</td><td class="r"><span class="pill p-quiet">02/11 · 102 dias</span></td><td><span class="pill p-quiet">programado</span></td><td><span class="who"><span class="ava">RM</span>Ricardo M.</span></td></tr>
+  </table>
+</div>
+
+<!-- ============ TELA 3: cross-sell / cobertura ============ -->
+<div class="shot" id="shot-cobertura">
+  <div class="mtop"><span class="crumb">Kinevo /</span><h2>Cross-sell · cobertura por cliente</h2>
+    <div class="chips"><span class="chip on">lacunas em vida</span><span class="chip">todos os ramos</span></div>
+  </div>
+  <table>
+    <tr><th>Cliente</th><th>Auto</th><th class="hlv">Vida</th><th>Empresarial</th><th>Frota</th><th>RE</th><th class="r">Cliente desde</th></tr>
+    <tr><td>Transportes Aurora</td><td><span class="mdot on"></span></td><td class="hlv"><span class="mdot off"></span></td><td><span class="mdot on"></span></td><td><span class="mdot on"></span></td><td><span class="mdot on"></span></td><td class="r num-mut">2019</td></tr>
+    <tr><td>Marcondes Ltda</td><td><span class="mdot on"></span></td><td class="hlv"><span class="mdot off"></span></td><td><span class="mdot on"></span></td><td><span class="mdot off"></span></td><td><span class="mdot off"></span></td><td class="r num-mut">2021</td></tr>
+    <tr><td>Nogueira Alimentos</td><td><span class="mdot on"></span></td><td class="hlv"><span class="mdot off"></span></td><td><span class="mdot on"></span></td><td><span class="mdot on"></span></td><td><span class="mdot on"></span></td><td class="r num-mut">2017</td></tr>
+    <tr><td>Metalúrgica Íris</td><td><span class="mdot on"></span></td><td class="hlv"><span class="mdot off"></span></td><td><span class="mdot off"></span></td><td><span class="mdot off"></span></td><td><span class="mdot on"></span></td><td class="r num-mut">2020</td></tr>
+    <tr><td>Clínica Vale Verde</td><td><span class="mdot on"></span></td><td class="hlv"><span class="mdot on"></span></td><td><span class="mdot on"></span></td><td><span class="mdot off"></span></td><td><span class="mdot off"></span></td><td class="r num-mut">2022</td></tr>
+  </table>
+  <div class="foot-line"><span class="pill p-blue">12 clientes com lacuna em vida</span>prêmio potencial estimado R$ 96 mil/ano · <a class="all" href="#" style="font-size:11.5px">gerar lista para os produtores →</a></div>
+</div>
+
+<!-- ============ TELA 4: comissões ============ -->
+<div class="shot" id="shot-comissoes">
+  <div class="mtop"><span class="crumb">Kinevo /</span><h2>Comissões · conferência de junho</h2>
+    <div class="chips"><span class="chip on">junho 2026</span><span class="chip">maio</span><span class="chip">abril</span></div>
+  </div>
+  <div class="sum">
+    <div><div class="l">Devido</div><div class="v">R$ 48.230</div></div>
+    <div><div class="l">Pago</div><div class="v">R$ 45.870</div></div>
+    <div><div class="l">Diferença</div><div class="v red">R$ 2.360</div></div>
+  </div>
+  <table>
+    <tr><th>Seguradora</th><th class="r">Apólices</th><th class="r">Devido</th><th class="r">Pago</th><th class="r">Diferença</th><th>Status</th></tr>
+    <tr><td>Atlântica Seguros</td><td class="r">96</td><td class="r">R$ 14.820</td><td class="r">R$ 14.820</td><td class="r num-mut">—</td><td><span class="pill p-ok">conferido</span></td></tr>
+    <tr><td>Meridional</td><td class="r">71</td><td class="r">R$ 11.360</td><td class="r">R$ 10.140</td><td class="r num-red">R$ 1.220</td><td><span class="pill p-danger">divergência</span></td></tr>
+    <tr><td>Cruzeiro Vida</td><td class="r">58</td><td class="r">R$ 8.950</td><td class="r">R$ 8.950</td><td class="r num-mut">—</td><td><span class="pill p-ok">conferido</span></td></tr>
+    <tr><td>Horizonte RE</td><td class="r">44</td><td class="r">R$ 7.600</td><td class="r">R$ 6.460</td><td class="r num-red">R$ 1.140</td><td><span class="pill p-danger">divergência</span></td></tr>
+    <tr><td>Pilar Seguros</td><td class="r">43</td><td class="r">R$ 5.500</td><td class="r">R$ 5.500</td><td class="r num-mut">—</td><td><span class="pill p-ok">conferido</span></td></tr>
+  </table>
+</div>
+
+<!-- ============ TELA 5: automações ============ -->
+<div class="shot" id="shot-automacoes">
+  <div class="mtop"><span class="crumb">Kinevo /</span><h2>Automações</h2>
+    <div class="chips"><span class="chip on">ativas · 4</span><span class="chip">histórico</span></div>
+  </div>
+  <table>
+    <tr><th>Rotina</th><th>Disparo</th><th class="r">Execuções no mês</th><th class="r">Última execução</th><th class="r">Ativa</th></tr>
+    <tr><td>Cadastro de cliente<span class="sub">cria o cliente a partir da apólice emitida</span></td><td>nova apólice no portal</td><td class="r">128</td><td class="r num-mut">hoje · 09:41</td><td class="r"><span class="tog"></span></td></tr>
+    <tr><td>Emissão de documentos<span class="sub">apólice e boleto seguem para o cliente</span></td><td>emissão confirmada</td><td class="r">74</td><td class="r num-mut">hoje · 09:12</td><td class="r"><span class="tog"></span></td></tr>
+    <tr><td>Follow-up de cotação<span class="sub">lembrete se a proposta ficar parada</span></td><td>3 dias sem resposta</td><td class="r">39</td><td class="r num-mut">hoje · 08:30</td><td class="r"><span class="tog"></span></td></tr>
+    <tr><td>Aviso de renovação<span class="sub">e-mail ao produtor responsável</span></td><td>90 · 60 · 30 dias</td><td class="r">22</td><td class="r num-mut">hoje · 06:20</td><td class="r"><span class="tog"></span></td></tr>
+  </table>
+  <div class="foot-line"><span class="pill p-ok">263 execuções no mês</span>≈ 6 horas de tarefa manual a menos por semana</div>
+</div>
+
+</body>
+</html>
